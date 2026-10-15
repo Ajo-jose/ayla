@@ -22,7 +22,6 @@ sec.innerHTML=(GL?'':'<div class="bg" aria-hidden="true" style="'+box+'"><img sr
 '<div aria-hidden="true" style="position:absolute;inset:0;background:'+scrim+'"></div>'+
 '<div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:240px;background:linear-gradient(to bottom, rgba(0, 95, 155,0), rgba(0, 95, 155,0.3))"></div>'+
 '<div class="ct" style="position:absolute;left:'+(s.cx-400)+'px;top:0;bottom:0;width:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;color:#ffffff;will-change:transform">'+
-'<div style="font-size:16px;font-weight:500">Label goes here</div>'+
 '<h2 style="margin:0;display:flex;flex-direction:column;align-items:center;line-height:1;margin:-24px 0 -16px"><span style="padding:0 16px 8px;line-height:.9;white-space:nowrap;font-family:\'Meno Banner\',\'Cormorant Garamond\',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-0.05em;font-size:200px;background:linear-gradient(to bottom,#ffffff 40%,#99d1dc);-webkit-background-clip:text;background-clip:text;color:transparent">'+s.word+'</span></h2>'+
 '<p style="margin:0;max-width:480px;font-size:18px;line-height:1.55">Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.</p>'+
 '<div style="display:flex;gap:12px;margin-top:12px"><button class="btn btn-solid">Plan your visit</button><button class="btn btn-line">Explore</button></div></div>'+
@@ -47,8 +46,6 @@ var a=(nxt<0?cur:(p<.5?cur:nxt))===i;e.sec.setAttribute('aria-hidden',a?'false':
 function go(i,user){i=((i%n)+n)%n;if(user)restart();if(nxt>=0||drag&&drag.on){queued=i;return}if(i===cur)return;nxt=i;p=0;if(!GL){cur=nxt;nxt=-1;ui();return}animate(1,DUR,e2,commit)}
 function restart(){clearInterval(timer);timer=setInterval(function(){if(!document.hidden&&!hover&&!(drag&&drag.on))go(cur+1)},AUTOPLAY)}
 var heroEl=stage.parentNode;heroEl.addEventListener('mouseenter',function(){hover=true});heroEl.addEventListener('mouseleave',function(){hover=false});
-document.getElementById('prev').onclick=function(){go((nxt>=0?nxt:cur)-1,true)};
-document.getElementById('next').onclick=function(){go((nxt>=0?nxt:cur)+1,true)};
 stage.addEventListener('pointerdown',function(e){if(e.target.closest('button')||nxt>=0||!GL)return;drag={x:e.clientX,w:stage.getBoundingClientRect().width||1440,on:true,dir:0};stage.classList.add('drag');restart()});
 addEventListener('pointermove',function(e){if(!drag)return;var dx=(e.clientX-drag.x)/drag.w,dir=dx<0?1:-1;if(Math.abs(dx)<.005)return;if(dir!==drag.dir){drag.dir=dir;nxt=((cur+dir)%n+n)%n}p=Math.min(1,Math.abs(dx));ui()});
 function up(){if(!drag)return;var d=drag;drag=null;stage.classList.remove('drag');if(!d.dir){return}if(p>.4)animate(1,500,function(t){return 1-(1-t)*(1-t)},commit);else animate(0,500,function(t){return 1-(1-t)*(1-t)},function(){nxt=-1;p=0;anim=null;ui()})}

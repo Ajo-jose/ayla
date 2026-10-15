@@ -17,14 +17,10 @@ export default function Hero() {
 </svg>
 <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true" focusable={false}><defs><filter id="fisheye" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" x="0" y="0" width="1440" height="820" colorInterpolationFilters="sRGB"><feImage id="fishMap" x="0" y="0" width="1440" height="820" preserveAspectRatio="none" result="map" /><feDisplacementMap id="fishDisp" in="SourceGraphic" in2="map" scale="0" xChannelSelector="R" yChannelSelector="G" /></filter></defs></svg>
 <div id="stage" style={{ position: "absolute", inset: "0" }} />
-<div style={{ position: "absolute", left: 40, right: 40, bottom: 28, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, color: "#ffffff" }}>
-<button id="prev" aria-label="Previous slide" style={{ width: 44, height: 44, borderRadius: "50%", border: "2px solid #ffffff", background: "rgba(0, 95, 155,0.25)", color: "#ffffff", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", padding: "0" }}>
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
-</button>
+<div style={{ position: "absolute", left: 40, right: 40, bottom: 28, display: "flex", alignItems: "center", justifyContent: "center", gap: 20, color: "#ffffff" }}>
+
 <div id="dots" style={{ display: "flex", alignItems: "center", gap: 6 }} />
-<button id="next" aria-label="Next slide" style={{ width: 44, height: 44, borderRadius: "50%", border: "2px solid #ffffff", background: "rgba(0, 95, 155,0.25)", color: "#ffffff", display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", padding: "0" }}>
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-</button>
+
 </div>
 </div></>
     </>
