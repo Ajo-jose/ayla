@@ -1,7 +1,7 @@
 // @ts-nocheck — ported verbatim from the Claude Design prototype (DOM-driven scroll effects)
 export default function hero() {
 (function(){
-var INTENSITY=.55,ABERRATION=.35,DRIFT=.4,SCALE=2.4,DUR=1100,AUTOPLAY=4000;
+var INTENSITY=.55,ABERRATION=.35,DRIFT=.4,SCALE=2.4,DUR=1100,AUTOPLAY=6000;
 var data=[
 {word:'Marina',bg:'/assets/4832270e23473a056a719250ca0b381a.png',fg:'/assets/f4822b32b0f04051c7d830b02ae78b89.png',w:1440,h:968,left:0,top:-148,cx:340,side:'L',sky:'#6aa6d8',ripple:true,alt:'Paddleboarder standing on a board, paddle in hand'},
 {word:'Stay',bg:'/assets/0eedfcae95800cf90c8e055d017aac34.png',fg:'/assets/0b58776450154823f45c3cb8e042f9b3.png',w:1440,h:962,left:0,top:-142,cx:340,side:'L',sky:'#6b9fe0',ripple:false,alt:'Couple leaning on a blue balcony railing, seen from behind'},
@@ -24,7 +24,7 @@ sec.innerHTML=(GL?'':'<div class="bg" aria-hidden="true" style="'+box+'"><img sr
 '<div class="ct" style="position:absolute;left:'+(s.cx-400)+'px;top:0;bottom:0;width:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;color:#ffffff;will-change:transform">'+
 '<h2 style="margin:0;display:flex;flex-direction:column;align-items:center;line-height:1;margin:-24px 0 -16px"><span style="padding:0 16px 8px;line-height:.9;white-space:nowrap;font-family:\'Meno Banner\',\'Cormorant Garamond\',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-0.05em;font-size:200px;background:linear-gradient(to bottom,#ffffff 40%,#99d1dc);-webkit-background-clip:text;background-clip:text;color:transparent">'+s.word+'</span></h2>'+
 '<p style="margin:0;max-width:480px;font-size:18px;line-height:1.55">Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.</p>'+
-'<div style="display:flex;gap:12px;margin-top:12px"><button class="btn btn-solid">Plan your visit</button><button class="btn btn-line">Explore</button></div></div>'+
+'<div style="display:flex;gap:12px;margin-top:12px"><button class="btn btn-line">Explore</button></div></div>'+
 (GL?'':'<div class="fg" style="'+box+';pointer-events:none"><img src="'+s.fg+'" alt="'+s.alt+'" draggable="false" style="width:100%;height:100%;display:block;pointer-events:none"></div>');
 stage.appendChild(sec);
 var b=document.createElement('button');b.setAttribute('aria-label','Go to slide '+(i+1)+': '+s.word);
