@@ -5,7 +5,25 @@ var ring=document.getElementById('mo-ring'),sec=document.getElementById('moments
 var IM=['/assets/4832270e23473a056a719250ca0b381a.png','/assets/0eedfcae95800cf90c8e055d017aac34.png','/assets/2882b24b799ca7a4515f17d6e845880f.png','/assets/c4a023d5c6e76ebbeba11c362135d2e9.png'];
 var ACTS=['Water','Land','Family','Adventure','Shop'],BODY='Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.';var CAPS=ACTS.concat(ACTS);
 var N=CAPS.length,STEP=26,SPAN=N*STEP,R=930,RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.className='mo-card';d.innerHTML='<div class="mo-img"><img src="'+IM[i%IM.length]+'" alt="" draggable="false"><div class="mo-reveal"><div class="mo-rv-in"><h4>'+c+'</h4><p>Body copy goes here — one or two sentences of intro for this activity.</p><a class="mo-explore" href="#" draggable="false">Explore</a></div></div></div><h3>'+c+'</h3>';ring.appendChild(d);return d});
+var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.className='mo-card';d.innerHTML='<div class="mo-img"><img src="'+IM[i%IM.length]+'" alt="" draggable="false"><div class="mo-reveal"><svg class="mo-rv-svg" aria-hidden="true" viewBox="0 0 320 360" preserveAspectRatio="none"></svg><div class="mo-rv-in"><h4>'+c+'</h4><p>Body copy goes here — one or two sentences of intro for this activity.</p><a class="mo-explore" href="#" draggable="false">Explore</a></div></div></div><h3>'+c+'</h3>';ring.appendChild(d);return d});
+
+// cloud reveal (same puff/turbulence technique as the second fold)
+var NS='http://www.w3.org/2000/svg';
+cards.forEach(function(d,ci){var svg=d.querySelector('.mo-rv-svg');if(!svg)return;var id='mrv'+ci,W=320,H=360;
+var rnd=(function(s){return function(){s=(s*16807)%2147483647;return (s-1)/2147483646}})(5+ci*7);
+svg.innerHTML='<defs><filter id="'+id+'f" filterUnits="userSpaceOnUse" x="-120" y="-120" width="560" height="600"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="'+(3+ci)+'" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="3"/></filter><mask id="'+id+'m" maskUnits="userSpaceOnUse" x="0" y="0" width="'+W+'" height="'+H+'"><g id="'+id+'g" filter="url(#'+id+'f)" fill="#fff"></g></mask></defs><rect width="'+W+'" height="'+H+'" fill="#fff" mask="url(#'+id+'m)"/>';
+var g=svg.querySelector('#'+id+'g'),puffs=[];
+for(var gx=0;gx<4;gx++)for(var gy=0;gy<5;gy++){var c=document.createElementNS(NS,'circle'),cx=(gx+.5)*W/4+(rnd()-.5)*40,cy=(gy+.5)*H/5+(rnd()-.5)*40;c.setAttribute('cx',cx.toFixed(0));c.setAttribute('cy',cy.toFixed(0));c.setAttribute('r','0');g.appendChild(c);puffs.push({el:c,R:95+rnd()*70,d:Math.hypot(cx-W/2,cy-H/2)/260*.4+rnd()*.06})}
+var cp=0,tp=0,raf=0;
+function ease(x){return 1-Math.pow(1-x,3)}
+function step(){raf=0;cp+=(tp-cp)*.035;if(Math.abs(tp-cp)<.002)cp=tp;var p=cp;
+puffs.forEach(function(q){var t=Math.max(0,Math.min(1,(p-q.d)/.55));q.el.setAttribute('r',(q.R*ease(t)).toFixed(1))});
+if(cp!==tp)raf=requestAnimationFrame(step)}
+function go(v){tp=v;d.classList.toggle('mo-hv',!!v);if(!raf)raf=requestAnimationFrame(step)}
+if(RM){go=function(v){d.classList.toggle('mo-hv',!!v);puffs.forEach(function(q){q.el.setAttribute('r',v?q.R:0)})}}
+d.addEventListener('pointerenter',function(){if(d.classList.contains('mo-on'))go(1)});d.addEventListener('pointerleave',function(){go(0)});
+d.addEventListener('focusin',function(){go(1)});d.addEventListener('focusout',function(){go(0)});
+});
 var off=0,tg=0,vel=0,down=null,run=false,lastA=-1,wheelT=0,bar=document.getElementById('mo-bar');
 var lastI=performance.now(),hov=false;function poke(){lastI=performance.now()}
 sec.addEventListener('pointerenter',function(){hov=true});sec.addEventListener('pointerleave',function(){hov=false;poke()});sec.addEventListener('focusin',poke);
