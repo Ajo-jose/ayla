@@ -1,0 +1,83 @@
+/* F37 Ginger supplied (Thin, Light, Regular, Bold + italics). No Black file: 900 titles render in Bold until one is added.
+   Brandon Grotesque supplied (Thin, Light, Light Italic, Regular, Medium, Bold Italic). No upright Bold: the 700 tagline renders in Medium until one is added.
+   Meno Banner supplied (Light, Italic, Bold, ExtraBold, Black + italics).
+   Still missing: BoutrosART — Google fallbacks below load meanwhile. */
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Thin.ttf") format("truetype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-ThinItalic.ttf") format("truetype");font-weight:100;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Bold.ttf") format("truetype");font-weight:700 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-BoldItalic.ttf") format("truetype");font-weight:700 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBold.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBoldItalic.otf") format("opentype");font-weight:800;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BlackItalic.otf") format("opentype");font-weight:900;font-style:italic;font-display:swap}
+
+:root{
+/* Primary — ocean depths */
+--ayla-sky:#99d1dc;--ayla-aqua:#3ab0c8;--ayla-blue:#007cba;--ayla-deep:#005f9b;--ayla-slate:#98a3ad;
+/* Secondary */
+--sand:#ead99d;--amber:#f3940c;--rust:#cf5e14;--sage:#8bc799;--teal:#06a98f;--forest:#50675c;--steel:#69747c;--gray:#797e85;
+/* Neutrals */
+--surface:#ffffff;--ink:#000000;--text-muted:#69747c;--on-deep:#ffffff;--on-aqua:#000000;
+/* Gradient stops */
+--grad-mama-gaia:#ca6702;--grad-b12:#cb1486;--grad-turquoise:#47c0b9;--grad-sand:#e9d8a6;--grad-gold:#ffbf3c;--grad-yellow:#fec428;
+/* Gradients */
+--gradient-main:linear-gradient(90deg,var(--ayla-aqua),var(--ayla-deep));
+--gradient-mama-gaia:linear-gradient(90deg,var(--grad-mama-gaia),var(--amber));
+--gradient-b12:linear-gradient(90deg,var(--grad-b12),var(--amber));
+--gradient-turquoise:linear-gradient(90deg,var(--grad-turquoise),var(--sand));
+--gradient-sand:linear-gradient(90deg,var(--grad-sand),var(--grad-gold));
+--gradient-yellow:linear-gradient(90deg,var(--grad-sand),var(--grad-yellow));
+/* Semantic aliases */
+--text-body:var(--ink);--text-heading:var(--ink);--text-brand:var(--ayla-deep);--text-link:var(--ayla-blue);--text-secondary:var(--text-muted);--text-inverse:var(--on-deep);
+--surface-page:var(--surface);--surface-card:var(--surface);--surface-tint:color-mix(in srgb,var(--ayla-sky) 25%,var(--surface));--surface-warm:var(--sand);--surface-brand:var(--ayla-deep);
+--border-subtle:color-mix(in srgb,var(--ayla-slate) 45%,var(--surface));--border-strong:var(--ayla-slate);--focus-ring:var(--ayla-blue);
+--action-primary:var(--ayla-deep);--action-primary-hover:var(--ayla-blue);--action-secondary:var(--ayla-aqua);--action-secondary-hover:var(--ayla-sky);
+--status-success:var(--teal);--status-warning:var(--amber);--status-danger:var(--rust);--status-info:var(--ayla-deep);
+--scrim:color-mix(in srgb,var(--ayla-deep) 45%,transparent);
+}
+
+:root{
+--font-sans:"F37 Ginger","Urbanist",system-ui,sans-serif;
+--font-accent:"Meno Banner","Cormorant Garamond",Georgia,serif;
+--font-tagline:"Brandon Grotesque","Urbanist",system-ui,sans-serif;
+--font-digital-sans:"Urbanist",system-ui,sans-serif;
+--font-digital-serif:"Cormorant Garamond",Georgia,serif;
+--font-arabic:"BoutrosART","Noto Naskh Arabic",serif;
+--text-title-size:44px;--text-title-lh:52.8px;
+--text-subtitle-size:24px;--text-subtitle-lh:28.8px;
+--text-body-size:16px;--text-body-lh:19.2px;
+--text-caption-size:13px;--text-caption-lh:15.6px;
+--text-accent-size:28px;--text-accent-lh:33.6px;
+--text-tagline-size:12px;--text-tagline-lh:14.4px;--text-tagline-tracking:.3em;
+}
+.title{font:900 44px/52.8px var(--font-sans)}
+.subtitle{font:700 24px/28.8px var(--font-sans)}
+.body{font:400 16px/19.2px var(--font-sans)}
+.caption{font:400 13px/15.6px var(--font-sans)}
+.accent{font:italic 700 28px/33.6px var(--font-accent)}
+.tagline{font:700 12px/14.4px var(--font-tagline);letter-spacing:.3em;text-transform:uppercase}
+.digital-title{font:italic 700 40px/48px var(--font-digital-serif)}
+.digital-body{font:400 16px/19.2px var(--font-digital-sans)}
+
+:root{
+--space-1:4px;--space-2:8px;--space-3:16px;--space-4:24px;--space-5:32px;--space-6:48px;--space-7:64px;
+--radius-sm:4px;--radius-md:8px;--radius-pill:999px;
+--shadow-overlay:0 12px 32px color-mix(in srgb,var(--ayla-deep) 22%,transparent);
+--duration-fast:120ms;/* @kind other */
+--duration-base:200ms;/* @kind other */
+--ease-standard:cubic-bezier(.2,0,0,1);/* @kind other */
+}
