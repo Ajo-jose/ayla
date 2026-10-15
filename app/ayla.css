@@ -180,3 +180,6 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .btn-line:hover,.mo-all:hover{background:#fff;color:var(--ayla-deep)}
 /* Light surfaces (white sections): primary = deep fill, secondary = deep outline */
 .st-btn,.wo-all{border-width:1.5px}
+
+/* Stay with us: centre the link in the space between the card captions (≈625px) and the section bottom (820px) */
+.sw-copy{top:722px;bottom:auto;transform:translate(-50%,-50%)}
