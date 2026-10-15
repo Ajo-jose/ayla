@@ -12,8 +12,8 @@ var items=SLIDES.map(function(s){var d=document.createElement('div');d.className
 d.innerHTML=s.media.type==='video'?'<video src="'+s.media.src+'" poster="'+(s.media.poster||'')+'" autoplay muted loop playsinline></video>':'<img src="'+s.media.src+'" alt="'+s.media.alt+'" draggable="false">';mediaEl.appendChild(d);return d});
 var texts=SLIDES.map(function(s,i){var d=document.createElement('div');d.className='st-slide';d.setAttribute('role','group');d.setAttribute('aria-roledescription','slide');d.setAttribute('aria-label',(i+1)+' of '+N);
 d.innerHTML='<h2>'+s.title+'</h2><p>'+s.body+'</p><div class="st-ctas">'+s.ctas.map(function(c){return '<a class="st-btn st-'+c.variant+'" href="'+c.href+'">'+c.label+'</a>'}).join('')+'</div>';textEl.appendChild(d);return d});
-var lis=SLIDES.map(function(s,i){var li=document.createElement('li');li.innerHTML='<button type="button"><span>'+String(i+1).padStart(2,'0')+'</span>'+s.title+'</button>';li.firstChild.onclick=function(){jump(i)};list.appendChild(li);return li.firstChild});
-var dts=SLIDES.map(function(s,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Go to '+s.title);b.innerHTML='<span></span>';b.onclick=function(){jump(i)};dots.appendChild(b);return b});
+var lis=SLIDES.map(function(s,i){var li=document.createElement('li');li.innerHTML='<button type="button"><span>'+String(i+1).padStart(2,'0')+'</span>'+s.title+'</button>';li.firstChild.onclick=function(){jump(i)};list&&list.appendChild(li);return li.firstChild});
+var dts=SLIDES.map(function(s,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Go to '+s.title);b.innerHTML='<span></span>';b.onclick=function(){jump(i)};dots&&dots.appendChild(b);return b});
 function layout(){items.forEach(function(d,i){var k=i-idx,act=k===0,sc=act?1:.72,ty=k*STEP;
 d.style.transformOrigin=k<0?'50% 100%':k>0?'50% 0%':'50% 50%';
 if(RM){d.style.transform='translateY('+ty+'px) scale('+sc+')';d.style.opacity=Math.abs(k)>1?0:1}else{d.style.transform='translateY('+ty+'px) scale('+sc+')';d.style.opacity=Math.abs(k)>1?0:1}
