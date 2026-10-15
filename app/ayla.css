@@ -183,3 +183,7 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 
 /* Stay with us: centre the link in the space between the card captions (≈625px) and the section bottom (820px) */
 .sw-copy{top:722px;bottom:auto;transform:translate(-50%,-50%)}
+
+/* Play at Ayla: centre slider nav in the space below the cards (card bottom ≈675px → section bottom 900px; middle ≈787px) */
+.mo-arrow-prev,.mo-arrow-next{bottom:88.6px;margin-top:0}
+.mo-prog{bottom:111px}
