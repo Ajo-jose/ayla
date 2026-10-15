@@ -146,9 +146,6 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .pl-bar span{display:block;height:100%;background:var(--ayla-sky);transform-origin:left}
 @media (prefers-reduced-motion:reduce){#preloader{transition:opacity .4s}#preloader.pl-out{transform:none;opacity:0}}
 
-/* Play at Ayla: arrows sit on the same line as the progress slider */
-.mo-arrow-prev,.mo-arrow-next{position:absolute;left:50%;bottom:26px;z-index:3}
-.mo-arrow-prev{margin-left:-192px}.mo-arrow-next{margin-left:144px}
 
 /* Stay with us: stack title above the "Explore more" button so both fit the 300px card */
 
@@ -185,5 +182,4 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .sw-copy{top:722px;bottom:auto;transform:translate(-50%,-50%)}
 
 /* Play at Ayla: centre slider nav in the space below the cards (card bottom ≈675px → section bottom 900px; middle ≈787px) */
-.mo-arrow-prev,.mo-arrow-next{bottom:88.6px;margin-top:0}
 .mo-prog{bottom:111px}
