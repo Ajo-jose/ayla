@@ -6,7 +6,7 @@ if(!wrap)return;var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var PROPS=[{name:'Hyatt Regency',href:'#',img:'/assets/4832270e23473a056a719250ca0b381a.png',alt:'Paddleboarder on calm water at the marina'},{name:'Pulse',href:'#',img:'/assets/2882b24b799ca7a4515f17d6e845880f.png',alt:'Marina promenade on a sunny day'},{name:'Cloud7',href:'#',img:'/assets/0eedfcae95800cf90c8e055d017aac34.png',alt:'Balcony view over the sea'}];
 var CW=300,CH=420,GAP=120,LEFT=(1440-(CW*3+GAP*2))/2,TOP=160,W=1440,LERP=.08;
 var els=PROPS.map(function(pr,i){var d=document.createElement('div');d.className='sw-tile';d.setAttribute('role','listitem');d.style.width=CW+'px';
-d.innerHTML='<div class="sw-img" style="height:'+CH+'px"><img src="'+pr.img+'" alt="'+pr.name+': '+pr.alt+'" draggable="false"></div><div class="sw-cap"><h3>'+pr.name+'</h3><a class="about" href="'+pr.href+'" tabindex="-1" aria-label="Explore more: '+pr.name+'">Explore more</a></div>';
+d.innerHTML='<div class="sw-img" style="height:'+CH+'px"><img src="'+pr.img+'" alt="'+pr.name+': '+pr.alt+'" draggable="false"><a class="sw-explore" href="'+pr.href+'" tabindex="-1" aria-label="Explore more: '+pr.name+'">Explore more</a></div><div class="sw-cap"><h3>'+pr.name+'</h3></div>';
 strip.appendChild(d);return {el:d,img:d.querySelector('.sw-img'),pic:d.querySelector('img'),a:d.querySelector('a'),fx:LEFT+i*(CW+GAP),on:false}});
 var cp=0,run=false;
 function eo(x){return 1-Math.pow(1-x,4)}
