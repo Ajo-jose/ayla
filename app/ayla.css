@@ -135,3 +135,13 @@ button{font-family:inherit}
 @media (prefers-reduced-motion: reduce){.sw-badge svg{animation:none}}
 @media (prefers-reduced-motion: reduce){.rip{display:none}}
 html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b}nav a{color:inherit}nav a:hover{opacity:.75}#stage{touch-action:pan-y;cursor:grab}#stage.drag{cursor:grabbing}.lr{display:block;transform:translateY(110%);opacity:0;transition:transform .9s cubic-bezier(.2,0,0,1),opacity .9s cubic-bezier(.2,0,0,1)}.lr-in .lr,.rv-in .lr{transform:none;opacity:1}.rv-img{clip-path:inset(18% 18% 18% 18%);opacity:0;transition:clip-path 1.2s cubic-bezier(.2,0,0,1),opacity .8s cubic-bezier(.2,0,0,1)}.rv-img video{transform:scale(1.15);transition:transform 1.6s cubic-bezier(.2,0,0,1)}.rv-in .rv-img{clip-path:inset(0);opacity:1}.rv-in .rv-img video{transform:none}.rv-up{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,0,0,1),transform .9s cubic-bezier(.2,0,0,1)}.rv-in .rv-up{opacity:1;transform:none}
+/* Preloader — Ayla deep blue / sky */
+#preloader{position:fixed;inset:0;z-index:9999;background:var(--ayla-deep);color:#fff;font-family:'F37 Ginger','Urbanist',system-ui,sans-serif;overflow:hidden;transition:transform 1s cubic-bezier(.76,0,.24,1)}
+#preloader.pl-out{transform:translateY(-100%)}
+.pl-logo{position:absolute;left:40px;top:28px}
+.pl-num{position:absolute;right:3vw;top:2vw;display:flex;align-items:baseline;font-size:min(17vw,300px);font-weight:300;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.4)}
+.pl-num em{font-family:'Meno Banner','Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;color:var(--ayla-sky);font-size:.9em;letter-spacing:-.04em}
+.pl-copy{position:absolute;left:40px;bottom:56px;margin:0;max-width:min(620px,70vw);font-size:clamp(18px,1.9vw,26px);font-weight:300;line-height:1.35;color:rgba(255,255,255,.75)}
+.pl-bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(153,209,220,.25)}
+.pl-bar span{display:block;height:100%;background:var(--ayla-sky);transform-origin:left}
+@media (prefers-reduced-motion:reduce){#preloader{transition:opacity .4s}#preloader.pl-out{transform:none;opacity:0}}

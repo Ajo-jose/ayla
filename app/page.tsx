@@ -1,4 +1,4 @@
-import Effects from './Effects'
+import Preloader from './Preloader'
 import Hero from './components/Hero'
 import Fold2 from './components/Fold2'
 import Stay from './components/Stay'
@@ -25,7 +25,7 @@ export default function Home() {
         <Featured />
         <Footer />
       </div>
-      <Effects />
+      <Preloader />
     </>
   )
 }
