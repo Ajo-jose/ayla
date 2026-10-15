@@ -18,8 +18,7 @@ var chips=[ev.category,ev.location].filter(Boolean).map(function(c){return '<spa
 a.innerHTML='<div class="wo-media">'+media+'</div><div class="wo-fade" aria-hidden="true"></div><div class="wo-body">'+
 (ev.date?'<div class="wo-count" style="color: '+(['#FFFFFF67','#FFFFFF56','#FFFFFF50'][ci]||'#FFFFFF56')+'">'+esc(ev.date)+'</div>':'')+
 '<div class="wo-title"><h3 id="wo-t'+ci+'">'+esc(ev.title)+'</h3></div>'+
-'<p class="wo-desc">'+esc(ev.description)+'</p>'+(chips?'<div class="wo-chips">'+chips+'</div>':'')+
-'<a class="wo-btn" href="'+esc(ev.href||'#')+'" aria-label="More info: '+esc(ev.title)+'">More Info</a></div>';
+(chips?'<div class="wo-chips">'+chips+'</div>':'')+'</div>';
 grid.appendChild(a);
 var els=[].slice.call(a.querySelectorAll('.wo-media img'));
 if(els[0]){if(els[0].complete&&els[0].naturalWidth)tint(a,els[0]);else els[0].addEventListener('load',function(){tint(a,els[0])})}
