@@ -145,3 +145,7 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .pl-bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(153,209,220,.25)}
 .pl-bar span{display:block;height:100%;background:var(--ayla-sky);transform-origin:left}
 @media (prefers-reduced-motion:reduce){#preloader{transition:opacity .4s}#preloader.pl-out{transform:none;opacity:0}}
+
+/* Play at Ayla: arrows sit on the same line as the progress slider */
+.mo-arrow-prev,.mo-arrow-next{position:absolute;left:50%;bottom:26px;z-index:3}
+.mo-arrow-prev{margin-left:-192px}.mo-arrow-next{margin-left:144px}
