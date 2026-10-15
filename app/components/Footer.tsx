@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
 <footer id="site-footer" data-screen-label="Footer" style={{ position: "relative", zIndex: "10", width: 1440, boxSizing: "border-box", padding: "96px 64px 40px", background: "var(--ayla-deep)", color: "#ffffff", fontFamily: "'F37 Ginger', 'Urbanist', system-ui, sans-serif", overflow: "hidden" }}>
-<video className="ft-bgv" src="/assets/footer-bg.mp4" autoPlay muted loop playsInline aria-hidden="true" /><div className="ft-bgtint" aria-hidden="true" /><div className="ft-blur" aria-hidden="true" />
+
 <div className="ft-news">
 <div className="ft-newsbox"><div className="ft-news-copy"><span className="ft-label">Newsletter</span><h2>Stay in the <em className="sw-serif">loop</em></h2><p>Body copy goes here &mdash; one or two sentences of intro for this section. Replace with real words once the content is written.</p></div>
 <form className="ft-form" onSubmit={onSubmit}><label className="sw-sr" htmlFor="ft-email">Email address</label><input id="ft-email" type="email" required placeholder="Your email address" autoComplete="email" /><button type="submit">Subscribe<ArrowRight size={20} strokeWidth={1.75} aria-hidden="true" /></button><p className="ft-ok" role="status" hidden={!ok}>Thanks, you&rsquo;re on the list.</p></form></div>
@@ -19,10 +19,10 @@ export default function Footer() {
 <div className="ft-pills"><a href="#" className="ft-pill"><Star size={20} strokeWidth={1.75} aria-hidden="true" />Review us on Google</a><a href="#" className="ft-pill"><Star size={20} strokeWidth={1.75} aria-hidden="true" />Review us on Tripadvisor</a></div>
 </div>
 <div><h3 className="ft-label">Contact</h3><ul className="ft-contact">
-<li><Phone size={20} strokeWidth={1.75} aria-hidden="true" /><div><span>Tel</span><a href="tel:+96232094000">+962 3 209 4000</a></div></li>
-<li><Printer size={20} strokeWidth={1.75} aria-hidden="true" /><div><span>Fax</span><a href="tel:+96232094217">+962 3 209 4217</a></div></li>
-<li><Mail size={20} strokeWidth={1.75} aria-hidden="true" /><div><span>Email</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div></li>
-<li><MapPin size={20} strokeWidth={1.75} aria-hidden="true" /><div><span>Address</span><address>Al Farouq Street, Al Nakheel Area, Aqaba, P.O. Box 2303, 77110 Jordan</address></div></li></ul></div>
+<li><Phone size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Tel</span><a href="tel:+96232094000">+962 3 209 4000</a></div></li>
+<li><Printer size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Fax</span><a href="tel:+96232094217">+962 3 209 4217</a></div></li>
+<li><Mail size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Email</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div></li>
+<li><MapPin size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Address</span><address>Al Farouq Street, Al Nakheel Area, Aqaba, P.O. Box 2303, 77110 Jordan</address></div></li></ul></div>
 <nav aria-label="About"><h3 className="ft-label">About</h3><ul className="ft-links"><li><a href="#">About Ayla</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></nav>
 <nav aria-label="Media"><h3 className="ft-label">Media</h3><ul className="ft-links"><li><a href="#">Service charge</a></li><li><a href="#">News</a></li><li><a href="#">Blogs</a></li><li><a href="#">FAQs</a></li></ul></nav>
 </div>

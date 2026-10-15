@@ -8,7 +8,7 @@ const IMAGES = [
   '0b58776450154823f45c3cb8e042f9b3', '2882b24b799ca7a4515f17d6e845880f', '031dabd9dac523b90a61e21f2bafb3d5',
   'c4a023d5c6e76ebbeba11c362135d2e9', 'a53e791093aa902d295aef552ec7dfd6',
 ].map((h) => `/assets/${h}.png`).concat(['/assets/whatson-fire.png', '/assets/location-map.jpg', '/assets/ayla-app.jpg'])
-const VIDEOS = ['oasis', 'live', 'duo-bg', 'events-bg', 'footer-bg'].map((n) => `/assets/${n}.mp4`)
+const VIDEOS = ['oasis', 'live', 'duo-bg', 'events-bg'].map((n) => `/assets/${n}.mp4`)
 const MIN_MS = 1400
 const MAX_MS = 20000
 
