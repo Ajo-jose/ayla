@@ -12,6 +12,7 @@ import live from './live'
 import stack from './stack'
 import duoClouds from './duoClouds'
 import whatsOn from './whatsOn'
+import cardCursor from './cardCursor'
 
 let started = false
 export function initAll() {
@@ -31,4 +32,5 @@ export function initAll() {
   stack()
   duoClouds()
   whatsOn()
+  cardCursor()
 }
