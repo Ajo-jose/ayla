@@ -9,7 +9,7 @@ var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.class
 var off=0,tg=0,vel=0,down=null,run=false,lastA=-1,wheelT=0,bar=document.getElementById('mo-bar');
 var lastI=performance.now(),hov=false;function poke(){lastI=performance.now()}
 sec.addEventListener('pointerenter',function(){hov=true});sec.addEventListener('pointerleave',function(){hov=false;poke()});sec.addEventListener('focusin',poke);
-setInterval(function(){if(RM||!run||hov||down||document.hidden)return;if(performance.now()-lastI<3500)return;vel=0;tg=Math.round(tg/STEP+1)*STEP;lastI=performance.now()},500);
+setInterval(function(){if(RM||!run||hov||down||document.hidden)return;if(performance.now()-lastI<6000)return;vel=0;tg=Math.round(tg/STEP+1)*STEP;lastI=performance.now()},250);
 document.getElementById('mo-prev').onclick=function(){poke();vel=0;tg=Math.round(tg/STEP-1)*STEP};document.getElementById('mo-next').onclick=function(){poke();vel=0;tg=Math.round(tg/STEP+1)*STEP};
 function zf(){return (sec.getBoundingClientRect().width||1440)/1440}
 function frame(){if(!run)return;requestAnimationFrame(frame);
