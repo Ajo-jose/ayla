@@ -149,3 +149,6 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 /* Play at Ayla: arrows sit on the same line as the progress slider */
 .mo-arrow-prev,.mo-arrow-next{position:absolute;left:50%;bottom:26px;z-index:3}
 .mo-arrow-prev{margin-left:-192px}.mo-arrow-next{margin-left:144px}
+
+/* Stay with us: stack title above the "Explore more" button so both fit the 300px card */
+.sw-cap{flex-direction:column;align-items:flex-start;gap:12px}
