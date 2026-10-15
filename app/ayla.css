@@ -182,3 +182,16 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .sw-copy{top:722px;bottom:auto;transform:translate(-50%,-50%)}
 
 /* Play at Ayla: centre slider nav in the space below the cards (card bottom ≈675px → section bottom 900px; middle ≈787px) */
+
+.mo-img{position:relative}
+.mo-reveal{position:absolute;inset:20px;background:#fff;color:var(--ayla-deep);display:flex;align-items:center;justify-content:center;text-align:center;pointer-events:none;
+-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3Cg%20fill='%23000'%3E%3Ccircle%20cx='100'%20cy='100'%20r='82'/%3E%3Ccircle%20cx='100'%20cy='24'%20r='30'/%3E%3Ccircle%20cx='148'%20cy='38'%20r='30'/%3E%3Ccircle%20cx='176'%20cy='80'%20r='28'/%3E%3Ccircle%20cx='176'%20cy='128'%20r='30'/%3E%3Ccircle%20cx='146'%20cy='172'%20r='30'/%3E%3Ccircle%20cx='100'%20cy='178'%20r='28'/%3E%3Ccircle%20cx='54'%20cy='170'%20r='30'/%3E%3Ccircle%20cx='24'%20cy='128'%20r='30'/%3E%3Ccircle%20cx='24'%20cy='76'%20r='28'/%3E%3Ccircle%20cx='52'%20cy='34'%20r='30'/%3E%3C/g%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3Cg%20fill='%23000'%3E%3Ccircle%20cx='100'%20cy='100'%20r='82'/%3E%3Ccircle%20cx='100'%20cy='24'%20r='30'/%3E%3Ccircle%20cx='148'%20cy='38'%20r='30'/%3E%3Ccircle%20cx='176'%20cy='80'%20r='28'/%3E%3Ccircle%20cx='176'%20cy='128'%20r='30'/%3E%3Ccircle%20cx='146'%20cy='172'%20r='30'/%3E%3Ccircle%20cx='100'%20cy='178'%20r='28'/%3E%3Ccircle%20cx='54'%20cy='170'%20r='30'/%3E%3Ccircle%20cx='24'%20cy='128'%20r='30'/%3E%3Ccircle%20cx='24'%20cy='76'%20r='28'/%3E%3Ccircle%20cx='52'%20cy='34'%20r='30'/%3E%3C/g%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:0% 0%;mask-size:0% 0%;
+transition:-webkit-mask-size 1.2s cubic-bezier(.45,0,.25,1),mask-size 1.2s cubic-bezier(.45,0,.25,1)}
+.mo-card:hover .mo-reveal,.mo-card:focus-within .mo-reveal{-webkit-mask-size:330% 330%;mask-size:330% 330%;pointer-events:auto}
+.mo-rv-in{display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 36px;opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}
+.mo-card:hover .mo-rv-in,.mo-card:focus-within .mo-rv-in{opacity:1;transform:none;transition:opacity .6s cubic-bezier(.22,1,.36,1) .35s,transform .6s cubic-bezier(.22,1,.36,1) .35s}
+.mo-rv-in h4{margin:0;font-size:32px;font-weight:700;line-height:1.1;color:var(--ayla-deep)}
+.mo-rv-in p{margin:0;font-size:16px;font-weight:300;line-height:1.5;color:#000}
+.mo-explore{height:48px;padding:0 28px;border-radius:999px;background:var(--ayla-deep);color:#fff;border:1.5px solid var(--ayla-deep);display:inline-flex;align-items:center;font-size:15px;font-weight:500;text-decoration:none;margin-top:6px;transition:background .2s,border-color .2s}
+.mo-explore:hover{background:var(--ayla-blue);border-color:var(--ayla-blue)}
+@media (prefers-reduced-motion: reduce){.mo-reveal,.mo-rv-in{transition:none}}

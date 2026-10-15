@@ -5,7 +5,7 @@ var ring=document.getElementById('mo-ring'),sec=document.getElementById('moments
 var IM=['/assets/4832270e23473a056a719250ca0b381a.png','/assets/0eedfcae95800cf90c8e055d017aac34.png','/assets/2882b24b799ca7a4515f17d6e845880f.png','/assets/c4a023d5c6e76ebbeba11c362135d2e9.png'];
 var ACTS=['Water','Land','Family','Adventure','Shop'],BODY='Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.';var CAPS=ACTS.concat(ACTS);
 var N=CAPS.length,STEP=26,SPAN=N*STEP,R=930,RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.className='mo-card';d.innerHTML='<div class="mo-img"><img src="'+IM[i%IM.length]+'" alt="" draggable="false"></div><h3>'+c+'</h3>';ring.appendChild(d);return d});
+var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.className='mo-card';d.innerHTML='<div class="mo-img"><img src="'+IM[i%IM.length]+'" alt="" draggable="false"><div class="mo-reveal"><div class="mo-rv-in"><h4>'+c+'</h4><p>Body copy goes here — one or two sentences of intro for this activity.</p><a class="mo-explore" href="#" draggable="false">Explore</a></div></div></div><h3>'+c+'</h3>';ring.appendChild(d);return d});
 var off=0,tg=0,vel=0,down=null,run=false,lastA=-1,wheelT=0,bar=document.getElementById('mo-bar');
 var lastI=performance.now(),hov=false;function poke(){lastI=performance.now()}
 sec.addEventListener('pointerenter',function(){hov=true});sec.addEventListener('pointerleave',function(){hov=false;poke()});sec.addEventListener('focusin',poke);
