@@ -19,7 +19,7 @@ cards.forEach(function(d,i){var a=((i*STEP-off)%SPAN+SPAN*1.5)%SPAN-SPAN/2,r=a*M
 var x=Math.sin(r)*R,z=(Math.cos(r)-1)*R,vis=Math.abs(a)<74;
 d.style.visibility=vis?'visible':'hidden';d.style.transform='translate3d('+x.toFixed(1)+'px,0,'+z.toFixed(1)+'px) rotateY('+a.toFixed(2)+'deg)';
 d.style.opacity=Math.max(0,Math.min(1,(74-Math.abs(a))/18)).toFixed(3);d.style.zIndex=String(200-Math.round(Math.abs(a)));
-var on=Math.abs(a)<STEP/2;d.setAttribute('aria-hidden',on?'false':'true');d.classList.toggle('mo-on',on);if(on){var ai=i%ACTS.length;if(ai!==lastA){lastA=ai;bar.style.transform='translateX('+(ai*100)+'%)'}}})}
+var on=Math.abs(a)<STEP/2;d.setAttribute('aria-hidden',on?'false':'true');d.classList.toggle('mo-on',on);if(on){var ai=i%ACTS.length;if(ai!==lastA){lastA=ai;if(bar)bar.style.transform='translateX('+(ai*100)+'%)'}}})}
 new IntersectionObserver(function(es){var v=es[0].isIntersecting;if(v&&!run){run=true;requestAnimationFrame(frame)}else if(!v)run=false},{rootMargin:'200px'}).observe(sec);
 ring.addEventListener('pointerdown',function(e){poke();down={x:e.clientX,lx:e.clientX,t:tg};vel=0;ring.classList.add('mo-drag');try{ring.setPointerCapture(e.pointerId)}catch(_){}});
 ring.addEventListener('pointermove',function(e){if(!down)return;var k=.06/zf();tg=down.t-(e.clientX-down.x)*k;vel=-(e.clientX-down.lx)*k;down.lx=e.clientX});
