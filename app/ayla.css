@@ -158,6 +158,3 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .sw-explore{position:absolute;left:16px;bottom:16px;height:40px;padding:0 22px;border-radius:999px;border:1.5px solid #fff;color:#fff;background:rgba(0,63,107,.25);display:inline-flex;align-items:center;font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;pointer-events:auto;transition:background .2s cubic-bezier(.2,0,0,1),color .2s cubic-bezier(.2,0,0,1)}
 .sw-explore:hover{background:#fff;color:var(--ayla-deep)}
 .sw-explore:focus-visible{outline:2px solid #fff;outline-offset:2px}
-.sw-img{position:relative}
-.sw-img .about{position:absolute;left:16px;bottom:16px;display:inline-flex;align-items:center;text-decoration:none;border-color:#fff;color:#fff;background:rgba(0,95,155,.25);pointer-events:auto;z-index:2}
-.sw-img .about:hover{background:#fff;color:var(--ayla-deep)}
