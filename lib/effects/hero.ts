@@ -23,8 +23,8 @@ sec.innerHTML=(GL?'':'<div class="bg" aria-hidden="true" style="'+box+'"><img sr
 '<div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:240px;background:linear-gradient(to bottom, rgba(0, 95, 155,0), rgba(0, 95, 155,0.3))"></div>'+
 '<div class="ct" style="position:absolute;left:'+(s.cx-400)+'px;top:0;bottom:0;width:800px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;color:#ffffff;will-change:transform">'+
 '<h2 style="margin:0;display:flex;flex-direction:column;align-items:center;line-height:1;margin:-24px 0 -16px"><span style="padding:0 16px 8px;line-height:.9;white-space:nowrap;font-family:\'Meno Banner\',\'Cormorant Garamond\',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-0.05em;font-size:200px;background:linear-gradient(to bottom,#ffffff 40%,#99d1dc);-webkit-background-clip:text;background-clip:text;color:transparent">'+s.word+'</span></h2>'+
-'<p style="margin:0;max-width:480px;font-size:18px;line-height:1.55">Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.</p>'+
-'<div style="display:flex;gap:12px;margin-top:12px"><button class="btn btn-line">Explore</button></div></div>'+
+'<p style="margin:0;max-width:480px;font-size:18px;font-weight:300;line-height:1.55">Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.</p>'+
+'<div style="display:flex;gap:12px;margin-top:12px"><button class="btn btn-solid">Explore</button></div></div>'+
 (GL?'':'<div class="fg" style="'+box+';pointer-events:none"><img src="'+s.fg+'" alt="'+s.alt+'" draggable="false" style="width:100%;height:100%;display:block;pointer-events:none"></div>');
 stage.appendChild(sec);
 var b=document.createElement('button');b.setAttribute('aria-label','Go to slide '+(i+1)+': '+s.word);

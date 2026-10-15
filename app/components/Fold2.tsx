@@ -17,8 +17,8 @@ export default function Fold2() {
 
 </figure>
 <div style={{ alignSelf: "center", justifySelf: "end", width: 360, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 14 }}>
-<p style={{ margin: "0", fontSize: 16, fontWeight: "400", lineHeight: "1.25", color: "#69747c" }}>Body copy goes here &mdash; one or two sentences of intro for this section. Replace with real words once the content is written. Keep it calm, short and specific to the place.</p>
-<p style={{ margin: "0", fontSize: 16, fontWeight: "400", lineHeight: "1.25", color: "#69747c" }}>A second paragraph can follow here to add a little more detail, such as what makes this part of the destination different from the others.</p>
+<p style={{ margin: "0", fontSize: 16, fontWeight: "300", lineHeight: "1.25", color: "#69747c" }}>Body copy goes here &mdash; one or two sentences of intro for this section. Replace with real words once the content is written. Keep it calm, short and specific to the place.</p>
+<p style={{ margin: "0", fontSize: 16, fontWeight: "300", lineHeight: "1.25", color: "#69747c" }}>A second paragraph can follow here to add a little more detail, such as what makes this part of the destination different from the others.</p>
 <div style={{ display: "flex", gap: 14, alignItems: "flex-end", marginTop: 10 }}>
 <svg width="84" height="97" viewBox="0 0 170 196" role="img" aria-label="Award badge placeholder">
 <path d="M85 6 L160 49 L160 147 L85 190 L10 147 L10 49 Z" fill="none" stroke="#69747c" strokeWidth={4} />

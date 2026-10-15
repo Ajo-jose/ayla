@@ -166,3 +166,17 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .sw-explore:focus-visible,.lv-explore:focus-visible{outline:2px solid #fff;outline-offset:-6px}
 @media (hover:hover) and (pointer:fine){.sw-img,.lv-img{cursor:none}.sw-img a,.lv-img a{cursor:none}}
 .card-cursor{position:fixed;left:0;top:0;z-index:9000;pointer-events:none;height:52px;padding:0 26px;border-radius:999px;background:#fff;color:var(--ayla-deep);display:flex;align-items:center;font:500 15px/1 'F37 Ginger','Urbanist',system-ui,sans-serif;white-space:nowrap;box-shadow:0 8px 24px rgba(0,40,80,.25);transform:translate3d(-100px,-100px,0) scale(0);will-change:transform}
+
+/* ===== Consistency pass: body/tag weight + button system ===== */
+/* Body copy + tags = Light (300) */
+.sw-intro,.st-slide p,.sw-copy p,.ft-links a,.ft-contact a,.ft-contact address,.ft-legal,.wo-chip,.wo-count,.lv-card p,.we-text p,.ft-news p,.ft-brand>p{font-weight:300}
+/* Shared button metrics: one height, padding, label size and weight */
+.btn,.we-btn,.st-btn,.lv-book,.wo-all,.mo-all,.ft-pill,.ft-form button{height:48px;padding:0 28px;border-radius:999px;font-family:inherit;font-size:15px;font-weight:500;line-height:1;white-space:nowrap}
+/* Primary on dark / imagery surfaces: white fill */
+.btn-solid,.we-btn,.lv-book,.ft-form button{background:#fff;color:var(--ayla-deep);border:1.5px solid #fff}
+.btn-solid:hover,.we-btn:hover,.lv-book:hover,.ft-form button:hover{background:var(--ayla-sky);border-color:var(--ayla-sky);color:var(--ayla-deep)}
+/* Secondary on dark / imagery surfaces: outline */
+.btn-line,.mo-all,.ft-pill{background:transparent;color:#fff;border:1.5px solid #fff}
+.btn-line:hover,.mo-all:hover{background:#fff;color:var(--ayla-deep)}
+/* Light surfaces (white sections): primary = deep fill, secondary = deep outline */
+.st-btn,.wo-all{border-width:1.5px}
