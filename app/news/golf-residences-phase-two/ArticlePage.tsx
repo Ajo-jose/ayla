@@ -25,7 +25,7 @@ export default function ArticlePage() {
             <a className="dt-back" href="/news"><ArrowLeft aria-hidden="true" />All news/Blog</a>
           </div>
           <h1 id="dt-h1">Ayla launches Phase Two of Golf Residences and completes handover of Phase Two of Island Apartments</h1>
-          <ul className="dt-meta"><li>Press release</li><li>28 Feb 2026</li><li>Residences</li><li>4 min read</li></ul>
+          <ul className="dt-meta"><li>Press release</li><li>28 Feb 2026</li><li>4 min read</li></ul>
         </section>
         <figure className="dt-fig" id="dt-fig" data-screen-label="Lead image">
           <div className="dt-fimg"><img src="/assets/news/article-hero.jpg" alt="Golf Residences, Phase Two" /></div>
@@ -55,10 +55,10 @@ export default function ArticlePage() {
         <section className="dt-rel" data-screen-label="Related articles">
           <div className="dt-relhead"><h2>Related <em className="sw-serif">articles</em></h2><a className="wo-all" href="/news">All news</a></div>
           <div className="dt-relgrid" id="dt-rel">
-            {related.map(([img, ty, d, tp, t, x]) => (
+            {related.map(([img, ty, d, , t, x]) => (
               <a key={t} className="nw-card" href="/news/golf-residences-phase-two">
                 <div className="nw-img"><img src={img} alt="" loading="lazy" /><span className="nw-cur" aria-hidden="true">Read</span></div>
-                <div className="nw-meta"><span>{ty}</span><i /><time>{d}</time><i /><span>{tp}</span></div>
+                <div className="nw-meta"><span>{ty}</span><i /><time>{d}</time></div>
                 <h3><span>{t}</span></h3><p>{x}</p>
               </a>
             ))}
