@@ -12,7 +12,7 @@ const routes = [
   ["/assets/0eedfcae95800cf90c8e055d017aac34.png", "Book a hotel room", "Stay"],
   ["/assets/c4a023d5c6e76ebbeba11c362135d2e9.png", "Book a viewing", "Live"],
   ["/assets/4832270e23473a056a719250ca0b381a.png", "Reserve a berth", "Marina berth enquiry"],
-  ["/assets/2882b24b799ca7a4515f17d6e845880f.png", "Book a tee time", "Golf"],
+  ["/assets/golf-tee.jpg", "Book a tee time", "Golf"],
   ["/assets/whatson-fire.png", "Plan an event", "Wedding & Events"],
 ]
 const X = <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.71 7.67L22 21h-6.18l-4.84-6.33L5.44 21H2.37l7.18-8.2L2 3h6.34l4.37 5.78L17.75 3Zm-1.08 16.2h1.7L7.4 4.7H5.58l11.09 14.5Z" /></svg>
