@@ -60,3 +60,4 @@
 @media (prefers-reduced-motion: reduce){.nw-img,.nw-img img,.nw-meta,.nw-card h3,.nw-card p,.dt-w{transition:none!important;clip-path:none!important;transform:none!important;opacity:1!important;filter:none!important}.dt-fimg{clip-path:none!important}.dt-fimg img{transform:none!important}}
 
 .nw .nw-hero video{display:block}
+.dt-hero h1{font-weight:400}
