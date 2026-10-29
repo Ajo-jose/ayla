@@ -17,3 +17,5 @@
 @keyframes aw-scroll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @media (prefers-reduced-motion: reduce){.aw-track{animation:none}}
 .aw{padding:56px 0 56px}.aw+.ex{padding-top:88px}.wh-cal+.aw{padding-top:0}
+.wh-cal+.aw{padding-top:56px}
+.pv-faq+.aw{padding-top:112px}
