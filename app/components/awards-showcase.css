@@ -5,3 +5,6 @@
 .aw-row li{display:flex;align-items:center;justify-content:center;height:140px}
 .aw-row img{display:block;height:128px;width:auto;max-width:240px;object-fit:contain;filter:grayscale(1);opacity:.7;transition:filter .3s cubic-bezier(.2,0,0,1),opacity .3s cubic-bezier(.2,0,0,1),transform .5s cubic-bezier(.22,1,.36,1)}
 .aw-row li:hover img{filter:none;opacity:1;transform:translateY(-4px)}
+.aw{padding:80px 64px 0}.aw>p{margin-bottom:40px}
+.aw-row{gap:56px}.aw-row li{height:88px}.aw-row img{height:80px;max-width:180px}
+.aw+.ex{padding-top:96px}
