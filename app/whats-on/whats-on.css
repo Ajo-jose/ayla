@@ -128,3 +128,4 @@
 .wh-otxt h3{font-size:24px;line-height:1.15;letter-spacing:-.01em}.wh-odeal{font-size:16px}
 .wh-d{height:auto;aspect-ratio:1/1;padding:10px;overflow:hidden}.wh-d .num{font-size:18px}
 .wh-pill{max-height:none}
+.wh-d{justify-content:flex-start;gap:8px}
