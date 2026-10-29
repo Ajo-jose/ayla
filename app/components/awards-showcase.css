@@ -16,3 +16,4 @@
 .aw-track li:hover img{filter:none;opacity:1}
 @keyframes aw-scroll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
 @media (prefers-reduced-motion: reduce){.aw-track{animation:none}}
+.aw{padding:56px 0 56px}.aw+.ex{padding-top:88px}.wh-cal+.aw{padding-top:0}
