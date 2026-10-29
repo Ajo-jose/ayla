@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { Calendar, MapPin, ArrowRight, ArrowUpRight } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
+import AwardsShowcase from "../components/AwardsShowcase"
 import whatsOnPage from "../../lib/effects/whatsOnPage"
 import "./whats-on.css"
 
@@ -81,6 +82,8 @@ export default function WhatsOnPage() {
             </aside>
           </div>
         </section>
+
+        <AwardsShowcase />
 
         <section className="ex" data-screen-label="While you explore">
           <div className="ex-head"><h2 className="vp-h2 vp-rv">While you explore at <em className="sw-serif">Ayla</em></h2></div>

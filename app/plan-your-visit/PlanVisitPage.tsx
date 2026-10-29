@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { ArrowDownRight, ArrowUpRight, BedDouble, Sailboat, ShoppingBag, Utensils, Flag, Umbrella, SquareParking, Plus, Minus } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
+import AwardsShowcase from "../components/AwardsShowcase"
 import planVisit from "../../lib/effects/planVisit"
 import "./plan-your-visit.css"
 
@@ -112,6 +113,8 @@ export default function PlanVisitPage() {
             ))}
           </div>
         </section>
+
+        <AwardsShowcase />
 
         <section className="ex" data-screen-label="While you explore">
           <div className="ex-head"><h2 className="vp-h2 vp-rv">While you explore at <em className="sw-serif">Ayla</em></h2></div>
