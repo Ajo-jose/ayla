@@ -12,9 +12,13 @@ export default function AwardsShowcase() {
     <section className="aw" aria-labelledby="aw-h" data-screen-label="Awards">
       <h2 id="aw-h">Awards &amp; <em className="sw-serif">recognition</em></h2>
       <p>Ayla is recognised for architecture, sustainable masterplanning and marina excellence.</p>
-      <ul className="aw-row" aria-label="Awards">
-        {awards.map(([src, alt]) => <li key={src}><img src={src} alt={alt} draggable={false} loading="lazy" /></li>)}
-      </ul>
+      <div className="aw-viewport">
+        <ul className="aw-track" aria-label="Awards">
+          {[0, 1, 2, 3, 4, 5].flatMap(r => awards.map(([src, alt]) => (
+            <li key={r + src} aria-hidden={r > 0 ? true : undefined}><img src={src} alt={r === 0 ? alt : ""} draggable={false} /></li>
+          )))}
+        </ul>
+      </div>
     </section>
   )
 }

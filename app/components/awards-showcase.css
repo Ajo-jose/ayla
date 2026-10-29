@@ -8,3 +8,11 @@
 .aw{padding:80px 64px 0}.aw>p{margin-bottom:40px}
 .aw-row{gap:56px}.aw-row li{height:88px}.aw-row img{height:80px;max-width:180px}
 .aw+.ex{padding-top:96px}
+.aw-viewport{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.aw-track{list-style:none;margin:0;padding:0;display:flex;width:max-content;animation:aw-scroll 40s linear infinite}
+.aw-viewport:hover .aw-track{animation-play-state:paused}
+.aw-track li{flex:0 0 auto;display:flex;align-items:center;justify-content:center;height:88px;padding-right:72px}
+.aw-track img{display:block;height:80px;width:auto;max-width:180px;object-fit:contain;filter:grayscale(1);opacity:.7;transition:filter .3s cubic-bezier(.2,0,0,1),opacity .3s cubic-bezier(.2,0,0,1)}
+.aw-track li:hover img{filter:none;opacity:1}
+@keyframes aw-scroll{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@media (prefers-reduced-motion: reduce){.aw-track{animation:none}}
