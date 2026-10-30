@@ -46,7 +46,7 @@ export default function MarinaVillagePage() {
           <span className="mv-cue" aria-hidden="true">Scroll</span>
         </section>
         <section className="mv-intro" data-screen-label="Intro">
-          <h2 className="vp-h2 vp-rv">Where the Sea Meets <em className="sw-serif">Lifestyle</em></h2>
+          <h2 className="vp-h2 mv-st" id="mv-st" aria-label="Where the Sea Meets Lifestyle">{["Where", "the", "Sea", "Meets"].map((w, i) => <span key={w} className="mv-sw" aria-hidden="true" style={{ transitionDelay: `${i * 90}ms` }}>{w} </span>)}<em className="sw-serif mv-sw" aria-hidden="true" style={{ transitionDelay: "360ms" }}>Lifestyle</em></h2>
           <p className="vp-rv" style={D(1)}>From world-class berthing at Ayla Marina to vibrant dining, shopping, and cultural experiences at Marina Village, this is where luxury meets everyday life. Discover Ayla’s assortment at its finest.</p>
         </section>
         <div className="mv-bar"><nav className="mv-barin" id="mv-bar" aria-label="Marina Village categories">

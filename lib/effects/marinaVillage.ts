@@ -1,6 +1,7 @@
 // @ts-nocheck — ported from the Claude Design prototype (Ayla Marina Village)
 export default function marinaVillage() {
 var off=[];function on(t,f,o,tg){(tg||window).addEventListener(t,f,o);off.push(function(){(tg||window).removeEventListener(t,f,o)})}
+var st=document.getElementById('mv-st'),sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){st.classList.add('sw-in');sio.disconnect()}})},{threshold:.6});sio.observe(st);
 var hdr=document.getElementById('hdr'),sc=null;function onScroll(){var s=(window.scrollY||0)>60;if(s!==sc){sc=s;hdr.style.setProperty('--tint',s?'linear-gradient(to bottom, rgba(0, 95, 155, 0.8), rgba(0, 95, 155, 0))':'linear-gradient(to bottom, rgba(0, 95, 155, 0.3), rgba(0, 95, 155, 0))')}}on('scroll',onScroll,{passive:true});onScroll();
 function fit(){document.getElementById('page').style.setProperty('--z',document.documentElement.clientWidth/1440||1)}on('resize',fit);fit();
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target)}})},{threshold:.15});document.querySelectorAll('.vp-rv,.vp-ri').forEach(function(el){io.observe(el)});
@@ -19,5 +20,5 @@ on('click',function(e){var b=e.target.closest('.vp-chip');if(!b)return;var el=do
 var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(e.target.id)})},{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('.mv-sec').forEach(function(s){spy.observe(s)});
 var lastY=scrollY;on('scroll',function(){var y=scrollY,d=y-lastY;if(Math.abs(d)<6)return;document.body.classList.toggle('nav-off',d>0&&y>200);lastY=y},{passive:true});
 var himg=document.getElementById('mv-himg');on('scroll',function(){var y=scrollY;if(y<1000)himg.style.translate='0 '+(y*.25).toFixed(1)+'px'},{passive:true});
-return function(){off.forEach(function(f){f()});io.disconnect();spy.disconnect();document.body.classList.remove('nav-off')}
+return function(){off.forEach(function(f){f()});io.disconnect();sio.disconnect();spy.disconnect();document.body.classList.remove('nav-off')}
 }

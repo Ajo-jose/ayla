@@ -178,3 +178,6 @@
 .mv-hero{height:clamp(560px,calc(100vh / var(--z,1)),760px)}
 .mv-hc{bottom:56px}.mv-h1{font-size:144px}
 .mv-intro{padding-top:134px}
+.mv-sw{display:inline-block;white-space:pre;opacity:0;transform:translateY(.4em);filter:blur(4px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1),filter .9s cubic-bezier(.22,1,.36,1)}
+.mv-st.sw-in .mv-sw{opacity:1;transform:none;filter:none}
+@media (prefers-reduced-motion: reduce){.mv-sw{opacity:1;transform:none;filter:none}}
