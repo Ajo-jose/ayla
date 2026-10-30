@@ -195,3 +195,16 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .mo-explore:hover{background:var(--ayla-blue);border-color:var(--ayla-blue)}
 @media (prefers-reduced-motion: reduce){.mo-rv-in{transition:none!important}}
 .mo-card .mo-rv-in p{opacity:1;transform:none;transition:none}
+/* What's on — featured-offer card style */
+.wo-grid{gap:24px}
+.wo-fc{position:relative;display:flex;flex-direction:column;height:450px;border-radius:8px;overflow:hidden;background:color-mix(in srgb,var(--sand) 22%,#fff);color:#000;text-decoration:none}
+.wo-fc-top{flex:none;padding:24px 24px 40px}
+.wo-fc-top h3{margin:0;font-size:24px;font-weight:700;line-height:1.15;letter-spacing:-.01em;color:var(--ayla-deep);text-wrap:balance}
+.wo-fc-date{margin:8px 0 0;font-size:16px;font-weight:500;color:var(--ayla-blue)}
+.wo-fc-rule{display:block;width:16px;height:2px;margin:12px 0 10px;background:var(--ayla-deep);transition:width .6s cubic-bezier(.22,1,.36,1)}.wo-fc:hover .wo-fc-rule{width:48px}
+.wo-fc-meta{margin:0;font-size:14px;font-weight:300;color:#3f4950}
+.wo-fc-img{position:relative;flex:1;min-height:0;margin-top:-24px;clip-path:var(--torn)}
+.wo-fc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.06);transition:transform 1.4s cubic-bezier(.22,1,.36,1)}.wo-fc:hover .wo-fc-img img{transform:scale(1.14)}
+.wo-fc-link{position:absolute;left:24px;bottom:24px;z-index:1;display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:999px;background:var(--ayla-deep);color:#fff;font-size:15px;font-weight:500;opacity:0;transform:translateY(12px);transition:background .2s,opacity .3s,transform .5s cubic-bezier(.22,1,.36,1)}
+.wo-fc:hover .wo-fc-link,.wo-fc:focus-visible .wo-fc-link{opacity:1;transform:none}.wo-fc:hover .wo-fc-link{background:var(--ayla-blue)}.wo-fc-link svg{width:16px;height:16px;transition:transform .4s cubic-bezier(.22,1,.36,1)}.wo-fc:hover .wo-fc-link svg{transform:translateX(4px)}
+.wo-fc:focus-visible{outline:2px solid var(--ayla-blue);outline-offset:2px}
