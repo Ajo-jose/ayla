@@ -259,3 +259,4 @@
 .dv-sort{height:44px;box-sizing:border-box;padding:0 44px 0 18px;border-radius:999px;border:1px solid color-mix(in srgb,#98a3ad 45%,transparent);transition:border-color .2s cubic-bezier(.2,0,0,1);cursor:pointer}
 .dv-sort:hover,.dv-sort:focus-within{border-color:var(--ayla-blue)}
 .dv-sort select{padding-right:0;outline:0}.dv-sort svg{right:16px}
+.dv-grid .mv-card{height:500px}
