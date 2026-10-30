@@ -175,3 +175,6 @@
 #hdr{transition:transform .5s cubic-bezier(.22,1,.36,1)}body.nav-off #hdr{transform:translateY(-170px)}.mv-bar{transition:top .5s cubic-bezier(.22,1,.36,1)}body.nav-off .mv-bar{top:24px}
 
 #hdr{transition:transform .5s cubic-bezier(.22,1,.36,1)}body.nav-off #hdr{transform:translateY(-170px)}.mv-bar{transition:top .5s cubic-bezier(.22,1,.36,1)}body.nav-off .mv-bar{top:24px}
+.mv-hero{height:clamp(560px,calc(100vh / var(--z,1)),760px)}
+.mv-hc{bottom:56px}.mv-h1{font-size:144px}
+.mv-intro{padding-top:134px}
