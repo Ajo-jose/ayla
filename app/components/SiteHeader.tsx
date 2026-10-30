@@ -1,6 +1,6 @@
 import type { ReactNode } from "react"
 
-const hrefs: Record<string, string> = { "What's On": "/whats-on", "Plan your visit": "/plan-your-visit" }
+const hrefs: Record<string, string> = { "Marina Village": "/marina-village", "What's On": "/whats-on", "Plan your visit": "/plan-your-visit" }
 const nav = ["Stay", "Play", "Live", "Dine", "Marina Village", "Wedding & Events", "What's On", "Plan your visit"]
 const blur = [[2, 100], [4, 85], [8, 70], [16, 55], [32, 40]]
 
