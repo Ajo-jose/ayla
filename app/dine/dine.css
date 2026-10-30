@@ -256,3 +256,6 @@
 .dv-off .mv-img img{filter:grayscale(1);opacity:.7}.dv-off h3{color:#4d575e}
 .dv-empty{margin:48px 0 0;text-align:center;font-size:19px;color:#4d575e}
 .mv-hero{height:clamp(560px,calc(100vh / var(--z,1)),760px)}.mv-hc{bottom:56px}.mv-h1{font-size:144px}
+.dv-sort{height:44px;box-sizing:border-box;padding:0 44px 0 18px;border-radius:999px;border:1px solid color-mix(in srgb,#98a3ad 45%,transparent);transition:border-color .2s cubic-bezier(.2,0,0,1);cursor:pointer}
+.dv-sort:hover,.dv-sort:focus-within{border-color:var(--ayla-blue)}
+.dv-sort select{padding-right:0;outline:0}.dv-sort svg{right:16px}
