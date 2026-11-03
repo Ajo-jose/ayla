@@ -245,3 +245,4 @@
 .wh-w,.nw-l,.mv-h1 .mv-w{padding-bottom:.24em;margin-bottom:-.16em}
 .vp .wh-t{font-weight:400}
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
+.py-d{max-width:none;width:100%;text-wrap:wrap}
