@@ -63,3 +63,6 @@
 .dt-hero h1{font-weight:400}
 .nw-hero h1{font-size:80px}
 .nw-hin{top:0;bottom:0;align-items:center}.nw-hero p{margin:0}
+/* reveal masks: keep descenders (g, y, p) from being clipped */
+.wh-w,.nw-l,.mv-h1 .mv-w,.pv-hero h1 .nw-l{padding-bottom:.24em;margin-bottom:-.16em}
+.wh-w{margin-bottom:-.16em}

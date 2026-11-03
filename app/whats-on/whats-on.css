@@ -129,3 +129,6 @@
 .wh-d{height:auto;aspect-ratio:1/1;padding:10px;overflow:hidden}.wh-d .num{font-size:18px}
 .wh-pill{max-height:none}
 .wh-d{justify-content:flex-start;gap:8px}
+/* reveal masks: keep descenders (g, y, p) from being clipped */
+.wh-w,.nw-l,.mv-h1 .mv-w,.pv-hero h1 .nw-l{padding-bottom:.24em;margin-bottom:-.16em}
+.wh-w{margin-bottom:-.16em}

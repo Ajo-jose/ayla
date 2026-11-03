@@ -260,3 +260,6 @@
 .dv-sort:hover,.dv-sort:focus-within{border-color:var(--ayla-blue)}
 .dv-sort select{padding-right:0;outline:0}.dv-sort svg{right:16px}
 .dv-grid .mv-card{height:500px}
+/* reveal masks: keep descenders (g, y, p) from being clipped */
+.wh-w,.nw-l,.mv-h1 .mv-w,.pv-hero h1 .nw-l{padding-bottom:.24em;margin-bottom:-.16em}
+.wh-w{margin-bottom:-.16em}

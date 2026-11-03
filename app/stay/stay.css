@@ -234,3 +234,6 @@
 .vp .ex.dn-wd{padding:var(--sec) 64px}
 .vp .dn-wo .dn-wohead,.vp .ex.dn-wd .ex-head{margin-bottom:40px}
 .mv-hero{height:clamp(560px,calc(100vh / var(--z,1)),760px)}.mv-hc{bottom:56px}.mv-h1{font-size:144px}
+/* reveal masks: keep descenders (g, y, p) from being clipped */
+.wh-w,.nw-l,.mv-h1 .mv-w,.pv-hero h1 .nw-l{padding-bottom:.24em;margin-bottom:-.16em}
+.wh-w{margin-bottom:-.16em}
