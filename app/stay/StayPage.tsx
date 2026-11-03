@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { ArrowRight, ArrowUpRight } from "lucide-react"
+import { ArrowRight, ArrowUpRight, Plane } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
 import stay from "../../lib/effects/stay"
@@ -55,7 +55,7 @@ export default function StayPage() {
           <div className="st-fcopy">
             <h2 className="vp-h2 vp-rv">Find <em className="sw-serif">Ayla Oasis</em></h2>
             <p className="vp-rv" style={D(1)}>Ayla Oasis sits on the Red Sea coast in Aqaba, Jordan, 10 minutes from King Hussein International Airport.</p>
-            <div className="st-fig vp-rv" style={D(2)}><b>10</b><span>minutes from<br />King Hussein International Airport</span></div>
+            <div className="st-fig vp-rv" style={D(2)}><b>10</b><span>minutes from<br />King Hussein International Airport</span><Plane className="st-plane" aria-hidden="true" strokeWidth={1.5} /></div>
             <a className="vp-btn vp-rv" style={D(3)} href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
           <div className="st-map vp-ri"><img src="/assets/stay/78e2f3c3.jpg" alt="Map of Ayla Oasis in Aqaba" loading="eager" /><span className="st-pin" aria-hidden="true" /></div>
