@@ -126,3 +126,5 @@
 /* reveal masks: keep descenders (g, y, p) from being clipped */
 .wh-w,.nw-l,.mv-h1 .mv-w,.pv-hero h1 .nw-l{padding-bottom:.24em;margin-bottom:-.16em}
 .wh-w{margin-bottom:-.16em}
+/* h1: regular weight */
+.vp .mv-h1,.vp .pv-hero h1,.vp .nw-hero h1,.vp #nw-h1,.vp .wh-t,.vp .c2-hin h1,.vp .dt-hero h1{font-weight:400}
