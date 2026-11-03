@@ -26,7 +26,7 @@ export default function StayPage() {
       <SiteHeader />
       <main className="vp">
         <section className="mv-hero st-hero" data-screen-label="Hero">
-          <video id="mv-himg" src="/assets/stay/hero.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+          <video id="mv-himg" src="/assets/v/v-oasis.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="mv-hc"><h1 className="mv-h1"><span className="mv-w"><span style={{ ["--i" as string]: 0 } as React.CSSProperties}>Stay at</span></span><span className="mv-w"><span style={{ ["--i" as string]: 1 } as React.CSSProperties}><em className="sw-serif">Ayla Oasis</em></span></span></h1></div>
           <span className="mv-cue" aria-hidden="true">Scroll</span>
         </section>
@@ -58,7 +58,7 @@ export default function StayPage() {
             <div className="st-fig vp-rv" style={D(2)}><b>10</b><span>minutes from<br />King Hussein International Airport</span><Plane className="st-plane" aria-hidden="true" strokeWidth={1.5} /></div>
             <a className="vp-btn vp-rv" style={D(3)} href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
-          <div className="st-map vp-ri"><img src="/assets/stay/78e2f3c3.jpg" alt="Map of Ayla Oasis in Aqaba" loading="eager" /><span className="st-pin" aria-hidden="true" /></div>
+          <div className="st-map vp-ri"><img src="/assets/location-map.jpg" alt="Map of Ayla Oasis in Aqaba" loading="eager" /><span className="st-pin" aria-hidden="true" /></div>
         </section>
         <section className="dn-wo" data-screen-label="Seasonal offers">
           <div className="dn-wohead"><h2 className="vp-h2 vp-rv">Seasonal <em className="sw-serif">offers</em></h2></div>

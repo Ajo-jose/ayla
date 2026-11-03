@@ -54,7 +54,7 @@ export default function DinePage() {
         </section>
 
         <section className="dn-cross" data-screen-label="Cross-link banner">
-          <video src="/assets/dine/cross.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+          <video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="dn-crin"><h2 className="vp-h2 vp-rv">Planning a private event or <em className="sw-serif">wedding?</em></h2><a className="vp-btn vp-rv" style={D(1)} href="#">Explore Weddings &amp; Events<b><ArrowRight aria-hidden="true" /></b></a></div>
         </section>
 
@@ -75,7 +75,7 @@ export default function DinePage() {
           <div className="ex-row vp-rv" style={D(1)}>
             <a className="ex-p" href="#"><img src="/assets/dine/2010121f.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3></div></a>
             <a className="ex-p" href="/marina-village"><img src="/assets/dine/2010121f.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
-            <a className="ex-p" href="#"><video src="/assets/dine/cross.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
+            <a className="ex-p" href="#"><video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
           </div>
         </section>
       </main>

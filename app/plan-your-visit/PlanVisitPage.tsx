@@ -38,7 +38,7 @@ export default function PlanVisitPage() {
       <SiteHeader />
       <main className="vp">
         <section className="pv-hero" id="pv-hero" data-screen-label="Plan your visit hero">
-          <video src="/assets/pv/hero.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+          <video src="/assets/v/v-duo.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="pv-tint" />
           <div className="pv-hin">
             <h1><span className="nw-l"><span className="lr">Plan your</span></span><span className="nw-l"><span className="lr"><em className="sw-serif">visit</em></span></span></h1>
@@ -71,7 +71,7 @@ export default function PlanVisitPage() {
           </div>
           <div className="pv-mapbox vp-rv">
             <div className="pv-mapin" id="pv-mapin">
-              <img src="/assets/pv/map.jpg" alt="Illustrated map of the Ayla waterfront" />
+              <img src="/assets/location-map.jpg" alt="Illustrated map of the Ayla waterfront" />
               {pins.map(([c, n, x, y, dl, Icon]) => (
                 <div key={n} className="pv-pin" data-c={c} style={{ ["--x" as string]: x + "%", ["--y" as string]: y + "%", ["--dl" as string]: dl } as React.CSSProperties}>
                   <button aria-label={n} data-x={x} data-y={y}><Icon aria-hidden="true" /></button>
@@ -121,7 +121,7 @@ export default function PlanVisitPage() {
           <div className="ex-row vp-rv" style={D(1)}>
             <a className="ex-p" href="#"><img src="/assets/whats-on/offer-2.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3></div></a>
             <a className="ex-p" href="#"><img src="/assets/whats-on/offer-4.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
-            <a className="ex-p" href="#"><video src="/assets/whats-on/music.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
+            <a className="ex-p" href="#"><video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
           </div>
         </section>
       </main>

@@ -15,7 +15,7 @@ export default function NewsPage() {
       <SiteHeader />
       <main className="nw">
         <section className="nw-hero" data-screen-label="News hero">
-          <video src="/assets/news-hero.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+          <video src="/assets/v/v-oasis.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="nw-tint" />
           <div className="nw-hin">
             <h1 id="nw-h1"><span className="nw-l"><span className="lr">News &amp;</span></span><span className="nw-l"><span className="lr"><em className="sw-serif">updates</em></span></span></h1>

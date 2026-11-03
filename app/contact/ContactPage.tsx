@@ -10,9 +10,9 @@ const hrefs: Record<string, string> = { "Play": "/play", "Stay": "/stay", "Dine"
 const nav = ["Stay", "Play", "Live", "Dine", "Marina Village", "Wedding & Events", "What's On", "Plan your visit"]
 const blur = [[2, 100], [4, 85], [8, 70], [16, 55], [32, 40]]
 const routes = [
-  ["/assets/0eedfcae95800cf90c8e055d017aac34.png", "Book a hotel room", "Stay"],
-  ["/assets/c4a023d5c6e76ebbeba11c362135d2e9.png", "Book a viewing", "Live"],
-  ["/assets/4832270e23473a056a719250ca0b381a.png", "Reserve a berth", "Marina berth enquiry"],
+  ["/assets/0eedfcae95800cf90c8e055d017aac34.jpg", "Book a hotel room", "Stay"],
+  ["/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg", "Book a viewing", "Live"],
+  ["/assets/4832270e23473a056a719250ca0b381a.jpg", "Reserve a berth", "Marina berth enquiry"],
   ["/assets/golf-tee.jpg", "Book a tee time", "Golf"],
   ["/assets/whatson-fire.png", "Plan an event", "Wedding & Events"],
 ]
@@ -57,7 +57,7 @@ export default function ContactPage() {
         </section>
 
         <section className="c2-form" aria-labelledby="ge-h" data-screen-label="General enquiry">
-          <div className="c2-stage"><img className="c2-bg" src="/assets/4832270e23473a056a719250ca0b381a.png" alt="" aria-hidden="true" />
+          <div className="c2-stage"><img className="c2-bg" src="/assets/4832270e23473a056a719250ca0b381a.jpg" alt="" aria-hidden="true" />
             <div className="c2-win"><div className="c2-bar"><h2 id="ge-h">General enquiry</h2><span>New message</span></div>
               <form id="c2-form" noValidate>
                 <div className="c2-ln c2-sel"><label className="sw-sr" htmlFor="f-type">Enquiry type</label>

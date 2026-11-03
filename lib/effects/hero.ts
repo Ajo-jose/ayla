@@ -3,10 +3,10 @@ export default function hero() {
 (function(){
 var INTENSITY=.55,ABERRATION=.35,DRIFT=.4,SCALE=2.4,DUR=1100,AUTOPLAY=6000;
 var data=[
-{word:'Marina',bg:'/assets/4832270e23473a056a719250ca0b381a.png',fg:'/assets/f4822b32b0f04051c7d830b02ae78b89.png',w:1440,h:968,left:0,top:-148,cx:340,side:'L',sky:'#6aa6d8',ripple:true,alt:'Paddleboarder standing on a board, paddle in hand'},
-{word:'Stay',bg:'/assets/0eedfcae95800cf90c8e055d017aac34.png',fg:'/assets/0b58776450154823f45c3cb8e042f9b3.png',w:1440,h:962,left:0,top:-142,cx:340,side:'L',sky:'#6b9fe0',ripple:false,alt:'Couple leaning on a blue balcony railing, seen from behind'},
-{word:'Play',bg:'/assets/2882b24b799ca7a4515f17d6e845880f.png',fg:'/assets/031dabd9dac523b90a61e21f2bafb3d5.png',w:1440,h:962,left:0,top:-142,cx:1100,side:'R',sky:'#6aa8e8',ripple:false,alt:'Couple walking along the marina promenade'},
-{word:'Live',bg:'/assets/c4a023d5c6e76ebbeba11c362135d2e9.png',fg:'/assets/a53e791093aa902d295aef552ec7dfd6.png',w:1440,h:962,left:0,top:-142,cx:1100,side:'R',sky:'#1a1612',ripple:false,alt:'Woman in sunglasses seated at a restaurant table'}];
+{word:'Marina',bg:'/assets/4832270e23473a056a719250ca0b381a.jpg',fg:'/assets/f4822b32b0f04051c7d830b02ae78b89.png',w:1440,h:968,left:0,top:-148,cx:340,side:'L',sky:'#6aa6d8',ripple:true,alt:'Paddleboarder standing on a board, paddle in hand'},
+{word:'Stay',bg:'/assets/0eedfcae95800cf90c8e055d017aac34.jpg',fg:'/assets/0b58776450154823f45c3cb8e042f9b3.webp',w:1440,h:962,left:0,top:-142,cx:340,side:'L',sky:'#6b9fe0',ripple:false,alt:'Couple leaning on a blue balcony railing, seen from behind'},
+{word:'Play',bg:'/assets/2882b24b799ca7a4515f17d6e845880f.jpg',fg:'/assets/031dabd9dac523b90a61e21f2bafb3d5.webp',w:1440,h:962,left:0,top:-142,cx:1100,side:'R',sky:'#6aa8e8',ripple:false,alt:'Couple walking along the marina promenade'},
+{word:'Live',bg:'/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg',fg:'/assets/a53e791093aa902d295aef552ec7dfd6.webp',w:1440,h:962,left:0,top:-142,cx:1100,side:'R',sky:'#1a1612',ripple:false,alt:'Woman in sunglasses seated at a restaurant table'}];
 var stage=document.getElementById('stage');
 var cv=document.createElement('canvas');cv.setAttribute('aria-hidden','true');cv.style.cssText='position:absolute;inset:0;width:100%;height:100%;display:block';
 var gl=cv.getContext('webgl',{antialias:false,premultipliedAlpha:false});var GL=!!gl;

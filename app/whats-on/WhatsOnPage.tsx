@@ -8,10 +8,10 @@ import whatsOnPage from "../../lib/effects/whatsOnPage"
 import "./whats-on.css"
 
 const events = [
-  ["Sunset Yoga", "April 1 · 6:00 PM", "Beach Lawn", "/assets/news-hero.mp4", "video"],
-  ["Live DJ Set", "April 1 · 7:30 PM", "Vista Lounge", "/assets/whats-on/dj.mp4", "video"],
+  ["Sunset Yoga", "April 1 · 6:00 PM", "Beach Lawn", "/assets/v/v-oasis.mp4", "video"],
+  ["Live DJ Set", "April 1 · 7:30 PM", "Vista Lounge", "/assets/v/v-live.mp4", "video"],
   ["Sardinian Tasting", "April 1 · 8:00 PM", "Mama Gaia", "/assets/whats-on/tasting.png", "img"],
-  ["Live Music", "April 1 · 9:00 PM", "Red Restaurant", "/assets/whats-on/music.mp4", "video"],
+  ["Live Music", "April 1 · 9:00 PM", "Red Restaurant", "/assets/v/v-events.mp4", "video"],
 ]
 const torn = ["polygon(0.0% 10.6%,4.2% 10.4%,8.3% 12.1%,12.5% 10.2%,16.7% 6.3%,20.8% 7.3%,25.0% 5.5%,29.2% 5.5%,33.3% 5.3%,37.5% 7.7%,41.7% 9.1%,45.8% 9.0%,50.0% 10.5%,54.2% 10.1%,58.3% 9.5%,62.5% 6.6%,66.7% 4.9%,70.8% 5.2%,75.0% 6.3%,79.2% 4.0%,83.3% 7.6%,87.5% 8.7%,91.7% 9.2%,95.8% 9.3%,100.0% 12.0%,100% 100%,0 100%)", "polygon(0.0% 10.2%,4.2% 8.3%,8.3% 6.7%,12.5% 6.9%,16.7% 3.9%,20.8% 4.3%,25.0% 5.3%,29.2% 6.7%,33.3% 8.1%,37.5% 9.3%,41.7% 11.5%,45.8% 11.9%,50.0% 10.2%,54.2% 10.4%,58.3% 7.6%,62.5% 5.2%,66.7% 5.9%,70.8% 5.4%,75.0% 6.1%,79.2% 8.3%,83.3% 7.8%,87.5% 9.8%,91.7% 9.3%,95.8% 10.4%,100.0% 7.8%,100% 100%,0 100%)", "polygon(0.0% 7.2%,4.2% 8.0%,8.3% 4.7%,12.5% 5.1%,16.7% 4.1%,20.8% 7.7%,25.0% 7.6%,29.2% 9.0%,33.3% 10.6%,37.5% 12.5%,41.7% 11.1%,45.8% 8.4%,50.0% 7.7%,54.2% 6.3%,58.3% 3.0%,62.5% 6.1%,66.7% 6.3%,70.8% 8.3%,75.0% 7.6%,79.2% 9.3%,83.3% 10.3%,87.5% 11.9%,91.7% 10.0%,95.8% 9.0%,100.0% 5.7%,100% 100%,0 100%)", "polygon(0.0% 3.8%,4.2% 5.4%,8.3% 5.1%,12.5% 6.2%,16.7% 6.8%,20.8% 9.2%,25.0% 9.7%,29.2% 9.8%,33.3% 10.4%,37.5% 9.3%,41.7% 8.3%,45.8% 7.4%,50.0% 5.7%,54.2% 4.2%,58.3% 4.7%,62.5% 6.2%,66.7% 8.8%,70.8% 8.4%,75.0% 11.7%,79.2% 11.6%,83.3% 9.8%,87.5% 7.8%,91.7% 5.5%,95.8% 3.9%,100.0% 5.0%,100% 100%,0 100%)"]
 const offers = [
@@ -90,7 +90,7 @@ export default function WhatsOnPage() {
           <div className="ex-row vp-rv" style={{ ["--d" as string]: 1 } as React.CSSProperties}>
             <a className="ex-p" href="#"><img src="/assets/whats-on/offer-2.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3></div></a>
             <a className="ex-p" href="#"><img src="/assets/whats-on/offer-4.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
-            <a className="ex-p" href="#"><video src="/assets/whats-on/music.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
+            <a className="ex-p" href="#"><video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
           </div>
         </section>
       </main>

@@ -3,12 +3,13 @@ import { useEffect, useRef, useState } from 'react'
 import AylaLogo from './components/AylaLogo'
 import { initAll } from '../lib/effects'
 
+const EXT: Record<string, string> = {"4832270e23473a056a719250ca0b381a": "jpg", "f4822b32b0f04051c7d830b02ae78b89": "png", "0eedfcae95800cf90c8e055d017aac34": "jpg", "0b58776450154823f45c3cb8e042f9b3": "webp", "2882b24b799ca7a4515f17d6e845880f": "jpg", "031dabd9dac523b90a61e21f2bafb3d5": "webp", "c4a023d5c6e76ebbeba11c362135d2e9": "jpg", "a53e791093aa902d295aef552ec7dfd6": "webp"}
 const IMAGES = [
   '4832270e23473a056a719250ca0b381a', 'f4822b32b0f04051c7d830b02ae78b89', '0eedfcae95800cf90c8e055d017aac34',
   '0b58776450154823f45c3cb8e042f9b3', '2882b24b799ca7a4515f17d6e845880f', '031dabd9dac523b90a61e21f2bafb3d5',
   'c4a023d5c6e76ebbeba11c362135d2e9', 'a53e791093aa902d295aef552ec7dfd6',
-].map((h) => `/assets/${h}.png`).concat(['/assets/whatson-fire.png', '/assets/location-map.jpg', '/assets/ayla-app.jpg'])
-const VIDEOS = ['oasis', 'live', 'duo-bg', 'events-bg'].map((n) => `/assets/${n}.mp4`)
+].map((h) => `/assets/${h}.${EXT[h] || 'png'}`).concat(['/assets/whatson-fire.png', '/assets/location-map.jpg', '/assets/ayla-app.jpg'])
+const VIDEOS = ['v-oasis', 'v-live', 'v-duo', 'v-events'].map((n) => `/assets/v/${n}.mp4`)
 const MIN_MS = 1400
 const MAX_MS = 20000
 
