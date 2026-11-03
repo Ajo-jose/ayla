@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { ArrowDownRight, ArrowUpRight, BedDouble, Sailboat, ShoppingBag, Utensils, Flag, Umbrella, SquareParking, Plus, Minus } from "lucide-react"
+import { ArrowDownRight, ArrowUpRight, ArrowRight, BedDouble, Sailboat, ShoppingBag, Utensils, Flag, Umbrella, SquareParking, Plus, Minus } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
 import AwardsShowcase from "../components/AwardsShowcase"
@@ -53,7 +53,7 @@ export default function PlanVisitPage() {
           <div className="pv-etext">
             <h2 className="vp-h2 vp-rv" style={D(1)}>Explore <em className="sw-serif">Ayla</em></h2>
             <p className="vp-rv" style={D(2)}>A guided tour of everything Ayla offers — from our neighborhoods and beaches to the marina, golf course, and residential communities. Get the full picture before you arrive.</p>
-            <a className="vp-btn vp-rv" style={D(3)} href="#">Receive customized itinerary<b><ArrowUpRight aria-hidden="true" /></b></a>
+            <a className="vp-btn vp-rv" style={D(3)} href="#">Receive customized itinerary<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
         </section>
 
@@ -86,7 +86,7 @@ export default function PlanVisitPage() {
                 </div></div>
               <div className="pv-ct" style={{ marginBottom: 11 }}><div className="pv-lab" style={{ fontWeight: 700 }}>Contact</div><a href="tel:+96232094000">Tel: +962 3 209 4000</a><span>Fax: +962 3 209 4217</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div>
               <div className="pv-ct"><div className="pv-lab" style={{ fontWeight: 700 }}>Address</div><span>Al Farouq Street<br />Al Nakheel Area – Aqaba<br />P.O.Box: 2303 Aqaba 77110 Jordan</span></div>
-              <a className="vp-btn" href="https://maps.google.com/?q=Ayla+Aqaba" target="_blank" rel="noopener">Get directions<b><ArrowUpRight aria-hidden="true" /></b></a>
+              <a className="vp-btn" href="https://maps.google.com/?q=Ayla+Aqaba" target="_blank" rel="noopener">Get directions<b><ArrowRight aria-hidden="true" /></b></a>
             </div>
             <div className="pv-zoom"><button id="pv-zin" aria-label="Zoom in"><Plus aria-hidden="true" /></button><button id="pv-zout" aria-label="Zoom out"><Minus aria-hidden="true" /></button></div>
           </div>
@@ -98,7 +98,7 @@ export default function PlanVisitPage() {
             <h2 className="vp-h2">Sustainability</h2>
             <p className="pv-st" id="pv-st">{sus.map((w, i) => <span key={i}><span className="pv-sw">{w}</span>{" "}</span>)}</p>
             <div className="pv-tags"><span>Environment</span><span>Community</span><span>Blue Flag</span><span>Design</span></div>
-            <a className="vp-btn" href="#">Read our commitments<b><ArrowUpRight aria-hidden="true" /></b></a>
+            <a className="vp-btn" href="#">Read our commitments<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
         </section>
 
