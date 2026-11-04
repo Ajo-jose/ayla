@@ -44,7 +44,7 @@ export default function StayPage() {
                   <p>{c.p}</p>
                   {c.chips.length > 0 && <ul className="dq-chips">{c.chips.map(x => <li key={x}>{x}</li>)}</ul>}
                   <div className="st-btns">
-                    {c.soon ? <a className="st-ghost" href="#">Register interest</a> : <><a className="vp-btn" href="#">Book your room<b><ArrowRight aria-hidden="true" /></b></a><a className="st-ghost" href="#">Learn More</a></>}
+                    {c.soon ? <a className="st-ghost" href="#">Register interest</a> : <><a className="vp-btn" href="#">Book your room<b><ArrowRight aria-hidden="true" /></b></a><a className="st-ghost" href={c.alt.includes("Hyatt") ? "/hyatt-regency" : "#"}>Learn More</a></>}
                   </div>
                 </div>
               </div>
