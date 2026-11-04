@@ -1100,3 +1100,5 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .lw-cb dl>div{padding:10px 0}
 .lw-cb h3{font-size:32px}/* banner titles: regular weight everywhere */
 .vp .mv-h1,.vp .mv-h1 .mv-w,.vp .mv-h1 .mv-w>span,.vp h1{font-weight:400}
+/* smaller chart */
+.mr-sw{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px}.mr-cf{height:calc(100% - 260px);max-width:560px}
