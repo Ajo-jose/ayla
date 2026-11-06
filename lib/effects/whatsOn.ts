@@ -4,7 +4,8 @@ export default function whatsOn() {
 var EVENTS=[
 {images:[{src:'/assets/4832270e23473a056a719250ca0b381a.jpg',alt:'Paddleboarder on the marina at sunset'},{src:'/assets/2882b24b799ca7a4515f17d6e845880f.jpg',alt:'Couple walking along the promenade'},{src:'/assets/0eedfcae95800cf90c8e055d017aac34.jpg',alt:'Balcony view over the sea'}],date:'12 Nov',category:'Category',location:'Location',title:'Event title goes here',description:'Short event description goes here.',href:'#'},
 {images:[{src:'/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg',alt:'Guest dining at a waterfront restaurant'}],date:'24 Nov',category:'Category',location:'Location',title:'Event title goes here',description:'Short event description goes here.',href:'#'},
-{images:[{src:'/assets/whatson-fire.png',alt:'Fire performer spinning flaming staffs at night'}],date:'3 Dec',category:'Category',title:'Event title goes here',description:'Short event description goes here.',href:'#'}];
+{images:[{src:'/assets/whatson-fire.png',alt:'Fire performer spinning flaming staffs at night'}],date:'3 Dec',category:'Category',title:'Event title goes here',description:'Short event description goes here.',href:'#'},
+{images:[{src:'/assets/2882b24b799ca7a4515f17d6e845880f.jpg',alt:'Couple walking along the promenade'}],date:'15 Dec',category:'Category',location:'Location',title:'Event title goes here',description:'Short event description goes here.',href:'#'}];
 var grid=document.getElementById('wo-grid');if(!grid)return;
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var ICON='<svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#b8cdea" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"></path></svg>';

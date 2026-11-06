@@ -133,6 +133,9 @@ var gfl=$('.gf-fl');if(gfl){var gb=$$('button',gfl),ge=$$('.gf-ev');gb.forEach(f
 /* legal: toc highlight + faq filter */
 (function(){var t=document.querySelector('.lg-toc');if(t){var links=[].slice.call(t.querySelectorAll('a'));var secs=links.map(function(a){return document.getElementById(a.dataset.go)});var upd=function(){var cur=0;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<200*zoom())cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})};addEventListener('scroll',upd,{passive:true});upd()}
 var f=document.querySelector('.lg-ft');if(f){var bs=[].slice.call(f.querySelectorAll('button'));bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});[].slice.call(document.querySelectorAll('.lw-qi')).forEach(function(q){q.hidden=!(b.dataset.c==='all'||q.dataset.c===b.dataset.c)})})})}})();
+/* sustainability: sticky chapter images */
+(function(){var ch=$('.sb-ch');if(!ch)return;var im=$$('.sb-sk img',ch),cn=$('.sb-cn b',ch),cs=$$('.sb-c',ch);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var i=+e.target.dataset.i;im.forEach(function(m,j){m.classList.toggle('on',j===i)});if(cn)cn.textContent=('0'+(i+1)).slice(-2)})},{rootMargin:'-45% 0px -45% 0px'});cs.forEach(function(c){io.observe(c)})})();
 run();
 
 /* marina */

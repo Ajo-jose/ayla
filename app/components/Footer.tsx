@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react'
 export default function Footer() {
   const [ok, setOk] = useState(false)
   useEffect(() => {
-    const els = Array.from(document.querySelectorAll('.ft-newsbox, .ft-appcard')) as HTMLElement[]
+    const els = Array.from(document.querySelectorAll('.ft-newsbox, .ft-appcard, .ft-grid > *, .ft-bottom')) as HTMLElement[]
     if (!els.length || matchMedia('(prefers-reduced-motion: reduce)').matches) return
-    els.forEach((e, i) => { e.classList.add('ft-fx'); e.style.transitionDelay = i * 160 + 'ms' })
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('ft-in'); io.unobserve(e.target) } }), { threshold: 0.2 })
+    els.forEach((e, i) => { e.classList.add('ft-fx'); e.style.transitionDelay = (i < 2 ? i * 160 : (i - 2) * 100) + 'ms' })
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('ft-in'); io.unobserve(e.target) } }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' })
     els.forEach((e) => io.observe(e))
     return () => io.disconnect()
   }, [])
@@ -31,7 +31,7 @@ export default function Footer() {
 <li><Printer size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Fax</span><a href="tel:+96232094217">+962 3 209 4217</a></div></li>
 <li><Mail size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Email</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div></li>
 <li><MapPin size={20} strokeWidth={1.75} aria-hidden="true" /><div><span className="sw-sr">Address</span><address>Al Farouq Street, Al Nakheel Area, Aqaba, P.O. Box 2303, 77110 Jordan</address></div></li></ul></div>
-<nav aria-label="About"><h3 className="ft-label">About</h3><ul className="ft-links"><li><a href="#">About Ayla</a></li><li><a href="/news">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></nav>
+<nav aria-label="About"><h3 className="ft-label">About</h3><ul className="ft-links"><li><a href="#">About Ayla</a></li><li><a href="/sustainability">Sustainability</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul></nav>
 <nav aria-label="Media"><h3 className="ft-label">Media</h3><ul className="ft-links"><li><a href="#">Service charge</a></li><li><a href="#">News</a></li><li><a href="#">Blogs</a></li><li><a href="/faqs">FAQs</a></li></ul></nav>
 </div>
 <div className="ft-bottom"><div className="ft-legal"><span>&copy; 2026 Ayla</span><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>

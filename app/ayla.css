@@ -233,5 +233,8 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .mo-rv-in{transition:none;opacity:1;transform:none}
 .mo-card.mo-hv .mo-rv-in{transition:none}
 
-.ft-fx{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.ft-fx{opacity:0;transform:translateY(48px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
 .ft-fx.ft-in{opacity:1;transform:none}
+
+#wo-grid.wo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+#wo-grid .wo-fc-top h3{font-size:22px}
