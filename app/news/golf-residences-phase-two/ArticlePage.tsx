@@ -13,12 +13,11 @@ const related = [
 ]
 const X = <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.71 7.67L22 21h-6.18l-4.84-6.33L5.44 21H2.37l7.18-8.2L2 3h6.34l4.37 5.78L17.75 3Zm-1.08 16.2h1.7L7.4 4.7H5.58l11.09 14.5Z" /></svg>
 
-const llms: [string, string, string, string][] = [
-  ["chatgpt", "ChatGPT", "GPT", "https://chatgpt.com/?q="],
-  ["claude", "Claude", "Cl", "https://claude.ai/new?q="],
-  ["gemini", "Gemini", "Ge", "https://www.google.com/search?udm=50&q="],
-  ["grok", "Grok", "Gr", "https://grok.com/?q="],
-  ["perplexity", "Perplexity", "Px", "https://www.perplexity.ai/search?q="],
+const llms: [string, string, string][] = [
+  ["chatgpt", "ChatGPT", "https://chatgpt.com/?q="],
+  ["claude", "Claude", "https://claude.ai/new?q="],
+  ["gemini", "Gemini", "https://www.google.com/search?udm=50&q="],
+  ["grok", "Grok", "https://grok.com/?q="],
 ]
 
 export default function ArticlePage() {
@@ -54,8 +53,8 @@ export default function ArticlePage() {
             <div className="dt-sum">
               <span className="dt-sumlbl">Summarise this article with:</span>
               <ul className="dt-llms">
-                {llms.map(([id, name, mark, url]) => (
-                  <li key={id}><a className="dt-llm" href={url} target="_blank" rel="noopener noreferrer" title={name} aria-label={"Summarise with " + name} onClick={e => { e.preventDefault(); window.open(url + encodeURIComponent("Summarize this article: " + window.location.href), "_blank", "noopener") }}><span aria-hidden="true">{mark}</span></a></li>
+                {llms.map(([id, name, url]) => (
+                  <li key={id}><a className="dt-llm" href={url} target="_blank" rel="noopener noreferrer" title={name} aria-label={"Summarise with " + name} onClick={e => { e.preventDefault(); window.open(url + encodeURIComponent("Summarize this article: " + window.location.href), "_blank", "noopener") }}><img src={"/assets/llm/" + id + ".png"} alt="" width="28" height="28" /></a></li>
                 ))}
               </ul>
             </div>
