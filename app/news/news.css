@@ -98,4 +98,4 @@
 .dt-llms{display:flex;gap:12px;list-style:none;margin:0;padding:0}
 .dt-llm{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;border:1.5px solid color-mix(in srgb,#98a3ad 45%,transparent);background:#fff;color:var(--ayla-deep);font:700 15px 'F37 Ginger','Urbanist',system-ui,sans-serif;text-decoration:none;transition:border-color .2s cubic-bezier(.2,0,0,1),background .2s,color .2s,transform .3s cubic-bezier(.22,1,.36,1)}
 .dt-llm:hover{background:var(--ayla-deep);color:#fff;border-color:var(--ayla-deep);transform:translateY(-2px)}
-.dt-llm img{width:28px;height:28px;object-fit:contain;display:block}.dt-llm:hover{background:#fff;border-color:var(--ayla-deep)}
+.dt-llm img{width:23.8px;height:23.8px;object-fit:contain;display:block}.dt-llm:hover{background:#fff;border-color:var(--ayla-deep)}
