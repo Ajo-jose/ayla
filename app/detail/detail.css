@@ -1219,3 +1219,8 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .bq-cp .vp-h2{font-size:54px}
 .bq-cp{gap:18px}
 @media (max-width:767px){.bq-st .bq-p{padding:72px 0 32px}}
+
+/* why-ayla header: top-align title and lead */
+.vp .ew-wh .ew-wl{align-items:start}
+.vp .ew-wh .ew-wl .vp-h2{margin:0;line-height:1.05}
+.vp .ew-wh .ew-wl .ew-lead{margin:6px 0 0}
