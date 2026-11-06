@@ -93,12 +93,11 @@ export default function PlanVisitPage() {
         </section>
 
         <section className="pv-sus" id="pv-sus" data-screen-label="Sustainability">
-          <div className="pv-trail" id="pv-trail" aria-hidden="true" />
           <div className="pv-sin">
             <h2 className="vp-h2">Sustainability</h2>
             <p className="pv-st" id="pv-st">{sus.map((w, i) => <span key={i}><span className="pv-sw">{w}</span>{" "}</span>)}</p>
             <div className="pv-tags"><span>Environment</span><span>Community</span><span>Blue Flag</span><span>Design</span></div>
-            <a className="vp-btn" href="#">Read our commitments<b><ArrowRight aria-hidden="true" /></b></a>
+            <a className="vp-btn" href="/news">Read our commitments<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
         </section>
 

@@ -136,3 +136,16 @@
 .vp .mv-h1,.vp .pv-hero h1,.vp .nw-hero h1,.vp #nw-h1,.vp .wh-t,.vp .c2-hin h1,.vp .dt-hero h1{font-weight:400}
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
 .wh-hero{height:clamp(620px,calc(100vh / var(--z,1)),820px)}
+
+/* whats-on refinements */
+.vp .wh-off{padding:100px 64px}
+.wh-ogrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.wh-ogrid .wo-fc{transition:opacity 1s cubic-bezier(.22,1,.36,1),transform 1s cubic-bezier(.22,1,.36,1)}
+.vp .wh-cal{padding:100px 64px}
+.wh-phead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:0 0 24px}.wh-phead .wh-pdate{margin:0}
+.wh-cal+.aw{padding:100px 0 0}
+.wh-cal+.aw .aw-track li{height:150px;padding-right:140px}
+.wh-cal+.aw .aw-track img{height:130px;max-width:280px}
+.vp .wh-cal~.ex{padding:100px 64px 100px}
+.vp .wh-cal~.ex .ex-row{height:500px}
+.wh-nav button{grid-template-columns:minmax(0,1fr)}

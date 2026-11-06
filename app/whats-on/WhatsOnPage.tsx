@@ -29,17 +29,15 @@ export default function WhatsOnPage() {
       <main className="vp">
         <section className="wh-hero" id="wh-hero" data-screen-label="Featured events slider" aria-roledescription="carousel" aria-label="Featured events">
           <h1 className="wh-h1">What’s on</h1>
-          <div className="wh-count" aria-hidden="true"><b id="wh-cur">01</b>/ 04</div>
-          {events.map(([t, , where, src, kind], i) => (
+                    {events.map(([t, , where, src, kind], i) => (
             <div key={t} className={"wh-s" + (i === 0 ? " on" : "")} aria-hidden={i !== 0}>
               {kind === "video" ? <video className="wh-m" src={src} autoPlay muted loop playsInline aria-hidden="true" /> : <img className="wh-m" src={src} alt="" />}
               <div className="wh-c">
-                <span className="vp-k">Featured event · 0{i + 1}</span>
                 <h2 className="wh-t">{t.split(" ").map((w, k) => <span key={k} className="wh-w"><span style={{ ["--i" as string]: k } as React.CSSProperties}>{w}</span></span>)}</h2>
                 <div className="wh-meta">
                   <span><Calendar aria-hidden="true" />{events[i][1]}</span>
                   <span><MapPin aria-hidden="true" />{where}</span>
-                  <a className="wh-res" href="#">Reserve<ArrowRight aria-hidden="true" /></a>
+                  <a className="wh-res" href="#">Explore<ArrowRight aria-hidden="true" /></a>
                 </div>
               </div>
             </div>
@@ -47,7 +45,6 @@ export default function WhatsOnPage() {
           <div className="wh-nav" role="group" aria-label="Choose event">
             {events.map(([t, when, where], i) => (
               <button key={t} className={i === 0 ? "on" : ""} data-i={i} aria-label={"Show " + t}>
-                <small>0{i + 1}</small>
                 <span><strong>{t}</strong><em>{where} · {when.split("· ")[1]}</em></span>
                 <span className="wh-bar" />
               </button>
@@ -56,12 +53,12 @@ export default function WhatsOnPage() {
         </section>
 
         <section className="wh-off" id="wh-off" data-screen-label="Featured offers">
-          <div className="wh-offhead"><h2 className="vp-h2 vp-rv">Featured <em className="sw-serif">offers</em></h2></div>
-          <div className="wh-ocards">
+          <div className="wo-head"><h2 className="vp-h2 vp-rv">Featured <em className="sw-serif">offers</em></h2><a href="#" className="wo-all">See all offers</a></div>
+          <div className="wo-grid wh-ogrid">
             {offers.map(([t, deal, val, img], i) => (
-              <a key={t} className="wh-oc vp-rv" style={{ ["--d" as string]: i, ["--torn" as string]: torn[i] } as React.CSSProperties} href="#">
-                <div className="wh-otop"><div className="wh-otxt"><h3>{t}</h3><p className="wh-odeal">{deal}</p><span className="wh-orule" aria-hidden="true" /><p className="wh-oval">{val}</p></div></div>
-                <div className="wh-oimg"><img src={img} alt="" loading="lazy" /><span className="wh-olink">Book now<ArrowRight aria-hidden="true" /></span></div>
+              <a key={t} className="wo-fc vp-rv" style={{ ["--d" as string]: i, ["--torn" as string]: torn[i] } as React.CSSProperties} href="#">
+                <div className="wo-fc-top"><h3>{t}</h3><p className="wo-fc-date">{deal}</p><span className="wo-fc-rule" aria-hidden="true" /><p className="wo-fc-meta">{val}</p></div>
+                <div className="wo-fc-img"><img src={img} alt="" loading="lazy" /><span className="wo-fc-link">Book now<ArrowRight aria-hidden="true" /></span></div>
               </a>
             ))}
           </div>
@@ -76,8 +73,7 @@ export default function WhatsOnPage() {
               <div className="wh-days" id="wh-days" role="grid" />
             </div>
             <aside className="wh-panel vp-rv" style={{ ["--d" as string]: 1 } as React.CSSProperties} aria-live="polite">
-              <p className="wh-wd" id="wh-wd">Tuesday</p>
-              <h3 className="wh-pdate" id="wh-pdate" style={{ fontSize: 45 }}>April 1</h3>
+              <div className="wh-phead"><h3 className="wh-pdate" id="wh-pdate" style={{ fontSize: 45 }}>April 1</h3><p className="wh-wd" id="wh-wd">Tuesday</p></div>
               <div id="wh-evs" />
             </aside>
           </div>
