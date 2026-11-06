@@ -15,10 +15,10 @@ const events = [
 ]
 const torn = ["polygon(0.0% 10.6%,4.2% 10.4%,8.3% 12.1%,12.5% 10.2%,16.7% 6.3%,20.8% 7.3%,25.0% 5.5%,29.2% 5.5%,33.3% 5.3%,37.5% 7.7%,41.7% 9.1%,45.8% 9.0%,50.0% 10.5%,54.2% 10.1%,58.3% 9.5%,62.5% 6.6%,66.7% 4.9%,70.8% 5.2%,75.0% 6.3%,79.2% 4.0%,83.3% 7.6%,87.5% 8.7%,91.7% 9.2%,95.8% 9.3%,100.0% 12.0%,100% 100%,0 100%)", "polygon(0.0% 10.2%,4.2% 8.3%,8.3% 6.7%,12.5% 6.9%,16.7% 3.9%,20.8% 4.3%,25.0% 5.3%,29.2% 6.7%,33.3% 8.1%,37.5% 9.3%,41.7% 11.5%,45.8% 11.9%,50.0% 10.2%,54.2% 10.4%,58.3% 7.6%,62.5% 5.2%,66.7% 5.9%,70.8% 5.4%,75.0% 6.1%,79.2% 8.3%,83.3% 7.8%,87.5% 9.8%,91.7% 9.3%,95.8% 10.4%,100.0% 7.8%,100% 100%,0 100%)", "polygon(0.0% 7.2%,4.2% 8.0%,8.3% 4.7%,12.5% 5.1%,16.7% 4.1%,20.8% 7.7%,25.0% 7.6%,29.2% 9.0%,33.3% 10.6%,37.5% 12.5%,41.7% 11.1%,45.8% 8.4%,50.0% 7.7%,54.2% 6.3%,58.3% 3.0%,62.5% 6.1%,66.7% 6.3%,70.8% 8.3%,75.0% 7.6%,79.2% 9.3%,83.3% 10.3%,87.5% 11.9%,91.7% 10.0%,95.8% 9.0%,100.0% 5.7%,100% 100%,0 100%)", "polygon(0.0% 3.8%,4.2% 5.4%,8.3% 5.1%,12.5% 6.2%,16.7% 6.8%,20.8% 9.2%,25.0% 9.7%,29.2% 9.8%,33.3% 10.4%,37.5% 9.3%,41.7% 8.3%,45.8% 7.4%,50.0% 5.7%,54.2% 4.2%,58.3% 4.7%,62.5% 6.2%,66.7% 8.8%,70.8% 8.4%,75.0% 11.7%,79.2% 11.6%,83.3% 9.8%,87.5% 7.8%,91.7% 5.5%,95.8% 3.9%,100.0% 5.0%,100% 100%,0 100%)"]
 const offers = [
-  ["Summer Stay", "30% off", "Valid until Sept 30", "/assets/whats-on/offer-1.jpg"],
-  ["Family Brunch Package", "From JOD 45", "Every weekend", "/assets/whats-on/offer-2.jpg"],
-  ["Golf & Stay Combo", "2 nights + 18 holes", "Year-round", "/assets/whats-on/offer-3.jpg"],
-  ["Weekend Beach Escape", "3 nights, 1 free", "Valid until Oct 31", "/assets/whats-on/offer-4.jpg"],
+  ["Event title goes here", "12 Nov", "Category · Location", "/assets/4832270e23473a056a719250ca0b381a.jpg"],
+  ["Event title goes here", "24 Nov", "Category · Location", "/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg"],
+  ["Event title goes here", "3 Dec", "Category", "/assets/whatson-fire.png"],
+  ["Event title goes here", "15 Dec", "Category · Location", "/assets/2882b24b799ca7a4515f17d6e845880f.jpg"],
 ]
 
 export default function WhatsOnPage() {
@@ -56,7 +56,7 @@ export default function WhatsOnPage() {
           <div className="wo-head"><h2 className="vp-h2 vp-rv">Featured <em className="sw-serif">offers</em></h2><a href="#" className="wo-all">See all offers</a></div>
           <div className="wo-grid wh-ogrid">
             {offers.map(([t, deal, val, img], i) => (
-              <a key={t} className="wo-fc vp-rv" style={{ ["--d" as string]: i, ["--torn" as string]: torn[i] } as React.CSSProperties} href="#">
+              <a key={i} className="wo-fc vp-rv" style={{ ["--d" as string]: i, ["--torn" as string]: torn[i] } as React.CSSProperties} href="#">
                 <div className="wo-fc-top"><h3>{t}</h3><p className="wo-fc-date">{deal}</p><span className="wo-fc-rule" aria-hidden="true" /><p className="wo-fc-meta">{val}</p></div>
                 <div className="wo-fc-img"><img src={img} alt="" loading="lazy" /><span className="wo-fc-link">Book now<ArrowRight aria-hidden="true" /></span></div>
               </a>
