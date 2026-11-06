@@ -1,4 +1,4 @@
-import { Instagram, ArrowUpRight } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import './social-feed.css'
 
 const posts = [
@@ -21,7 +21,7 @@ export default function SocialFeed() {
         {posts.map(([src, alt], i) => (
           <a key={src} className="sf-p" style={{ ['--d' as string]: i } as React.CSSProperties} href="#" aria-label={alt}>
             <img src={src} alt="" loading="lazy" />
-            <span className="sf-o" aria-hidden="true"><Instagram /><ArrowUpRight /></span>
+            <span className="sf-o" aria-hidden="true"><Instagram /></span>
           </a>
         ))}
       </div>
