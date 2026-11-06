@@ -14,7 +14,6 @@ const mega: Record<string, { groups: Group[]; cards: Card[] }> = {
     { h: "Plan", links: [["Book your stay", "/stay"], ["Seasonal offers", "/whats-on"]] }],
     cards: [{ t: "Hyatt Regency", label: "Learn more", img: "/assets/2882b24b799ca7a4515f17d6e845880f.jpg", href: "/hyatt-regency" }, { t: "Stay & play offers", label: "View offers", img: "/assets/0eedfcae95800cf90c8e055d017aac34.jpg", href: "/whats-on" }] },
   "Play": { groups: [
-    { h: "Clubs", links: [["Golf Club", "/golf-club"], ["Beach Clubs", "/beach-clubs"], ["Azure Beach", "/azure-beach"]] },
     { h: "Water & adventure", links: [["Inflatable Water Park", "/play"], ["Cable Wake Park", "/play"], ["Diverse Divers", "/play"], ["Rise High Ropes", "/play"]] },
     { h: "Active", links: [["The Courts", "/play"], ["Cycling", "/play"], ["Feather Trail", "/play"], ["Rush Store", "/play"]] }],
     cards: [{ t: "Golf Club", label: "Learn more", img: "/assets/golf-tee.jpg", href: "/golf-club" }, { t: "All activities", label: "Explore", img: "/assets/4832270e23473a056a719250ca0b381a.jpg", href: "/play" }] },
