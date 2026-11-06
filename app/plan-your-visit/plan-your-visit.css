@@ -131,3 +131,4 @@
 .vp .pv-hero h1{font-size:136px}
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
 .pv-hero{height:clamp(600px,calc(100vh / var(--z,1)),820px)}
+.vp .pv-faq{border-top:0!important}
