@@ -2,7 +2,7 @@
 export default function stack() {
 (function(){
 var SLIDES=[
-{title:'Marina Village',body:'Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.',ctas:[{label:'Berth enquiry',href:'#',variant:'primary'},{label:'Marina Village',href:'#',variant:'outline'}],media:{type:'image',src:'/assets/4832270e23473a056a719250ca0b381a.jpg',poster:'',alt:'Paddleboarder in the marina'}},
+{title:'Marina Village',body:'Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.',ctas:[{label:'Berth enquiry',href:'/marina',variant:'primary'},{label:'Marina Village',href:'/marina-village',variant:'outline'}],media:{type:'image',src:'/assets/4832270e23473a056a719250ca0b381a.jpg',poster:'',alt:'Paddleboarder in the marina'}},
 {title:'Dine',body:'Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.',ctas:[{label:'Explore Dine',href:'#',variant:'primary'}],media:{type:'image',src:'/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg',alt:'Restaurant table by the water'}},
 {title:'Beach clubs',body:'Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.',ctas:[{label:'Explore Beach',href:'#',variant:'primary'}],media:{type:'image',src:'/assets/0eedfcae95800cf90c8e055d017aac34.jpg',alt:'Sea view from a balcony'}}];
 var wrap=document.getElementById('stackwrap'),st=document.getElementById('stack');if(!wrap)return;
