@@ -25,8 +25,9 @@ const mega: Record<string, { groups: Group[]; cards: Card[] }> = {
     { h: "Eat & drink", links: [["Dining & Bars", "/dine"], ["Beach clubs", "/beach-clubs"], ["Book a table", "/dine"]] }],
     cards: [{ t: "Dining at Ayla", label: "Explore", img: "/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg", href: "/dine" }, { t: "Marina Village", label: "Learn more", img: "/assets/4832270e23473a056a719250ca0b381a.jpg", href: "/marina-village" }] },
   "Marina Village": { groups: [
-    { h: "Marina Village", links: [["Marina overview", "/marina-village"], ["Explore Marina Village", "/marina-village"]] },
-    { h: "Ayla Marina", links: [["Berthing", "/marina"], ["Berth enquiry", "/marina"]] }],
+    { h: "Eat & drink", links: [["Marina Dining", "/marina-village#mv-dining"], ["Cafes & Treats", "/marina-village#mv-cafes"], ["Bars & Bites", "/marina-village#mv-bars"]] },
+    { h: "Shop & explore", links: [["Shopping", "/marina-village#mv-shopping"], ["Beauty, Gifts & Fitness", "/marina-village#mv-beauty"], ["Traditional / Heritage", "/marina-village#mv-heritage"], ["Entertainment & Experiences", "/marina-village#mv-ent"]] },
+    { h: "Services & marina", links: [["Health Care", "/marina-village#mv-health"], ["Services", "/marina-village#mv-services"], ["Berthing", "/marina"], ["Berth enquiry", "/marina"]] }],
     cards: [{ t: "Marina Village", label: "Learn more", img: "/assets/mv/abb718fa.jpg", href: "/marina-village" }, { t: "Berthing at Ayla Marina", label: "Berth enquiry", img: "/assets/4832270e23473a056a719250ca0b381a.jpg", href: "/marina" }] },
   "Wedding & Events": { groups: [
     { h: "Weddings", links: [["Weddings @ Ayla", "/weddings"], ["Venues + capacities", "/weddings"], ["Catering", "/weddings"]] },
