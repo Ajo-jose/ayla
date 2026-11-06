@@ -63,13 +63,13 @@ export default function StayPage() {
             <h2 className="vp-h2 vp-rv">Reach <em className="sw-serif">Ayla Oasis</em></h2>
             <ul className="st-rl">
               {reach.map(({ Icon, t, p }, i) => (
-                <li key={t} className={"st-ri vp-rv" + (ra === i ? " on" : "")} style={D(i + 1)} onMouseEnter={() => setRa(i)} onFocus={() => setRa(i)} tabIndex={0}>
+                <li key={t} className={"st-ri" + (ra === i ? " on" : "")} style={D(i + 1)} onMouseEnter={() => setRa(i)} onFocus={() => setRa(i)} tabIndex={0}>
                   <span className="st-rico"><Icon aria-hidden="true" strokeWidth={1.5} /></span>
                   <div><h3>{t}</h3><p>{p}</p></div>
                 </li>
               ))}
             </ul>
-            <a className="vp-btn vp-rv" style={D(4)} href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
+            <a className="vp-btn" href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
           <div className="st-map st-rmap vp-ri">{reach.map((r, i) => <img key={r.t} className={ra === i ? "on" : ""} src={r.img} alt={r.t} loading="eager" />)}</div>
         </section>

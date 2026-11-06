@@ -306,3 +306,6 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .vp[data-pg="terms"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="privacy"]>section[data-screen-label="Privacy"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="privacy"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}
+/* While you explore: match What's On sizing on all inner pages */
+.vp[data-pg] .ex .ex-row{height:500px!important}
+.vp[data-pg] .ex{padding-top:80px!important;padding-bottom:80px!important}

@@ -254,3 +254,11 @@
 .st-ri h3{margin:0 0 8px;font-size:28px;font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--ayla-deep)}
 .st-ri p{margin:0;font-size:17px;line-height:1.5;color:#3f4950}
 .st-rmap img{opacity:0;transition:opacity .7s cubic-bezier(.22,1,.36,1)}.st-rmap img.on{opacity:1}
+.vp .st-reach{padding:80px 64px!important;gap:80px;align-items:center}
+.vp .st-reach .st-map{height:440px}
+.vp .st-reach .st-fcopy{display:flex;flex-direction:column;align-items:flex-start;gap:32px}
+.vp .st-reach .st-rl{margin:0}
+.vp .st-reach .st-ri{padding:20px 0;grid-template-columns:48px minmax(0,1fr);gap:20px}
+.vp .st-reach .st-rico{width:48px;height:48px}
+.vp .st-reach .st-ri h3{font-size:24px;margin-bottom:4px}
+.vp .st-reach .st-ri p{font-size:16px}
