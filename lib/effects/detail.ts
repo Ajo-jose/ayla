@@ -125,8 +125,9 @@ onScroll(function(){if(reduce||innerWidth<768){return}var r=eps.getBoundingClien
 /* why-ayla: overlapping cards, next card comes to front on scroll */
 var ewh=$('.ew-wh');if(ewh){var ewc=$$('.ew-it',ewh),ewl=ewc.length,ewa=-1;
 function ewset(a){if(a===ewa)return;ewa=a;ewc.forEach(function(c,i){c.setAttribute('data-d',String((i-a+ewl)%ewl))})}
-ewset(0);
-onScroll(function(){if(innerWidth<768){ewset(0);return}var r=ewh.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,.999);ewset(Math.floor(p*ewl))})}
+ewset(0);var ewlock=0;
+ewc.forEach(function(c,i){c.style.cursor='pointer';c.addEventListener('click',function(e){if(innerWidth<768||+c.getAttribute('data-d')===0)return;e.preventDefault();ewlock=Date.now()+900;ewset(i);var r=ewh.getBoundingClientRect(),tot=r.height-innerHeight,y=scrollY+r.top+tot*((i+.5)/ewl);scrollTo({top:y,behavior:reduce?'auto':'smooth'})})});
+onScroll(function(){if(innerWidth<768){ewset(0);return}if(Date.now()<ewlock)return;var r=ewh.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,.999);ewset(Math.floor(p*ewl))})}
 run();
 
 /* marina */
