@@ -78,10 +78,10 @@
 .nw-sel select:hover{border-color:var(--ayla-deep)}
 .nw-sel select:not([value="all"]):focus-visible{outline:2px solid var(--ayla-blue);outline-offset:2px}
 .nw-sel svg{position:absolute;right:12px;width:16px;height:16px;pointer-events:none;color:var(--ayla-deep)}
-.nw-img{height:260px}
-.nw-card[data-s="7"] .nw-img,.nw-card[data-s="5"] .nw-img{height:480px}
-.nw-card[data-s="6"] .nw-img{height:360px}
-.dt-relgrid .nw-img{height:260px}
+.nw-img{height:160px}
+.nw-card[data-s="7"] .nw-img,.nw-card[data-s="5"] .nw-img{height:380px}
+.nw-card[data-s="6"] .nw-img{height:260px}
+.dt-relgrid .nw-img{height:160px}
 .nw-list{padding-top:80px}
 .nw-more{padding-bottom:80px}
 .dt-text{grid-column:4/span 8;max-width:800px}
