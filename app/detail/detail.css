@@ -1224,3 +1224,8 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .ew-wh .ew-wl{align-items:start}
 .vp .ew-wh .ew-wl .vp-h2{margin:0;line-height:1.05}
 .vp .ew-wh .ew-wl .ew-lead{margin:6px 0 0}
+.vp .ew-wh .ew-wl{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}
+.vp .ew-wh .ew-wl .ew-lead{max-width:none;width:100%;margin-left:auto}
+.vp .ew-wh .ew-wl{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}
+.vp .ew-wh .ew-wl .ew-lead{max-width:none;width:100%;justify-self:stretch}
+@media (max-width:767px){.vp .ew-wh .ew-wl{grid-template-columns:1fr}}
