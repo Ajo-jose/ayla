@@ -3,7 +3,7 @@
 .nw-hin{position:absolute;left:64px;right:64px;bottom:104px;display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
 .nw-hero h1{margin:0;font-size:176px;line-height:.86;letter-spacing:-.045em}.nw-l{display:block;overflow:hidden;padding-bottom:.08em}.nw-l+.nw-l{padding-left:1.1em}.nw-l+.nw-l .lr{transition-delay:.12s}
 .nw-hero p{margin:0 0 20px;max-width:300px;font-size:20px;line-height:1.4;color:#fff}.nw-side{transition-delay:.3s}
-.nw-barwrap{position:sticky;top:96px;z-index:40;display:flex;justify-content:center;margin-top:-34px;pointer-events:none}
+.nw-barwrap{position:relative;z-index:40;display:flex;justify-content:center;margin-top:-34px;pointer-events:none}
 .nw-bar{pointer-events:auto;display:flex;align-items:center;gap:16px;padding:8px;background:#fff;border-radius:999px;box-shadow:var(--shadow-overlay,0 18px 48px rgba(0,63,107,.18))}
 .nw-tabs{position:relative;display:flex}.nw-tabs button{position:relative;z-index:1;height:44px;padding:0 20px;border:0;background:none;border-radius:999px;font-size:15px;color:var(--ayla-deep);cursor:pointer;transition:color .3s cubic-bezier(.2,0,0,1)}.nw-tabs button[aria-selected="true"]{color:#fff}
 .nw-ind{position:absolute;left:0;top:0;height:44px;border-radius:999px;background:var(--ayla-deep);transition:transform .55s cubic-bezier(.22,1,.36,1),width .55s cubic-bezier(.22,1,.36,1)}
@@ -70,3 +70,25 @@
 .vp .mv-h1,.vp .pv-hero h1,.vp .nw-hero h1,.vp #nw-h1,.vp .wh-t,.vp .c2-hin h1,.vp .dt-hero h1{font-weight:400}
 .nw .nw-hero h1,.nw #nw-h1{font-weight:400}
 .nw .nw-hero h1,.nw #nw-h1{font-size:136px}
+
+/* news refinements */
+.nw-dd{display:flex;gap:8px}
+.nw-sel{position:relative;display:inline-flex;align-items:center}
+.nw-sel select{appearance:none;-webkit-appearance:none;height:36px;padding:0 34px 0 16px;border-radius:999px;border:1px solid color-mix(in srgb,#98a3ad 45%,transparent);background:#fff;font:400 14px 'F37 Ginger','Urbanist',system-ui,sans-serif;color:#000;cursor:pointer;transition:border-color .2s,background .2s}
+.nw-sel select:hover{border-color:var(--ayla-deep)}
+.nw-sel select:not([value="all"]):focus-visible{outline:2px solid var(--ayla-blue);outline-offset:2px}
+.nw-sel svg{position:absolute;right:12px;width:16px;height:16px;pointer-events:none;color:var(--ayla-deep)}
+.nw-img{height:260px}
+.nw-card[data-s="7"] .nw-img,.nw-card[data-s="5"] .nw-img{height:480px}
+.nw-card[data-s="6"] .nw-img{height:360px}
+.dt-relgrid .nw-img{height:260px}
+.nw-list{padding-top:80px}
+.nw-more{padding-bottom:80px}
+.dt-text{grid-column:4/span 8;max-width:800px}
+.dt-inline{margin-right:0}
+.dt-sum{margin:0 0 40px}
+.dt-sumbtn{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 24px;border-radius:999px;border:1.5px solid var(--ayla-deep);background:transparent;color:var(--ayla-deep);font:500 15px 'F37 Ginger','Urbanist',system-ui,sans-serif;cursor:pointer;transition:background .2s cubic-bezier(.2,0,0,1),color .2s cubic-bezier(.2,0,0,1)}
+.dt-sumbtn svg{width:18px;height:18px}.dt-sumbtn:hover,.dt-sumbtn[aria-expanded="true"]{background:var(--ayla-deep);color:#fff}
+.dt-sumbox{margin-top:16px;padding:28px 32px;border-radius:8px;background:color-mix(in srgb,var(--ayla-sky) 22%,#fff);animation:dtSum .5s cubic-bezier(.22,1,.36,1) both}
+.dt-sumbox ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.5;color:#1d2328}
+@keyframes dtSum{from{opacity:0;transform:translateY(8px)}}

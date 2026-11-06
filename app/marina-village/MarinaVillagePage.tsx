@@ -50,7 +50,7 @@ export default function MarinaVillagePage() {
           <p className="vp-rv" style={D(1)}>From world-class berthing at Ayla Marina to vibrant dining, shopping, and cultural experiences at Marina Village, this is where luxury meets everyday life. Discover Ayla’s assortment at its finest.</p>
         </section>
         <div className="mv-bar"><nav className="mv-barin" id="mv-bar" aria-label="Marina Village categories">
-          {sections.map((s, i) => <button key={s.id} className="vp-chip" aria-pressed={i === 0} data-t={s.id}>{chipLabels[s.id]}</button>)}
+          {sections.map((s, i) => <button key={s.id} className="vp-chip" aria-pressed={i === 0} data-t={s.id}>{chipLabels[s.id].replace(/^Marina /, "")}</button>)}
         </nav></div>
         {sections.map(s => (
           <section key={s.id} className={`mv-sec${s.alt ? " alt" : ""}`} id={s.id} data-screen-label={chipLabels[s.id]}>

@@ -1,13 +1,19 @@
 "use client"
-import { useEffect } from "react"
-import { ArrowRight, ArrowUpRight, Plane } from "lucide-react"
+import { useEffect, useState } from "react"
+import { ArrowRight, ArrowUpRight, Plane, Ship, Car } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
+import SocialFeed from "../components/SocialFeed"
 import stay from "../../lib/effects/stay"
 import "./stay.css"
 
 const D = (n: number) => ({ ["--d" as string]: n }) as React.CSSProperties
 const intro = "From beachfront hotel rooms to marina residences, choose the way you want to stay in Aqaba. Every option sits within walking distance of the beach, the marina and Ayla Golf Club.".split(" ")
+const reach = [
+  { Icon: Ship, t: "By sea", p: "Arrive by yacht at Ayla Marina, with berths for vessels from 8 to 45 m.", img: "/assets/4832270e23473a056a719250ca0b381a.jpg" },
+  { Icon: Car, t: "By road", p: "Drive in along the Red Sea coast from Aqaba, with parking across the destination.", img: "/assets/2882b24b799ca7a4515f17d6e845880f.jpg" },
+  { Icon: Plane, t: "By air", p: "Fly into King Hussein International Airport, just 10 minutes from Ayla Oasis.", img: "/assets/location-map.jpg" },
+]
 const places = [
   { img: "/assets/stay/12f2f8cc.jpg", alt: "Hyatt Regency Aqaba Ayla terrace", h: ["Hyatt Regency ", "Aqaba Ayla"], p: "A full-service beachfront resort with private beach access, five dining outlets and direct access to Marina Village.", chips: ["Private beach", "Multiple pools", "Spa", "5 dining outlets", "Kids club"] },
   { img: "/assets/stay/3d56a393.jpg", alt: "Cloud7 Residence", h: ["Cloud7 ", "Residence"], p: "Apartment-style rooms with kitchenettes, built for families and longer stays on the marina.", chips: ["Kitchenette in every room", "Rooftop pool", "Free parking", "Pet-friendly", "Laundry facilities"] },
@@ -21,6 +27,7 @@ const offers = [
 
 export default function StayPage() {
   useEffect(() => stay(), [])
+  const [ra, setRa] = useState(0)
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
@@ -51,14 +58,20 @@ export default function StayPage() {
             </article>
           ))}
         </section>
-        <section className="st-find" data-screen-label="Find Ayla Oasis">
+        <section className="st-find st-reach" data-screen-label="Reach Ayla Oasis">
           <div className="st-fcopy">
-            <h2 className="vp-h2 vp-rv">Find <em className="sw-serif">Ayla Oasis</em></h2>
-            <p className="vp-rv" style={D(1)}>Ayla Oasis sits on the Red Sea coast in Aqaba, Jordan, 10 minutes from King Hussein International Airport.</p>
-            <div className="st-fig vp-rv" style={D(2)}><b>10</b><span>minutes from<br />King Hussein International Airport</span><Plane className="st-plane" aria-hidden="true" strokeWidth={1.5} /></div>
-            <a className="vp-btn vp-rv" style={D(3)} href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
+            <h2 className="vp-h2 vp-rv">Reach <em className="sw-serif">Ayla Oasis</em></h2>
+            <ul className="st-rl">
+              {reach.map(({ Icon, t, p }, i) => (
+                <li key={t} className={"st-ri vp-rv" + (ra === i ? " on" : "")} style={D(i + 1)} onMouseEnter={() => setRa(i)} onFocus={() => setRa(i)} tabIndex={0}>
+                  <span className="st-rico"><Icon aria-hidden="true" strokeWidth={1.5} /></span>
+                  <div><h3>{t}</h3><p>{p}</p></div>
+                </li>
+              ))}
+            </ul>
+            <a className="vp-btn vp-rv" style={D(4)} href="/plan-your-visit">Getting here<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
-          <div className="st-map vp-ri"><img src="/assets/location-map.jpg" alt="Map of Ayla Oasis in Aqaba" loading="eager" /><span className="st-pin" aria-hidden="true" /></div>
+          <div className="st-map st-rmap vp-ri">{reach.map((r, i) => <img key={r.t} className={ra === i ? "on" : ""} src={r.img} alt={r.t} loading="eager" />)}</div>
         </section>
         <section className="dn-wo" data-screen-label="Seasonal offers">
           <div className="dn-wohead"><h2 className="vp-h2 vp-rv">Seasonal <em className="sw-serif">offers</em></h2></div>
@@ -71,7 +84,8 @@ export default function StayPage() {
             ))}
           </div>
         </section>
-        <section className="ex dn-wd" data-screen-label="While you stay">
+        <SocialFeed />
+<section className="ex dn-wd" data-screen-label="While you stay">
           <div className="ex-head"><h2 className="vp-h2 vp-rv">While you <em className="sw-serif">stay</em></h2></div>
           <div className="ex-row vp-rv" style={D(1)}>
             <a className="ex-p" href="/dine"><img src="/assets/stay/9281bbc8.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Dine at Ayla</h3><p>Restaurants and cafes across the marina, beach and golf club.</p></div></a>

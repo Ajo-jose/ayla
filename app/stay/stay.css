@@ -242,3 +242,15 @@
 .vp .mv-h1{font-size:136px}
 .st-fig .st-plane{margin-left:auto;flex:none;width:48px;height:48px;color:var(--ayla-deep)}
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
+
+/* reach Ayla Oasis */
+.st-rl{list-style:none;margin:0;padding:0;width:100%;max-width:560px}
+.st-ri{display:grid;grid-template-columns:56px minmax(0,1fr);gap:24px;align-items:start;padding:28px 0;border-top:1px solid color-mix(in srgb,#98a3ad 45%,transparent);cursor:default;outline:none;transition:opacity .4s cubic-bezier(.22,1,.36,1)}
+.st-ri:last-child{border-bottom:1px solid color-mix(in srgb,#98a3ad 45%,transparent)}
+.st-rl:hover .st-ri:not(:hover),.st-rl:focus-within .st-ri:not(:focus){opacity:.45}
+.st-rico{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--ayla-deep);color:var(--ayla-deep);display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s}
+.st-rico svg{width:24px;height:24px}
+.st-ri.on .st-rico{background:var(--ayla-deep);color:#fff}
+.st-ri h3{margin:0 0 8px;font-size:28px;font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--ayla-deep)}
+.st-ri p{margin:0;font-size:17px;line-height:1.5;color:#3f4950}
+.st-rmap img{opacity:0;transition:opacity .7s cubic-bezier(.22,1,.36,1)}.st-rmap img.on{opacity:1}

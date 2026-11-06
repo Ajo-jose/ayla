@@ -2,6 +2,7 @@
 import { useEffect } from "react"
 import { Phone, Mail, MapPin, ChevronDown, CircleCheck, CircleAlert, ArrowUpRight, Navigation, Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 import Footer from "../components/Footer"
+import SocialFeed from "../components/SocialFeed"
 import contact from "../../lib/effects/contact"
 import "./contact.css"
 
@@ -97,6 +98,7 @@ export default function ContactPage() {
               </ul></div></div>
         </section>
 
+        <SocialFeed />
         <Footer />
       </div>
     </div>

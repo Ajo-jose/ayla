@@ -1,6 +1,6 @@
 "use client"
-import { useEffect } from "react"
-import { ArrowLeft, Linkedin, Facebook, MessageCircle, Link as LinkIcon } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Sparkles, ArrowLeft, Linkedin, Facebook, MessageCircle, Link as LinkIcon } from "lucide-react"
 import SiteHeader from "../../components/SiteHeader"
 import Footer from "../../components/Footer"
 import article from "../../../lib/effects/article"
@@ -15,6 +15,7 @@ const X = <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path 
 
 export default function ArticlePage() {
   useEffect(() => article(), [])
+  const [sum, setSum] = useState(false)
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader><span className="dt-prog" id="dt-prog" aria-hidden="true" /></SiteHeader>
@@ -43,6 +44,20 @@ export default function ArticlePage() {
             <div><span className="dt-k">Reading</span><div className="dt-rbar" aria-hidden="true"><span id="dt-rp" /></div><p className="dt-rmeta">4 min read</p></div>
           </div></aside>
           <div className="dt-text">
+            <div className="dt-sum">
+              <button type="button" className="dt-sumbtn" aria-expanded={sum} onClick={() => setSum(v => !v)}><Sparkles aria-hidden="true" />{sum ? "Hide summary" : "Summarize this article"}</button>
+              {sum && (
+                <div className="dt-sumbox" role="region" aria-label="Article summary">
+                  <span className="dt-k">Summary</span>
+                  <ul>
+                    <li>Ayla has launched Phase Two of Golf Residences: 64 more apartments and townhouses overlooking the golf club fairways.</li>
+                    <li>Freehold ownership is open to Jordanian and foreign buyers.</li>
+                    <li>Handover of Phase Two of Island Apartments is complete, with keys delivered to the first owners.</li>
+                    <li>Eligible Island Apartments include berthing access as standard.</li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <p className="dt-lede">Ayla today announced the launch of Phase Two of Golf Residences, alongside the completed handover of Phase Two of Island Apartments to its first owners. The milestones mark a significant step in the destination’s residential rollout, with both projects now fully integrated into the wider Ayla community.</p>
             <h2>A new phase of fairway living</h2>
             <p>Phase Two of Golf Residences introduces a further 64 apartments and townhouses overlooking the Ayla Golf Club fairways, with the same freehold ownership structure open to Jordanian and foreign buyers alike.</p>
@@ -58,7 +73,7 @@ export default function ArticlePage() {
             {related.map(([img, ty, d, , t, x]) => (
               <a key={t} className="nw-card" href="/news/golf-residences-phase-two">
                 <div className="nw-img"><img src={img} alt="" loading="lazy" /><span className="nw-cur" aria-hidden="true">Read</span></div>
-                <div className="nw-meta"><span>{ty}</span><i /><time>{d}</time></div>
+                <div className="nw-meta"><time>{d}</time></div>
                 <h3><span>{t}</span></h3><p>{x}</p>
               </a>
             ))}

@@ -267,3 +267,4 @@
 .vp .mv-h1,.vp .pv-hero h1,.vp .nw-hero h1,.vp #nw-h1,.vp .wh-t,.vp .c2-hin h1,.vp .dt-hero h1{font-weight:400}
 .vp .mv-h1{font-size:136px}
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
+.wh-nav button{grid-template-columns:minmax(0,1fr)}

@@ -1,12 +1,10 @@
 "use client"
 import { useEffect } from "react"
-import { Search, ArrowDown, ArrowRight, X } from "lucide-react"
+import { Search, ArrowDown, ChevronDown } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
 import news from "../../lib/effects/news"
 import "./news.css"
-
-const topics = ["Residences", "Sustainability", "Marina", "Golf", "Community & Events"]
 
 export default function NewsPage() {
   useEffect(() => news(), [])
@@ -31,10 +29,9 @@ export default function NewsPage() {
               <button role="tab" aria-selected="false" data-type="Inspiration">Inspiration</button>
             </div>
             <span className="nw-div" aria-hidden="true" />
-            <div className="nw-chips" aria-label="Topics">
-              {topics.map(t => (
-                <button key={t} className="nw-chip" aria-pressed="false" data-topic={t}>{t}<X aria-hidden="true" /></button>
-              ))}
+            <div className="nw-dd" aria-label="Month and year">
+              <label className="nw-sel"><span className="sw-sr">Month</span><select id="nw-m" defaultValue="all"><option value="all">Month</option>{["January","February","March","April","May","June","July","August","September","October","November","December"].map((m,i)=><option key={m} value={i+1}>{m}</option>)}</select><ChevronDown aria-hidden="true" /></label>
+              <label className="nw-sel"><span className="sw-sr">Year</span><select id="nw-y" defaultValue="all"><option value="all">Year</option>{[2026,2025,2024,2023,2022,2021,2020].map(y=><option key={y} value={y}>{y}</option>)}</select><ChevronDown aria-hidden="true" /></label>
             </div>
             <label className="nw-search"><Search aria-hidden="true" /><span className="sw-sr">Search news</span><input id="nw-q" type="search" placeholder="Search news" /></label>
           </div>
@@ -44,13 +41,6 @@ export default function NewsPage() {
           <div id="nw-empty" className="nw-empty" hidden><h3>No stories match</h3><p>Try another topic or clear your search.</p><button className="nw-loadbtn" id="nw-clear">Clear filters</button></div>
           <div id="nw-more" className="nw-more"><button id="nw-load" className="nw-loadbtn">Load more<ArrowDown aria-hidden="true" /></button><div className="nw-prog" aria-hidden="true"><span id="nw-pbar" /></div><p id="nw-count" className="nw-count" role="status">Showing 10 of 132</p></div>
         </section>
-        <section className="nw-sub" data-screen-label="Newsletter"><h2>Get news and updates from Ayla in your <em className="sw-serif">inbox</em>.</h2>
-          <form className="nw-sform" onSubmit={e => { e.preventDefault(); (e.currentTarget.querySelector(".nw-sok") as HTMLElement).hidden = false; e.currentTarget.reset() }}>
-            <label className="sw-sr" htmlFor="nw-email">Email address</label>
-            <input id="nw-email" type="email" required placeholder="Email address" autoComplete="email" />
-            <button className="nw-btn" type="submit">Subscribe<ArrowRight aria-hidden="true" /></button>
-            <p className="nw-sok" role="status" hidden>Thanks, you’re on the list.</p>
-          </form></section>
       </main>
       <Footer />
     </div>

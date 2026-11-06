@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { Activity, ArrowRight, ArrowUpRight, BadgeCheck, Car, Check, Flag, GraduationCap, LockKeyhole, Mail, Moon, Phone, ShoppingBag, Target, Trophy, User, Users, Utensils, Wrench } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
+import SocialFeed from "../components/SocialFeed"
 import AwardsShowcase from "../components/AwardsShowcase"
 import detail from "../../lib/effects/detail"
 import "../detail/detail.css"
@@ -63,6 +64,7 @@ export default function GolfClubPage() {
 
 <AwardsShowcase />
 
+<SocialFeed />
 <section className="ex dn-wd" data-screen-label="While you explore"><div className="ex-head"><h2 className="vp-h2 vp-rv">While you <em className="sw-serif">explore</em></h2></div>
 <div className="ex-row vp-rv" style={{ "--d": "1" } as React.CSSProperties}>
 <a className="ex-p" href="/dine"><img src="/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>01</small><h3>Dine @ Ayla</h3><p>Eight restaurants and lounges across the Oasis.</p></div></a>

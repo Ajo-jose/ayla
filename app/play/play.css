@@ -247,3 +247,10 @@
 .wh-res svg,.wh-res:hover svg{color:var(--ayla-deep);stroke:var(--ayla-deep)}
 .py-d{max-width:none;width:100%;text-wrap:wrap}
 .wh-hero{height:clamp(620px,calc(100vh / var(--z,1)),820px)}
+
+.wh-nav button{grid-template-columns:minmax(0,1fr)}
+
+.vp .py-club{height:340px}
+.vp .py-cc{bottom:32px}
+.vp .py-cc .vp-h2{font-size:44px}
+.py-wo{padding:80px 64px}

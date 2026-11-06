@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react"
-import { ArrowRight, ArrowUpRight, ChevronDown, Clock, Phone, Search } from "lucide-react"
+import { ArrowRight, ArrowUpRight, ChevronDown, Clock, MapPin, Phone, Search } from "lucide-react"
 import SiteHeader from "../components/SiteHeader"
 import Footer from "../components/Footer"
 import dine from "../../lib/effects/dine"
@@ -15,19 +15,42 @@ const events = [
   ["Marina Village night market", "Every Thu", "/assets/dine/760fd888.jpg", "0.0% 9.2%,4.2% 8.1%,8.3% 6.6%,12.5% 6.6%,16.7% 5.2%,20.8% 4.6%,25.0% 4.7%,29.2% 6.6%,33.3% 6.1%,37.5% 4.5%,41.7% 5.4%,45.8% 6.5%,50.0% 8.7%,54.2% 6.4%,58.3% 7.4%,62.5% 5.8%,66.7% 5.1%,70.8% 6.8%,75.0% 6.0%,79.2% 3.8%,83.3% 3.6%,87.5% 5.3%,91.7% 5.7%,95.8% 3.3%,100.0% 3.0%,100% 100%,0 100%"],
 ]
 
+const slides = [
+  ["Hyatt Regency", "Ayla Oasis", "Open daily", "/assets/dine/b23e4a5e.jpg", "Explore"],
+  ["Beach Clubs", "The lagoon", "10:00 – sunset", "/assets/dine/7f4be12f.jpg", "Explore"],
+  ["Golf Club", "Ayla Golf Club", "07:00 – 22:00", "/assets/dine/88dba3b8.jpg", "Explore"],
+  ["Marina Village", "The marina", "Until late", "/assets/dine/d495ec67.jpg", "Explore"],
+]
+
 export default function DinePage() {
   useEffect(() => dine(), [])
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
       <main className="vp" data-pg="dine">
-        <section className="mv-hero" data-screen-label="Hero">
-          <img id="mv-himg" src="/assets/dine/b23e4a5e.jpg" alt="Guest seated in a sunlit Ayla restaurant" />
-          <div className="mv-hc">
-            <h1 className="mv-h1"><span className="mv-w"><span style={{ ["--i" as string]: 0 } as React.CSSProperties}>Dine</span></span><span className="mv-w"><span style={{ ["--i" as string]: 1 } as React.CSSProperties}><em className="sw-serif">@ Ayla</em></span></span></h1>
-            <p>From world-class berthing at Ayla Marina to vibrant dining, shopping, and cultural experiences at Marina Village,</p>
+        <section className="wh-hero" id="wh-hero" data-screen-label="Hero slider" aria-roledescription="carousel" aria-label="Featured dining">
+          <h1 className="wh-h1">Dine at Ayla</h1>
+          {slides.map(([t, where, hrs, src, cta], i) => (
+            <div key={t} className={"wh-s" + (i === 0 ? " on" : "")} aria-hidden={i !== 0}>
+              <img className="wh-m" src={src} alt="" />
+              <div className="wh-c">
+                <h2 className="wh-t">{t.split(" ").map((w, k) => <span key={k} className="wh-w"><span style={{ ["--i" as string]: k } as React.CSSProperties}>{w}</span></span>)}</h2>
+                <div className="wh-meta">
+                  <span><MapPin aria-hidden="true" />{where}</span>
+                  <span><Clock aria-hidden="true" />{hrs}</span>
+                  <a className="wh-res" href="#dv-grid">{cta}<ArrowRight aria-hidden="true" /></a>
+                </div>
+              </div>
+            </div>
+          ))}
+          <div className="wh-nav" role="group" aria-label="Choose venue">
+            {slides.map(([t, where, hrs], i) => (
+              <button key={t} className={i === 0 ? "on" : ""} data-i={i} aria-label={"Show " + t}>
+                <span><strong>{t}</strong><em>{where} · {hrs}</em></span>
+                <span className="wh-bar" />
+              </button>
+            ))}
           </div>
-          <span className="mv-cue" aria-hidden="true">Scroll</span>
         </section>
 
         <section className="dv" data-screen-label="Venues">
