@@ -8,22 +8,22 @@
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap}
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Bold.ttf") format("truetype");font-weight:700 900;font-style:normal;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Bold.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
-@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-BoldItalic.ttf") format("truetype");font-weight:700 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Medium.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-BoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-BoldItalic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBold.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBoldItalic.otf") format("opentype");font-weight:800;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BlackItalic.otf") format("opentype");font-weight:900;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Bold.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBold.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Black.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BlackItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
 
 :root{
 /* Primary — ocean depths */
@@ -64,14 +64,14 @@
 --text-accent-size:28px;--text-accent-lh:33.6px;
 --text-tagline-size:12px;--text-tagline-lh:14.4px;--text-tagline-tracking:.3em;
 }
-.title{font:900 44px/52.8px var(--font-sans)}
-.subtitle{font:700 24px/28.8px var(--font-sans)}
-.body{font:400 16px/19.2px var(--font-sans)}
-.caption{font:400 13px/15.6px var(--font-sans)}
-.accent{font:italic 700 28px/33.6px var(--font-accent)}
-.tagline{font:700 12px/14.4px var(--font-tagline);letter-spacing:.3em;text-transform:uppercase}
-.digital-title{font:italic 700 40px/48px var(--font-digital-serif)}
-.digital-body{font:400 16px/19.2px var(--font-digital-sans)}
+.title{font:400 35px/42.2px var(--font-sans)}
+.subtitle{font:400 19px/23px var(--font-sans)}
+.body{font:400 13px/15.4px var(--font-sans)}
+.caption{font:400 11px/12.5px var(--font-sans)}
+.accent{font:italic 400 22px/26.9px var(--font-accent)}
+.tagline{font:400 11px/11.5px var(--font-tagline);letter-spacing:.3em;text-transform:uppercase}
+.digital-title{font:italic 400 32px/38.4px var(--font-digital-serif)}
+.digital-body{font:400 13px/15.4px var(--font-digital-sans)}
 
 :root{
 --space-1:4px;--space-2:8px;--space-3:16px;--space-4:24px;--space-5:32px;--space-6:48px;--space-7:64px;

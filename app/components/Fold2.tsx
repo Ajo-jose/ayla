@@ -9,7 +9,7 @@ export default function Fold2() {
 
 <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignSelf: "center", width: "100%", paddingRight: 0, paddingLeft: 0, paddingTop: 7, paddingBottom: 0 }}>
 <div>
-<h2 style={{ margin: "0", fontSize: 44, fontWeight: "600", lineHeight: "1.02", color: "#005f9b", letterSpacing: 0, fontStyle: "normal", fontFamily: "\"F37 Ginger\", \"Urbanist\", system-ui, sans-serif" }}><span style={{ display: "block" }}>Ayla Oasis,</span><span style={{ display: "block", fontFamily: "'Meno Banner','Cormorant Garamond',Georgia,serif", fontStyle: "italic", fontWeight: "500", letterSpacing: "-0.02em" }}>Seaside Living</span><span style={{ display: "block", fontFamily: "'Meno Banner','Cormorant Garamond',Georgia,serif", fontStyle: "italic", fontWeight: "500", letterSpacing: "-0.02em" }}>Reinvented</span></h2>
+<h2 style={{ margin: "0", fontSize: 35, fontWeight: 400, lineHeight: "1.02", color: "#005f9b", letterSpacing: 0, fontStyle: "normal", fontFamily: "\"F37 Ginger\", \"Urbanist\", system-ui, sans-serif" }}><span style={{ display: "block" }}>Ayla Oasis,</span><span style={{ display: "block", fontFamily: "'Meno Banner','Cormorant Garamond',Georgia,serif", fontStyle: "italic", fontWeight: 400, letterSpacing: "-0.02em" }}>Seaside Living</span><span style={{ display: "block", fontFamily: "'Meno Banner','Cormorant Garamond',Georgia,serif", fontStyle: "italic", fontWeight: 400, letterSpacing: "-0.02em" }}>Reinvented</span></h2>
 
 </div>
 <div style={{ display: "flex", alignItems: "flex-end" }} />
@@ -17,7 +17,7 @@ export default function Fold2() {
 
 </figure>
 <div style={{ alignSelf: "center", justifySelf: "end", width: 360, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 14 }}>
-<p style={{ margin: "0", fontSize: 16, fontWeight: "300", lineHeight: "1.25", color: "#69747c" }}>In Ayla Oasis Aqaba, Jordan. A dream conceived, the destination sculpted out of the coast of Aqaba and dedicated to inspiring lives by delivering a blend of art, music, sports, well-being, recreation and entertainment activities. Check out Ayla Oasis&rsquo;s magic!</p>
+<p style={{ margin: "0", fontSize: 13, fontWeight: "300", lineHeight: "1.25", color: "#69747c" }}>In Ayla Oasis Aqaba, Jordan. A dream conceived, the destination sculpted out of the coast of Aqaba and dedicated to inspiring lives by delivering a blend of art, music, sports, well-being, recreation and entertainment activities. Check out Ayla Oasis&rsquo;s magic!</p>
 <div style={{ display: "flex", flexWrap: "nowrap", alignItems: "center", gap: 16, marginTop: 10, height: 48 }}><img src="/assets/awards/award-1.png" alt="BUILD Architecture Awards 2026 — Winner, BUILD Excellence Award in Eco-Luxury Architecture 2026, Jordan" loading="lazy" draggable={false} style={{ height: 48, width: "auto", flex: "0 0 auto", display: "block" }} /><img src="/assets/awards/award-2.png" alt="BUILD Design &amp; Build Awards 2026 — Winner, Sustainable Masterplanning &amp; Destination Development Project of the Year 2026" loading="lazy" draggable={false} style={{ height: 48, width: "auto", flex: "0 0 auto", display: "block" }} /><img src="/assets/awards/award-3.png" alt="Sustainable Smart Marina" loading="lazy" draggable={false} style={{ height: 48, width: "auto", flex: "0 0 auto", display: "block" }} /><img src="/assets/awards/award-4.png" alt="Marina Awards 2026, The Yacht Harbour Association" loading="lazy" draggable={false} style={{ height: 48, width: "auto", flex: "0 0 auto", display: "block" }} /></div>
 </div>
 </div>
