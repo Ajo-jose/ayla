@@ -1132,6 +1132,20 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .ew-wh .ew-it:first-child::after{left:0}
 .vp .ew-wh .ew-it:hover::after{transform:scaleX(1)}
 @media (max-width:767px){.vp .ew-wh{padding:64px 16px}.vp .ew-wh .ew-wl{grid-template-columns:1fr;gap:24px;margin-bottom:40px}.vp .ew-wh .ew-wr{grid-template-columns:1fr}.vp .ew-wh .ew-it{min-height:0;padding:32px 0;border-left:0;border-top:1px solid var(--hl)}.vp .ew-wh .ew-top{padding-bottom:32px}.vp .ew-wh .ew-it h3{font-size:30px}}
+/* why-ayla: compact */
+.vp .ew-wh{padding:88px 64px 96px}
+.vp .ew-wh .ew-wl{margin-bottom:48px;align-items:end}
+.vp .ew-wh .ew-wl .vp-h2{margin:0}
+.vp .ew-wh .ew-wr{gap:24px;border-top:0}
+.vp .ew-wh .ew-it,.vp .ew-wh .ew-it:first-child{min-height:0;padding:28px 32px 32px;border:1px solid var(--hl);border-radius:16px;background:#fff;transition:background .5s,border-color .5s,transform .6s cubic-bezier(.22,1,.36,1)}
+.vp .ew-wh .ew-it:hover{background:color-mix(in srgb,var(--ayla-sky) 18%,#fff);border-color:var(--ayla-blue);transform:translateY(-4px)}
+.vp .ew-wh .ew-it::after{display:none}
+.vp .ew-wh .ew-top{padding-bottom:36px;align-items:center}
+.vp .ew-wh .ew-ic{width:56px;height:56px;border-radius:50%;background:color-mix(in srgb,var(--ayla-sky) 30%,#fff);align-items:center;justify-content:center;grid-row:auto}
+.vp .ew-wh .ew-ic svg{width:26px;height:26px}
+.vp .ew-wh .ew-it h3{font-size:32px;margin-bottom:6px}
+.vp .ew-wh .ew-it p{font-size:17px;max-width:none;margin:0}
+@media (max-width:767px){.vp .ew-wh{padding:56px 16px}.vp .ew-wh .ew-wr{gap:16px}.vp .ew-wh .ew-top{padding-bottom:20px}}
 .wd-fs{padding:var(--sec) 64px;display:flex;flex-direction:column;gap:120px}
 .wd-fe{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center}
 .wd-fi{grid-column:1/8;aspect-ratio:4/3;border-radius:8px;overflow:hidden}
@@ -1182,3 +1196,26 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .mv-h1,.vp .mv-h1 .mv-w,.vp .mv-h1 .mv-w>span,.vp h1{font-weight:400}
 /* smaller chart */
 .mr-sw{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px}.mr-cf{height:calc(100% - 260px);max-width:560px}
+
+/* gallery: images never overlap the title (scale to viewport) */
+.az-gal .az-pin{--av:max(260px,calc(100vh / var(--z,1) - 340px))}
+.az-gal .az-gt{height:auto;align-items:center;margin:auto 0}
+.az-gal .az-gf,.az-gal .az-gf:nth-child(n){align-self:center;justify-content:center;flex-direction:column}
+.az-gal .az-gf:nth-child(3n+1) figcaption{order:0}
+.az-gal .az-gf:nth-child(3n+1) .az-gi{height:min(440px,var(--av))!important}
+.az-gal .az-gf:nth-child(3n+2) .az-gi{height:min(340px,calc(var(--av) * .8))!important}
+.az-gal .az-gf:nth-child(3n) .az-gi{height:min(400px,calc(var(--av) * .92))!important}
+.az-gal .az-gh{margin-bottom:24px}
+
+/* stats strip: tighter number → title spacing */
+.vp .mr-nums{padding:88px 64px 96px}
+.vp .mr-row,.vp .mr-row:last-child{gap:10px;padding-top:8px;padding-bottom:8px}
+.vp .mr-row .x-n{line-height:.82}
+.vp .mr-row small{margin-top:2px}
+
+/* occasions stack: more breathing room around the cards */
+.bq-st .bq-p{min-height:760px;padding:88px 0 56px;box-sizing:border-box;align-items:center}
+.bq-cd{height:min(620px,max(520px,calc(100vh / var(--z,1) - 220px)))}
+.bq-cp .vp-h2{font-size:54px}
+.bq-cp{gap:18px}
+@media (max-width:767px){.bq-st .bq-p{padding:72px 0 32px}}

@@ -224,3 +224,11 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .st-btn.st-outline,.wo-all{background:transparent;color:var(--ayla-deep)}
 .st-btn.st-outline:hover,.wo-all:hover{background:var(--ayla-deep);color:#fff}
 .mo-all{border-color:#fff;color:#fff;background:transparent}.mo-all:hover{background:#fff;color:var(--ayla-deep)}
+
+/* moments: plain rounded hover card (no cloud mask) */
+.mo-img{border-radius:12px}
+.mo-reveal{inset:24px;border-radius:10px;background:#fff;opacity:0;transform:scale(.97);transition:opacity .45s cubic-bezier(.22,1,.36,1),transform .45s cubic-bezier(.22,1,.36,1)}
+.mo-card.mo-hv .mo-reveal{opacity:1;transform:none}
+.mo-rv-svg{display:none}
+.mo-rv-in{transition:none;opacity:1;transform:none}
+.mo-card.mo-hv .mo-rv-in{transition:none}
