@@ -64,14 +64,14 @@
 --text-accent-size:28px;--text-accent-lh:33.6px;
 --text-tagline-size:12px;--text-tagline-lh:14.4px;--text-tagline-tracking:.3em;
 }
-.title{font:400 35px/42.2px var(--font-sans)}
-.subtitle{font:400 19px/23px var(--font-sans)}
-.body{font:400 13px/15.4px var(--font-sans)}
-.caption{font:400 11px/12.5px var(--font-sans)}
-.accent{font:italic 400 22px/26.9px var(--font-accent)}
-.tagline{font:400 11px/11.5px var(--font-tagline);letter-spacing:.3em;text-transform:uppercase}
-.digital-title{font:italic 400 32px/38.4px var(--font-digital-serif)}
-.digital-body{font:400 13px/15.4px var(--font-digital-sans)}
+.title{font:900 44px/52.8px var(--font-sans)}
+.subtitle{font:700 24px/28.8px var(--font-sans)}
+.body{font:400 16px/19.2px var(--font-sans)}
+.caption{font:400 13px/15.6px var(--font-sans)}
+.accent{font:italic 700 28px/33.6px var(--font-accent)}
+.tagline{font:700 12px/14.4px var(--font-tagline);letter-spacing:.3em;text-transform:uppercase}
+.digital-title{font:italic 700 40px/48px var(--font-digital-serif)}
+.digital-body{font:400 16px/19.2px var(--font-digital-sans)}
 
 :root{
 --space-1:4px;--space-2:8px;--space-3:16px;--space-4:24px;--space-5:32px;--space-6:48px;--space-7:64px;

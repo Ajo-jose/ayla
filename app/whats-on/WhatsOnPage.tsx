@@ -77,7 +77,7 @@ export default function WhatsOnPage() {
             </div>
             <aside className="wh-panel vp-rv" style={{ ["--d" as string]: 1 } as React.CSSProperties} aria-live="polite">
               <p className="wh-wd" id="wh-wd">Tuesday</p>
-              <h3 className="wh-pdate" id="wh-pdate" style={{ fontSize: 36 }}>April 1</h3>
+              <h3 className="wh-pdate" id="wh-pdate" style={{ fontSize: 45 }}>April 1</h3>
               <div id="wh-evs" />
             </aside>
           </div>

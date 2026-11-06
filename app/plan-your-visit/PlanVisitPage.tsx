@@ -80,12 +80,12 @@ export default function PlanVisitPage() {
               ))}
             </div>
             <div className="pv-mcard">
-              <div><div className="pv-lab" style={{ marginBottom: 16, fontWeight: 400 }}>Show on map</div>
+              <div><div className="pv-lab" style={{ marginBottom: 16, fontWeight: 700 }}>Show on map</div>
                 <div className="vp-chips" id="pv-mf" style={{ marginBottom: 10 }}>
                   {chips.map((k, i) => <button key={k} className="vp-chip" aria-pressed={i === 0} data-k={k}>{k}</button>)}
                 </div></div>
-              <div className="pv-ct" style={{ marginBottom: 11 }}><div className="pv-lab" style={{ fontWeight: 400 }}>Contact</div><a href="tel:+96232094000">Tel: +962 3 209 4000</a><span>Fax: +962 3 209 4217</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div>
-              <div className="pv-ct"><div className="pv-lab" style={{ fontWeight: 400 }}>Address</div><span>Al Farouq Street<br />Al Nakheel Area – Aqaba<br />P.O.Box: 2303 Aqaba 77110 Jordan</span></div>
+              <div className="pv-ct" style={{ marginBottom: 11 }}><div className="pv-lab" style={{ fontWeight: 700 }}>Contact</div><a href="tel:+96232094000">Tel: +962 3 209 4000</a><span>Fax: +962 3 209 4217</span><a href="mailto:info@ayla.com.jo">info@ayla.com.jo</a></div>
+              <div className="pv-ct"><div className="pv-lab" style={{ fontWeight: 700 }}>Address</div><span>Al Farouq Street<br />Al Nakheel Area – Aqaba<br />P.O.Box: 2303 Aqaba 77110 Jordan</span></div>
               <a className="vp-btn" href="https://maps.google.com/?q=Ayla+Aqaba" target="_blank" rel="noopener">Get directions<b><ArrowRight aria-hidden="true" /></b></a>
             </div>
             <div className="pv-zoom"><button id="pv-zin" aria-label="Zoom in"><Plus aria-hidden="true" /></button><button id="pv-zout" aria-label="Zoom out"><Minus aria-hidden="true" /></button></div>
