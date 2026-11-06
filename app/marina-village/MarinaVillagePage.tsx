@@ -36,7 +36,7 @@ export default function MarinaVillagePage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="marina-village">
         <section className="mv-hero" data-screen-label="Hero">
           <img id="mv-himg" src="/assets/mv/abb718fa.jpg" alt="Marina Village boardwalk" />
           <div className="mv-hc">

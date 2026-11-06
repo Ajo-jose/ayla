@@ -24,7 +24,7 @@ export default function StayPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="stay">
         <section className="mv-hero st-hero" data-screen-label="Hero">
           <video id="mv-himg" src="/assets/v/v-oasis.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="mv-hc"><h1 className="mv-h1"><span className="mv-w"><span style={{ ["--i" as string]: 0 } as React.CSSProperties}>Stay at</span></span><span className="mv-w"><span style={{ ["--i" as string]: 1 } as React.CSSProperties}><em className="sw-serif">Ayla Oasis</em></span></span></h1></div>

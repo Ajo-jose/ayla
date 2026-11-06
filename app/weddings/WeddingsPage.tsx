@@ -11,7 +11,7 @@ export default function WeddingsPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="weddings">
 
 
 <section className="mv-hero st-hero x-hero wd-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/2882b24b799ca7a4515f17d6e845880f.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>

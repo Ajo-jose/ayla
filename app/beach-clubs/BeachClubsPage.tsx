@@ -11,7 +11,7 @@ export default function BeachClubsPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="beach-clubs">
 
 
 <section className="mv-hero st-hero x-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/4832270e23473a056a719250ca0b381a.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>

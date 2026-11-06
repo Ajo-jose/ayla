@@ -26,7 +26,7 @@ export default function WhatsOnPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="whats-on">
         <section className="wh-hero" id="wh-hero" data-screen-label="Featured events slider" aria-roledescription="carousel" aria-label="Featured events">
           <h1 className="wh-h1">What’s on</h1>
                     {events.map(([t, , where, src, kind], i) => (

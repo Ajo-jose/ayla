@@ -12,7 +12,7 @@ export default function GolfClubPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="golf-club">
 
 
 <section className="mv-hero st-hero x-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/dt/mv-marina-3.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>

@@ -20,7 +20,7 @@ export default function DinePage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="dine">
         <section className="mv-hero" data-screen-label="Hero">
           <img id="mv-himg" src="/assets/dine/b23e4a5e.jpg" alt="Guest seated in a sunlit Ayla restaurant" />
           <div className="mv-hc">

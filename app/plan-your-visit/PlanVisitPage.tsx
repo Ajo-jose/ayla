@@ -36,7 +36,7 @@ export default function PlanVisitPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="plan-your-visit">
         <section className="pv-hero" id="pv-hero" data-screen-label="Plan your visit hero">
           <video src="/assets/v/v-duo.mp4" autoPlay muted loop playsInline aria-hidden="true" />
           <div className="pv-tint" />

@@ -238,3 +238,71 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 
 #wo-grid.wo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 #wo-grid .wo-fc-top h3{font-size:22px}
+/* constant inner-page section spacing (cap 80px, home as reference) */
+.vp[data-pg="whats-on"]>section[data-screen-label="Featured offers"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="whats-on"]>section[data-screen-label="Happening at Ayla"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="whats-on"]>section[data-screen-label="Awards"]{padding-top:80px!important}
+.vp[data-pg="whats-on"]>section[data-screen-label="While you explore"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="Explore Ayla"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="Interactive map"]{padding-top:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="Sustainability"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="FAQ"]{padding-bottom:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="Awards"]{padding-top:80px!important}
+.vp[data-pg="plan-your-visit"]>section[data-screen-label="While you explore"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="stay"]>section[data-screen-label="Find Ayla Oasis"]{padding-top:80px!important}
+.vp[data-pg="live"]>section[data-screen-label="Compare"]{padding-top:80px!important}
+.vp[data-pg="live"]>section[data-screen-label="Floorplans"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="live"]>section[data-screen-label="FAQ"]{padding-bottom:80px!important}
+.vp[data-pg="dine"]>section[data-screen-label="Venues"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="dine"]>section[data-screen-label="Cross-link banner"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="dine"]>section[data-screen-label="What's on"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="dine"]>section[data-screen-label="While you dine"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina"]>section[data-screen-label="Accreditations"]{padding-top:80px!important}
+.vp[data-pg="marina"]>section[data-screen-label="Intro"]{padding-top:80px!important}
+.vp[data-pg="marina"]>section[data-screen-label="Services"]{padding-top:80px!important}
+.vp[data-pg="marina"]>section[data-screen-label="Marina Village"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Intro"]{padding-top:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Marina Dining"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Marina Cafes & Treats"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Bars & Bites"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Shopping"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Beauty, Gifts & Fitness"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Traditional / Heritage"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Entertainment & Experiences"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Health Care"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Services"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Boats Services"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="marina-village"]>section[data-screen-label="Explore more"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="azure-beach"]>section[data-screen-label="Amenities and units"]{padding-bottom:80px!important}
+.vp[data-pg="beach-clubs"]>section[data-screen-label="Intro"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="beach-clubs"]>section[data-screen-label="Dining and bars"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="hyatt-regency"]>section[data-screen-label="Book"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="weddings-events"]>section[data-screen-label="Occasions"]{padding-bottom:80px!important}
+.vp[data-pg="weddings"]>section[data-screen-label="Intro"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="weddings"]>section[data-screen-label="Venues"]{padding-bottom:80px!important}
+.vp[data-pg="weddings"]>section[data-screen-label="Events"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="events"]>section[data-screen-label="Intro"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="events"]>section[data-screen-label="Recreational activities"]{padding-bottom:80px!important}
+.vp[data-pg="events"]>section[data-screen-label="Wedding"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Amenities"]{padding-top:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="How to play"]{padding-top:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Courses"]{padding-top:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Course details"]{padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Membership"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Exclusive membership"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Academy and services"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="Events calendar"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="golf-club"]>section[data-screen-label="While you explore"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="At a glance"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="Water and waste"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="Awards"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="Giving back"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="SDGs"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="Reports"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="While you explore"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="faqs"]>section[data-screen-label="FAQs"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="faqs"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="terms"]>section[data-screen-label="Terms"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="terms"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="privacy"]>section[data-screen-label="Privacy"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="privacy"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}

@@ -11,7 +11,7 @@ export default function HyattRegencyPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="hyatt-regency">
 
 
 <section className="mv-hero st-hero x-hero hy-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/0eedfcae95800cf90c8e055d017aac34.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>

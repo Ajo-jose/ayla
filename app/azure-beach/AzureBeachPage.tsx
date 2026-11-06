@@ -11,7 +11,7 @@ export default function AzureBeachPage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="azure-beach">
 
 
 <section className="mv-hero py-hero az-hero" data-screen-label="Hero"><img className="py-s" src="/assets/4832270e23473a056a719250ca0b381a.jpg" alt="" /><img className="py-s" src="/assets/dt/mv-marina-2.jpg" alt="" loading="lazy" /><img className="py-s" src="/assets/dt/mv-marina-3.jpg" alt="" loading="lazy" /><img className="py-s" src="/assets/2882b24b799ca7a4515f17d6e845880f.jpg" alt="" loading="lazy" /><img className="py-s" src="/assets/dt/dine-slide-1.jpg" alt="" loading="lazy" />

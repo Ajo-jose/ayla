@@ -11,7 +11,7 @@ export default function LivePage() {
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader />
-      <main className="vp">
+      <main className="vp" data-pg="live">
 
 
 <section className="mv-hero st-hero x-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-live.mp4" poster="/assets/dt/mv-marina-3.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>
