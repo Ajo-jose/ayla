@@ -19,3 +19,7 @@
 .aw{padding:56px 0 56px}.aw+.ex{padding-top:88px}.wh-cal+.aw{padding-top:0}
 .wh-cal+.aw{padding-top:56px}
 .pv-faq+.aw{padding-top:112px}
+/* shared with What's On: larger logos, wider spacing, same section spacing on every page */
+.vp .aw{padding:80px 0 0!important}
+.aw .aw-track li{height:150px;padding-right:140px}
+.aw .aw-track img{height:130px;max-width:280px}
