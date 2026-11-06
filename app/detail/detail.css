@@ -1299,3 +1299,6 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .ew-wh .ew-it[data-d="2"]{transform:translate3d(-290px,28px,0) rotate(-7deg) scale(.92)}
 .vp .ew-wh .ew-bd{display:block;width:100%;box-sizing:border-box;align-self:stretch}
 .vp .ew-wh .ew-bd h3,.vp .ew-wh .ew-bd p{position:static;width:auto;max-width:none;background:none;height:auto}
+.vp .ew-wh{margin-bottom:96px}
+.vp .ew-wh .ew-pin{padding-bottom:56px}
+@media (max-width:767px){.vp .ew-wh{margin-bottom:0}}
