@@ -1409,3 +1409,53 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .gf-xb .vp-h2{color:var(--ayla-deep)}
 .gf-xb .vp-btn{background:var(--ayla-deep);color:#fff}
 .gf-xb .vp-btn b{background:#fff;color:var(--ayla-deep)}
+
+/* legal pages + golf tweaks */
+/* ================= GOLF CLUB ================= */
+a.mr-sv{text-decoration:none;color:inherit}
+/* golf: compact how-to-play */
+.vp #play.mr-svs{padding-top:56px}
+.vp #play .mr-sh{margin-bottom:28px}
+.vp #play .mr-sh{margin-bottom:48px}
+.vp #play .mr-sh{margin-bottom:78px}
+.vp #play.mr-svs{padding-top:106px}
+.vp #play .mr-sh{margin-bottom:28px}
+.vp #play.mr-svs{padding-top:146px}
+.vp #play.mr-svs{padding-top:100px;padding-bottom:0}
+.vp #courses.x-sec.bq-hd{padding:100px 64px 56px}
+.vp section[data-screen-label="Course details"]{padding-top:0!important;padding-bottom:100px}
+.vp .gf-xb ~ .ex.dn-wd{padding-top:100px;padding-bottom:100px}
+/* ================= TERMS + FAQ ================= */
+.lg-hero{background:var(--ayla-deep);color:#fff;padding:220px 64px 100px}
+.lg-hc{display:flex;flex-direction:column;gap:28px;max-width:1100px}
+.lg-crumb{display:flex;align-items:center;gap:8px;font-size:14px;color:rgba(255,255,255,.8)}
+.lg-crumb a{color:inherit;text-decoration:none}
+.lg-crumb a:hover{text-decoration:underline}
+.lg-crumb svg{width:14px;height:14px}
+.lg-crumb b{color:#fff;font-weight:500}
+.lg-h1{margin:0;font-size:120px;line-height:1;font-weight:400;letter-spacing:-4px}
+.lg-hc p{margin:0;max-width:560px;font-size:19px;line-height:1.55;color:#d6ecf2}
+.lg-wrap{display:grid;grid-template-columns:320px minmax(0,1fr);gap:96px;padding:100px 64px}
+.lg-toc{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;border-left:1px solid var(--hl)}
+.lg-toc h3{margin:0 0 16px 20px;font-size:14px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:#6b7780}
+.lg-toc a{display:flex;gap:14px;padding:10px 20px;margin-left:-1px;border-left:2px solid transparent;font-size:16px;color:#3f4950;text-decoration:none;transition:color .25s,border-color .25s}
+.lg-toc a span{color:#8a98a1;font-variant-numeric:tabular-nums}
+.lg-toc a:hover,.lg-toc a.on{color:var(--ayla-deep);border-left-color:var(--ayla-deep)}
+.lg-s{padding:0 0 64px;margin:0 0 64px;border-bottom:1px solid var(--hl);scroll-margin-top:120px}
+.lg-s:last-child{border:0;margin:0;padding:0}
+.lg-s small{display:block;margin-bottom:16px;font-size:16px;color:var(--ayla-blue)}
+.lg-s h2{margin:0 0 24px;font-size:40px;line-height:1.1;font-weight:400;letter-spacing:-1.2px;color:var(--ayla-deep)}
+.lg-s p{margin:0;max-width:680px;font-size:19px;line-height:1.6;color:#3f4950}
+.lg-fq{display:block;max-width:none}
+.lg-fq .lg-ft{margin-bottom:48px;flex-wrap:wrap}
+.lw-qi[hidden]{display:none}
+@media (max-width:900px){.lg-hero{padding:160px 24px 64px}.lg-h1{font-size:56px;letter-spacing:-2px}.lg-wrap{grid-template-columns:1fr;gap:48px;padding:64px 24px}.lg-toc{position:static}.lg-s h2{font-size:30px}}
+.lg-hc{max-width:none}
+.gf-xb .lw-fpl p{color:var(--ayla-deep)}
+.lg-s p+p,.lg-s p+ul,.lg-s ul+p{margin-top:20px}
+.lg-s ul{margin:20px 0 0;padding:0 0 0 22px;max-width:680px;font-size:19px;line-height:1.6;color:#3f4950}
+.lg-s li{margin:0 0 8px;padding-left:4px}
+.lg-s li::marker{color:var(--ayla-blue)}
+.lg-s a{color:var(--ayla-blue);text-decoration:underline;text-underline-offset:3px}
+.lg-s a:hover{color:var(--ayla-deep)}
+.lg-s p{max-width:720px}

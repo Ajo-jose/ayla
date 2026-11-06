@@ -56,7 +56,7 @@ export default function GolfClubPage() {
 <label className="c2-ln c2-half"><span className="c2-lb">Email</span><input type="email" required autoComplete="email" /></label>
 <label className="c2-ln c2-half"><span className="c2-lb">Phone</span><input type="tel" required autoComplete="tel" /></label>
 <label className="c2-ln c2-half c2-sel"><span className="c2-lb">I am interested in</span><select id="gf-int"><option>A round of golf</option><option>Academy lesson</option><option>Membership</option><option>Junior Hawks</option><option>A golf event</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></label>
-<p className="c2-agree">By submitting you agree to our <a href="#">Privacy policy</a>.</p>
+<p className="c2-agree">By submitting you agree to our <a href="/privacy">Privacy policy</a>.</p>
 <div className="c2-act"><button className="vp-btn" type="submit">Submit enquiry</button></div>
 <div className="c2-msg" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Thank you. Your enquiry has been sent and the Ayla team will be in touch.</div>
 </form></div></div></section>
