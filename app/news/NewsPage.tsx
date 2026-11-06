@@ -6,6 +6,8 @@ import Footer from "../components/Footer"
 import news from "../../lib/effects/news"
 import "./news.css"
 
+const topics = ["Residences", "Sustainability", "Marina", "Golf", "Community & Events"]
+
 export default function NewsPage() {
   useEffect(() => news(), [])
   return (
@@ -22,12 +24,7 @@ export default function NewsPage() {
         </section>
         <div className="nw-barwrap" data-screen-label="Filters">
           <div className="nw-bar">
-            <div className="nw-tabs" role="tablist" aria-label="Story type">
-              <span className="nw-ind" aria-hidden="true" />
-              <button role="tab" aria-selected="true" data-type="all">All</button>
-              <button role="tab" aria-selected="false" data-type="Press release">Press releases</button>
-              <button role="tab" aria-selected="false" data-type="Inspiration">Inspiration</button>
-            </div>
+            <div className="nw-chips" aria-label="Topics">{topics.map(t => (<button key={t} className="nw-chip" aria-pressed="false" data-topic={t}>{t}</button>))}</div>
             <span className="nw-div" aria-hidden="true" />
             <div className="nw-dd" aria-label="Month and year">
               <label className="nw-sel"><span className="sw-sr">Month</span><select id="nw-m" defaultValue="all"><option value="all">Month</option>{["January","February","March","April","May","June","July","August","September","October","November","December"].map((m,i)=><option key={m} value={i+1}>{m}</option>)}</select><ChevronDown aria-hidden="true" /></label>
