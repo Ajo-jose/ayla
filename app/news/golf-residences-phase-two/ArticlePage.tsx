@@ -1,6 +1,6 @@
 "use client"
-import { useEffect, useState } from "react"
-import { Sparkles, ArrowLeft, Linkedin, Facebook, MessageCircle, Link as LinkIcon } from "lucide-react"
+import { useEffect } from "react"
+import { ArrowLeft, Linkedin, Facebook, MessageCircle, Link as LinkIcon } from "lucide-react"
 import SiteHeader from "../../components/SiteHeader"
 import Footer from "../../components/Footer"
 import article from "../../../lib/effects/article"
@@ -13,9 +13,16 @@ const related = [
 ]
 const X = <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.75 3h3.07l-6.71 7.67L22 21h-6.18l-4.84-6.33L5.44 21H2.37l7.18-8.2L2 3h6.34l4.37 5.78L17.75 3Zm-1.08 16.2h1.7L7.4 4.7H5.58l11.09 14.5Z" /></svg>
 
+const llms: [string, string, string, string][] = [
+  ["chatgpt", "ChatGPT", "GPT", "https://chatgpt.com/?q="],
+  ["claude", "Claude", "Cl", "https://claude.ai/new?q="],
+  ["gemini", "Gemini", "Ge", "https://www.google.com/search?udm=50&q="],
+  ["grok", "Grok", "Gr", "https://grok.com/?q="],
+  ["perplexity", "Perplexity", "Px", "https://www.perplexity.ai/search?q="],
+]
+
 export default function ArticlePage() {
   useEffect(() => article(), [])
-  const [sum, setSum] = useState(false)
   return (
     <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
       <SiteHeader><span className="dt-prog" id="dt-prog" aria-hidden="true" /></SiteHeader>
@@ -45,18 +52,12 @@ export default function ArticlePage() {
           </div></aside>
           <div className="dt-text">
             <div className="dt-sum">
-              <button type="button" className="dt-sumbtn" aria-expanded={sum} onClick={() => setSum(v => !v)}><Sparkles aria-hidden="true" />{sum ? "Hide summary" : "Summarize this article"}</button>
-              {sum && (
-                <div className="dt-sumbox" role="region" aria-label="Article summary">
-                  <span className="dt-k">Summary</span>
-                  <ul>
-                    <li>Ayla has launched Phase Two of Golf Residences: 64 more apartments and townhouses overlooking the golf club fairways.</li>
-                    <li>Freehold ownership is open to Jordanian and foreign buyers.</li>
-                    <li>Handover of Phase Two of Island Apartments is complete, with keys delivered to the first owners.</li>
-                    <li>Eligible Island Apartments include berthing access as standard.</li>
-                  </ul>
-                </div>
-              )}
+              <span className="dt-sumlbl">Summarise this article with:</span>
+              <ul className="dt-llms">
+                {llms.map(([id, name, mark, url]) => (
+                  <li key={id}><a className="dt-llm" href={url} target="_blank" rel="noopener noreferrer" title={name} aria-label={"Summarise with " + name} onClick={e => { e.preventDefault(); window.open(url + encodeURIComponent("Summarize this article: " + window.location.href), "_blank", "noopener") }}><span aria-hidden="true">{mark}</span></a></li>
+                ))}
+              </ul>
             </div>
             <p className="dt-lede">Ayla today announced the launch of Phase Two of Golf Residences, alongside the completed handover of Phase Two of Island Apartments to its first owners. The milestones mark a significant step in the destination’s residential rollout, with both projects now fully integrated into the wider Ayla community.</p>
             <h2>A new phase of fairway living</h2>
