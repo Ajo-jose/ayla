@@ -229,7 +229,7 @@
 .py-d{margin:0;font-size:16px;font-weight:300;line-height:1.2;color:#000;text-wrap:pretty}.py-m{margin:12px 0 0;font-size:13px;font-weight:500;letter-spacing:.06em;color:var(--ayla-blue)}
 .py-kids{display:grid;grid-template-columns:360px minmax(0,1fr);gap:56px;align-items:start;padding:var(--sec) 0 var(--sec) 64px;background:color-mix(in srgb,var(--sand) 30%,#fff)}
 .py-kl{display:flex;flex-direction:column;align-items:flex-start;gap:24px;padding-top:24px}.py-kl .vp-h2{font-size:64px}.py-kl p{margin:0;font-size:19px;line-height:1.55;color:#3f4950}
-.py-kr{min-width:0}.py-kids .mv-track{padding-left:0;scroll-padding-left:0}.py-kids .mv-card{background:#fff;height:600px}.py-kids .mv-prog{margin-left:0}
+.py-kr{min-width:0}.py-kids .mv-track{padding-left:0;scroll-padding-left:0}.py-kids .mv-card{background:#fff;height:500px}.py-kids .mv-prog{margin-left:0}
 .py-kids .mv-ctop .py-d{margin-bottom:16px}
 .vp .dn-wo{padding:var(--sec) 64px}.vp .dn-wo .dn-wohead,.vp .ex.dn-wd .ex-head{margin-bottom:40px}.vp .ex.dn-wd{padding:var(--sec) 64px}
 @media (prefers-reduced-motion:reduce){.py-hero .py-s{transition:opacity .4s;transform:none}.py-seg.on i::after{animation:none;transform:scaleX(1)}}
