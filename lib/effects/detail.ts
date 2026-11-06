@@ -119,6 +119,9 @@ $('.lb-bd',lb).addEventListener('click',close);$('.lb-x',lb).addEventListener('c
 $('.lb-p',lb).addEventListener('click',function(){show(cur-1)});$('.lb-n',lb).addEventListener('click',function(){show(cur+1)});
 docOn('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1)})}
 
+/* events: pinned horizontal story */
+var eps=$('.ep-hs');if(eps){var ept=$('.ep-tr',eps),epp=$('.ep-prog',eps),epb=$$('.ep-bg',eps),epn=epb.length;
+onScroll(function(){if(reduce||innerWidth<768){return}var r=eps.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,1),ease=p;ept.style.transform='translate3d('+(-ease*1440*(epn-1)).toFixed(1)+'px,0,0)';epp.style.setProperty('--p',p.toFixed(3));epb.forEach(function(g,i){var c=(p*(epn-1)-i);g.style.transform='translate3d('+(c*-7).toFixed(2)+'%,0,0)'})})}
 run();
 
 /* marina */

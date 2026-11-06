@@ -8,22 +8,22 @@
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap}
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Bold.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-Bold.ttf") format("truetype");font-weight:700 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Thin.otf") format("opentype");font-weight:100;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
 @font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Medium.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-BoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-BoldItalic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Brandon Grotesque";src:url("/fonts/BrandonGrotesque-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"F37 Ginger";src:url("/fonts/F37Ginger-BoldItalic.ttf") format("truetype");font-weight:700 900;font-style:italic;font-display:swap}
 @font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Bold.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBold.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBoldItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Black.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BlackItalic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Bold.otf") format("opentype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBold.otf") format("opentype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-ExtraBoldItalic.otf") format("opentype");font-weight:800;font-style:italic;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-Black.otf") format("opentype");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Meno Banner";src:url("/fonts/MenoBanner-BlackItalic.otf") format("opentype");font-weight:900;font-style:italic;font-display:swap}
 
 :root{
 /* Primary — ocean depths */

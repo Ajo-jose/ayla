@@ -1,0 +1,62 @@
+"use client"
+import { useEffect } from "react"
+import { ArrowRight, ArrowUpRight, ChefHat, Mail, MapPin, Phone, UserCheck } from "lucide-react"
+import SiteHeader from "../components/SiteHeader"
+import Footer from "../components/Footer"
+import detail from "../../lib/effects/detail"
+import "../detail/detail.css"
+
+export default function WeddingsEventsPage() {
+  useEffect(() => detail(), [])
+  return (
+    <div id="page" style={{ position: "relative", width: 1440, background: "#ffffff" }}>
+      <SiteHeader />
+      <main className="vp">
+
+
+<section className="mv-hero st-hero x-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/0eedfcae95800cf90c8e055d017aac34.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>
+<div className="mv-hc"><h1 className="mv-h1"><span className="mv-w"><span style={{ "--i": "0" } as React.CSSProperties}>Wedding &amp;</span></span><span className="mv-w"><span style={{ "--i": "1" } as React.CSSProperties}><em className="sw-serif">Events</em></span></span></h1></div>
+<div className="x-hside"><p>Beachfront ceremonies, marina galas and boardroom retreats, designed and delivered with signature Ayla service.</p><div className="x-hbtns"><a className="vp-btn py-w" href="#enquire" data-go="enquire">Plan your event<b><ArrowRight aria-hidden="true" /></b></a><a className="st-ghost py-gw" href="https://wa.me/96232094000"><svg className="wa-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zM20.52 3.45A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41z" /></svg>WhatsApp enquiry</a></div></div>
+<span className="mv-cue" aria-hidden="true">Scroll</span></section>
+
+<section className="mv-intro st-intro lw-intro" data-screen-label="Intro"><p className="pv-st"><span className="pv-sw">From</span> <span className="pv-sw">once-in-a-lifetime</span> <span className="pv-sw sw-serif">weddings</span> <span className="pv-sw">to</span> <span className="pv-sw">landmark</span> <span className="pv-sw">corporate</span> <span className="pv-sw sw-serif">gatherings,</span> <span className="pv-sw">Ayla</span> <span className="pv-sw">is</span> <span className="pv-sw">where</span> <span className="pv-sw">meaningful</span> <span className="pv-sw sw-serif">moments</span> <span className="pv-sw">unfold.</span></p></section>
+
+<section className="mr-nums" data-screen-label="At a glance"><div className="mr-row vp-rv"><span className="x-n" data-count="15">15</span><div><b>Venues</b><small>Beachfront, marina and indoor</small></div></div><div className="mr-row vp-rv"><span className="x-n" data-count="500">500</span><div><b>Guests</b><small>Up to, in our largest venues</small></div></div><div className="mr-row vp-rv"><span className="x-n" data-count="8">8</span><div><b>Restaurants</b><small>In-house catering and bespoke menus</small></div></div><div className="mr-row vp-rv"><span className="x-n" data-count="1">1</span><div><b>Dedicated planner</b><small>From enquiry to farewell</small></div></div></section>
+
+<section className="x-sec bq-hd" data-screen-label="Occasions"><div className="x-hd" style={{ margin: "0" }}><div><h2 className="vp-h2 vp-rv bq-nt">Weddings and events, <em className="sw-serif">by the sea</em></h2></div></div></section>
+<section className="bq-st" id="occasions" data-screen-label="Wedding and events"><article className="bq-p"><img className="bq-bg" src="/assets/0eedfcae95800cf90c8e055d017aac34.jpg" alt="" loading="lazy" /><div className="bq-cd"><div className="bq-im"><img src="/assets/0eedfcae95800cf90c8e055d017aac34.jpg" alt="" loading="lazy" /></div><div className="bq-cp"><h2 className="vp-h2">Your <em className="sw-serif">wedding</em></h2><ul className="dq-chips"><li>Beachfront</li><li>Marina views</li><li>Garden</li><li>Ballroom</li></ul><p>Say 'I do' with the Red Sea as your backdrop. From intimate beachfront ceremonies to grand marina receptions, our wedding team crafts every detail, from venue and menu to florals and planning, so your day unfolds exactly as you imagined.</p><div className="st-btns"><a className="vp-btn" href="/weddings">Plan your wedding<b><ArrowRight aria-hidden="true" /></b></a></div></div></div></article>
+<article className="bq-p"><img className="bq-bg" src="/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg" alt="" loading="lazy" /><div className="bq-cd"><div className="bq-im"><img src="/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg" alt="" loading="lazy" /></div><div className="bq-cp"><h2 className="vp-h2">Your <em className="sw-serif">event</em></h2><ul className="dq-chips"><li>Corporate</li><li>Private</li><li>Recreational</li><li>Catering</li></ul><p>From boardroom retreats and product launches to private milestones and team adventures, Ayla hosts events that echo your purpose. Flexible venues, curated menus and expert planners keep logistics seamless, so you and your guests can focus on the moment.</p><div className="st-btns"><a className="vp-btn" href="/events">Explore events<b><ArrowRight aria-hidden="true" /></b></a></div></div></div></article>
+</section>
+
+<section className="ew-wh" data-screen-label="Why Ayla"><div className="ew-wl"><h2 className="vp-h2 vp-rv">Why Ayla for <em className="sw-serif">your event</em></h2><p className="ew-lead vp-rv">Three reasons hosts return: a shoreline few can match, one planner who owns every detail, and kitchens that cook for the occasion.</p></div><div className="ew-wr"><div className="ew-it vp-rv"><div className="ew-top"><small>01</small><span className="ew-ic"><MapPin aria-hidden="true" /></span></div><h3>Signature location</h3><p>Red Sea shoreline, private beaches and the Golden Triangle on your doorstep.</p></div><div className="ew-it vp-rv"><div className="ew-top"><small>02</small><span className="ew-ic"><UserCheck aria-hidden="true" /></span></div><h3>End-to-end planning</h3><p>One dedicated planner from enquiry to farewell. Zero handoffs.</p></div><div className="ew-it vp-rv"><div className="ew-top"><small>03</small><span className="ew-ic"><ChefHat aria-hidden="true" /></span></div><h3>Culinary excellence</h3><p>Eight restaurants, in-house catering and bespoke menus by our executive chefs.</p></div></div></section>
+
+<section className="az-gal" data-screen-label="Gallery"><div className="az-pin"><div className="az-gh"><h2 className="vp-h2">Wedding &amp; events <em className="sw-serif">gallery</em></h2></div><div className="az-gt"><figure className="az-gf"><div className="az-gi" style={{ width: "700px", height: "440px" }}><img src="/assets/0eedfcae95800cf90c8e055d017aac34.jpg" alt="" loading="lazy" /></div><figcaption><span>Beach ceremony</span></figcaption></figure><figure className="az-gf"><div className="az-gi" style={{ width: "420px", height: "330px" }}><img src="/assets/dt/dine-slide-1.jpg" alt="" loading="lazy" /></div><figcaption><span>Marina gala</span></figcaption></figure><figure className="az-gf"><div className="az-gi" style={{ width: "400px", height: "440px" }}><img src="/assets/dt/mv-marina-2.jpg" alt="" loading="lazy" /></div><figcaption><span>Boardroom retreat</span></figcaption></figure><figure className="az-gf"><div className="az-gi" style={{ width: "640px", height: "320px" }}><img src="/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg" alt="" loading="lazy" /></div><figcaption><span>Reception dinner</span></figcaption></figure><figure className="az-gf"><div className="az-gi" style={{ width: "380px", height: "440px" }}><img src="/assets/dt/dine-slide-2.jpg" alt="" loading="lazy" /></div><figcaption><span>After the vows</span></figcaption></figure><figure className="az-gf"><div className="az-gi" style={{ width: "560px", height: "360px" }}><img src="/assets/4832270e23473a056a719250ca0b381a.jpg" alt="" loading="lazy" /></div><figcaption><span>Waterfront venues</span></figcaption></figure></div><div className="az-gp"><i></i></div></div></section>
+
+<section className="x-stagewrap" id="enquire" data-screen-label="Enquire"><div className="c2-stage x-stage"><img className="c2-bg" src="/assets/dt/dine-slide-1.jpg" alt="" loading="lazy" />
+<div className="x-sl"><h2 className="vp-h2 vp-rv">Plan your <em className="sw-serif">celebration</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us about your wedding or event and the Ayla events team will come back with venues, availability and a tailored proposal.</p>
+<a className="x-line" href="tel:+96232094000"><Phone aria-hidden="true" />+962 3 209 4000</a><a className="x-line" href="mailto:info@ayla.com.jo"><Mail aria-hidden="true" />info@ayla.com.jo</a></div>
+<div className="c2-win vp-rv" style={{ "--d": "2" } as React.CSSProperties}><div className="c2-bar"><h2>Enquire now</h2><span>All fields required</span></div>
+<form data-f noValidate>
+<label className="c2-ln c2-half"><span className="c2-lb">Name</span><input type="text" required autoComplete="name" /></label>
+<label className="c2-ln c2-half"><span className="c2-lb">Email</span><input type="email" required autoComplete="email" /></label>
+<label className="c2-ln c2-half"><span className="c2-lb">Phone</span><input type="tel" required autoComplete="tel" /></label>
+<label className="c2-ln c2-half c2-sel"><span className="c2-lb">Event type</span><select id="ew-type"><option>Wedding</option><option>Corporate event</option><option>Private celebration</option><option>Recreational</option><option>Catering</option></select><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></label>
+<p className="c2-agree">By submitting you agree to our <a href="#">Privacy policy</a>.</p>
+<div className="c2-act"><button className="vp-btn" type="submit">Submit enquiry</button></div>
+<div className="c2-msg" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Thank you. Your enquiry has been sent and the Ayla team will be in touch.</div>
+</form></div></div></section>
+
+<section className="ex dn-wd" data-screen-label="While you explore"><div className="ex-head"><h2 className="vp-h2 vp-rv">While you <em className="sw-serif">explore</em></h2></div>
+<div className="ex-row vp-rv" style={{ "--d": "1" } as React.CSSProperties}>
+<a className="ex-p" href="/live"><img src="/assets/dt/mv-marina-3.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3><p>Freehold residences within the Ayla Oasis community.</p></div></a>
+<a className="ex-p" href="/marina-village"><img src="/assets/dt/mv-marina-1.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
+<a className="ex-p" href="Ayla Beach Clubs.html"><img src="/assets/4832270e23473a056a719250ca0b381a.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>03</small><h3>Beach Clubs</h3><p>Three beach clubs along one shoreline, for the whole family.</p></div></a>
+</div></section>
+
+
+      </main>
+      <Footer />
+      <div className="vp-toast" id="vp-toast" role="status" />
+    </div>
+  )
+}
