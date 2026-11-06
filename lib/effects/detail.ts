@@ -122,6 +122,11 @@ docOn('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();else
 /* events: pinned horizontal story */
 var eps=$('.ep-hs');if(eps){var ept=$('.ep-tr',eps),epp=$('.ep-prog',eps),epb=$$('.ep-bg',eps),epn=epb.length;
 onScroll(function(){if(reduce||innerWidth<768){return}var r=eps.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,1),ease=p;ept.style.transform='translate3d('+(-ease*1440*(epn-1)).toFixed(1)+'px,0,0)';epp.style.setProperty('--p',p.toFixed(3));epb.forEach(function(g,i){var c=(p*(epn-1)-i);g.style.transform='translate3d('+(c*-7).toFixed(2)+'%,0,0)'})})}
+/* why-ayla: overlapping cards, next card comes to front on scroll */
+var ewh=$('.ew-wh');if(ewh){var ewc=$$('.ew-it',ewh),ewl=ewc.length,ewa=-1;
+function ewset(a){if(a===ewa)return;ewa=a;ewc.forEach(function(c,i){c.setAttribute('data-d',String((i-a+ewl)%ewl))})}
+ewset(0);
+onScroll(function(){if(innerWidth<768){ewset(0);return}var r=ewh.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,.999);ewset(Math.floor(p*ewl))})}
 run();
 
 /* marina */

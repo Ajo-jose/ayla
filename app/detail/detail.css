@@ -1264,3 +1264,38 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .ew-wh .ew-it:hover h3{background:var(--ayla-deep);color:#fff}
 .vp .ew-wh .ew-it:hover p{background:var(--ayla-deep);color:#d6ecf2}
 @media (max-width:767px){.vp .ew-wh .ew-it,.vp .ew-wh .ew-it:first-child{height:420px}}
+
+/* why-ayla v3: pinned, overlapping card stack */
+.vp .ew-wh{display:block;position:relative;height:calc(290vh / var(--z,1));padding:0}
+.vp .ew-wh .ew-pin{position:sticky;top:0;height:calc(100vh / var(--z,1));min-height:780px;overflow:hidden;display:flex;flex-direction:column;align-items:center;padding:112px 64px 0;box-sizing:border-box}
+.vp .ew-wh .ew-wl{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;margin:0;grid-template-columns:none}
+.vp .ew-wh .ew-wl .vp-h2{text-align:center}
+.vp .ew-wh .ew-wl .ew-lead{max-width:640px;text-align:center;margin:0;justify-self:auto}
+.vp .ew-wh .ew-wr{position:relative;display:block;flex:1;width:100%;max-width:1200px;border:0;margin-top:20px}
+.vp .ew-wh .ew-it,.vp .ew-wh .ew-it:first-child{position:absolute;left:50%;top:6px;width:380px;height:472px;margin-left:-190px;padding:14px;box-sizing:border-box;border:0;border-radius:24px;background:#fff;box-shadow:0 30px 70px rgba(0,45,80,.22),0 2px 0 rgba(0,45,80,.04);display:flex;flex-direction:column;gap:6px;overflow:visible;isolation:auto;transform-origin:50% 100%;transition:transform .9s cubic-bezier(.22,1,.36,1),opacity .6s,box-shadow .6s}
+.vp .ew-wh .ew-it:hover{background:#fff}
+.vp .ew-wh .ew-it[data-d="0"]{z-index:3;transform:translate3d(0,0,0) rotate(0) scale(1)}
+.vp .ew-wh .ew-it[data-d="1"]{z-index:2;transform:translate3d(300px,28px,0) rotate(7deg) scale(.92)}
+.vp .ew-wh .ew-it[data-d="2"]{z-index:1;transform:translate3d(-300px,28px,0) rotate(-7deg) scale(.92)}
+.vp .ew-wh .ew-it[data-d="1"],.vp .ew-wh .ew-it[data-d="2"]{box-shadow:0 18px 40px rgba(0,45,80,.16)}
+.vp .ew-wh .ew-ph{position:relative;inset:auto;z-index:0;width:100%;height:312px;flex:none;border-radius:14px;object-fit:cover}
+.vp .ew-wh .ew-it:hover .ew-ph{transform:none}
+.vp .ew-wh .ew-top{top:26px;left:28px}
+.vp .ew-wh .ew-it h3{position:static;margin:14px 8px 0;padding:0;background:none;border-radius:0;font-size:28px;color:var(--ayla-deep)}
+.vp .ew-wh .ew-it p{position:static;height:auto;margin:0 8px;padding:0;background:none;border-radius:0;font-size:15px;line-height:1.45;color:#4f5f67}
+.vp .ew-wh .ew-it:hover h3,.vp .ew-wh .ew-it:hover p{background:none}
+.vp .ew-wh .ew-it:hover h3{color:var(--ayla-deep)}.vp .ew-wh .ew-it:hover p{color:#4f5f67}
+@media (max-width:767px){.vp .ew-wh{height:auto}.vp .ew-wh .ew-pin{position:static;height:auto;min-height:0;padding:56px 16px}.vp .ew-wh .ew-wr{display:flex;flex-direction:column;gap:16px;margin-top:28px}.vp .ew-wh .ew-it,.vp .ew-wh .ew-it[data-d]{position:relative;left:auto;top:auto;width:100%;margin:0;transform:none}}
+
+/* why-ayla cards: image on top, cream panel with torn edge below (as What's On) */
+.vp .ew-wh .ew-it,.vp .ew-wh .ew-it:first-child{padding:0;gap:0;overflow:hidden;background:#faf7ee;border-radius:18px;width:360px;margin-left:-180px;height:480px}
+.vp .ew-wh .ew-ph{flex:1;min-height:0;height:auto;border-radius:0}
+.vp .ew-wh .ew-bd{position:relative;flex:none;margin-top:-26px;padding:46px 26px 26px;background:#faf7ee;clip-path:polygon(0 12%,6% 16%,12% 11%,18% 8%,25% 12%,31% 7%,38% 10%,44% 14%,50% 9%,57% 6%,63% 11%,70% 8%,76% 13%,83% 9%,90% 6%,95% 10%,100% 7%,100% 100%,0 100%)}
+.vp .ew-wh .ew-it h3{margin:0;font-size:26px;line-height:1.1;letter-spacing:-.02em;color:var(--ayla-deep)}
+.vp .ew-wh .ew-it h3::after{content:"";display:block;width:36px;height:2px;margin:12px 0 10px;background:var(--ayla-deep)}
+.vp .ew-wh .ew-it p{margin:0;font-size:15px;line-height:1.45;color:#3f4950}
+.vp .ew-wh .ew-top{z-index:2}
+.vp .ew-wh .ew-it[data-d="1"]{transform:translate3d(290px,28px,0) rotate(7deg) scale(.92)}
+.vp .ew-wh .ew-it[data-d="2"]{transform:translate3d(-290px,28px,0) rotate(-7deg) scale(.92)}
+.vp .ew-wh .ew-bd{display:block;width:100%;box-sizing:border-box;align-self:stretch}
+.vp .ew-wh .ew-bd h3,.vp .ew-wh .ew-bd p{position:static;width:auto;max-width:none;background:none;height:auto}
