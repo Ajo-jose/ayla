@@ -1302,3 +1302,110 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .ew-wh{margin-bottom:96px}
 .vp .ew-wh .ew-pin{padding-bottom:56px}
 @media (max-width:767px){.vp .ew-wh{margin-bottom:0}}
+
+/* golf club page */
+.gf-hk{position:relative;height:calc(100vh / var(--z,1));min-height:680px;overflow:hidden;display:flex;align-items:center;padding:0 64px}
+.gf-hk>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.gf-hk::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,30,52,.45),rgba(0,30,52,.05))}
+.gf-card{position:relative;z-index:1;width:560px;background:#fff;border-radius:8px;padding:56px 56px 52px;display:flex;flex-direction:column;gap:24px}
+.gf-card small{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--ayla-blue)}
+.gf-card .vp-h2{margin:0}
+.gf-card p{margin:0;font-size:20px;line-height:1.5;color:#4f5f67}
+.gf-card .dq-chips{margin:0}
+.gf-rs{justify-content:flex-end}
+.gf-rs::after{background:linear-gradient(270deg,rgba(0,30,52,.45),rgba(0,30,52,.05))}
+.gf-mb{background:var(--ayla-deep);color:#fff;padding:var(--sec) 64px}
+.gf-mh{margin-bottom:64px;display:flex;flex-direction:column;gap:16px}
+.gf-mh .vp-h2{color:#fff;margin:0}
+.gf-mh .vp-h2 em{color:var(--ayla-sky)}
+.gf-mh p{margin:0;font-size:20px;color:#d6ecf2}
+.gf-tg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.gf-t{border:1px solid rgba(255,255,255,.28);border-radius:8px;padding:40px 32px 36px;display:flex;flex-direction:column;gap:24px;transition:background .5s,border-color .5s}
+.gf-t:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.gf-t small{font-size:14px;letter-spacing:.14em;color:var(--ayla-sky)}
+.gf-t h3{margin:0;font-weight:400;font-size:36px;line-height:1.1;letter-spacing:-.03em}
+.gf-t h3 span{font-size:18px;letter-spacing:0;color:#d6ecf2}
+.gf-t ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:18px;color:#d6ecf2;flex:1}
+.gf-t li{display:flex;align-items:center;gap:12px}
+.gf-t li svg{width:18px;height:18px;color:var(--ayla-sky);flex:none}
+.gf-t .vp-btn{align-self:flex-start}
+.gf-ac{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:96px;padding:var(--sec) 64px;align-items:start}
+.gf-al{position:sticky;top:120px;display:flex;flex-direction:column;gap:28px}
+.gf-al .vp-h2{margin:0}
+.gf-al p{margin:0;font-size:20px;line-height:1.5;color:#4f5f67;max-width:520px}
+.gf-ag{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--hl);border-left:1px solid var(--hl)}
+.gf-sv{position:relative;min-height:300px;padding:36px 32px;border-right:1px solid var(--hl);border-bottom:1px solid var(--hl);display:flex;flex-direction:column;justify-content:space-between;transition:background .5s}
+.gf-sv:hover{background:var(--ayla-sky)}
+.gf-sv svg{width:44px;height:44px;stroke-width:1.2;color:var(--ayla-blue);transition:color .5s}
+.gf-sv:hover svg{color:var(--ayla-deep)}
+.gf-sv h3{margin:0;font-weight:400;font-size:30px;line-height:1.15;letter-spacing:-.02em;color:var(--ayla-deep)}
+.gf-cal{padding:var(--sec) 64px;background:var(--sand,#f6f3ec)}
+.gf-ch{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:32px}
+.gf-ch .vp-h2{margin:0}
+.gf-fl{display:flex;gap:8px}
+.gf-fl button{font:inherit;font-size:16px;padding:10px 22px;border-radius:999px;border:1px solid var(--ayla-deep);background:transparent;color:var(--ayla-deep);cursor:pointer;transition:background .3s,color .3s}
+.gf-fl button[aria-pressed="true"]{background:var(--ayla-deep);color:#fff}
+.gf-ev{display:grid;grid-template-columns:320px minmax(0,1fr) auto;align-items:center;gap:32px;padding:40px 0;border-top:1px solid var(--hl)}
+.gf-ev:last-child{border-bottom:1px solid var(--hl)}
+.gf-ev[hidden]{display:none}
+.gf-d{font-size:20px;color:var(--ayla-blue)}
+.gf-ev h3{margin:0;font-weight:400;font-size:44px;line-height:1.05;letter-spacing:-.03em;color:var(--ayla-deep)}
+.gf-vc{margin-top:40px}
+@media (max-width:767px){.gf-hk{padding:0 16px;min-height:600px}.gf-card{width:100%;padding:32px 24px}.gf-mb,.gf-cal{padding:64px 16px}.gf-tg{grid-template-columns:1fr}.gf-ac{grid-template-columns:1fr;gap:40px;padding:64px 16px}.gf-al{position:static}.gf-sv{min-height:200px}.gf-ev{grid-template-columns:1fr;gap:12px}.gf-ev h3{font-size:30px}.gf-ch{flex-direction:column;align-items:flex-start}}
+.vp .gf-n .x-n{font-size:72px}
+.gf-t h3{font-size:40px}
+.gf-t h3 b{display:block;font-weight:400;font-size:16px;letter-spacing:.02em;color:#d6ecf2;margin-bottom:6px}
+.gf-t h3 span{white-space:nowrap}
+.gf-cal{background:#eef6f9}
+.vp .lw-intro.gf-intro{padding-top:72px;padding-bottom:72px}
+/* golf services: simple list */
+.vp .gf-ag{display:flex;flex-direction:column;border:0;border-top:1px solid var(--hl)}
+.vp .gf-sv{min-height:0;flex-direction:row;align-items:center;justify-content:flex-start;gap:28px;padding:32px 24px;border:0;border-bottom:1px solid var(--hl)}
+.vp .gf-sv svg{width:32px;height:32px;stroke-width:1.4}
+.vp .gf-sv h3{font-size:32px}
+@media (max-width:767px){.vp .gf-sv{padding:24px 8px}.vp .gf-sv h3{font-size:24px}}
+.gf-am{padding:56px 64px 0}
+.gf-am .mr-ac{gap:64px 24px}
+@media (max-width:767px){.gf-am{padding:48px 16px 0}}
+.vp .gf-awh{padding:var(--sec) 64px 48px}
+.gf-aw{padding-bottom:var(--sec)}
+.vp .mr-nums.gf-n{padding:40px 64px 40px}
+.vp .gf-am{padding-top:32px}
+.vp .gf-am{padding-top:62px}
+.vp .gf-am{padding-top:80px}
+.vp #play .gf-pl{padding:22px 24px;grid-template-columns:56px minmax(0,.8fr) minmax(0,1.4fr) 48px}
+.vp #play .gf-pl h3{font-size:32px}
+.vp #play .gf-pl p{font-size:16px;line-height:1.5}
+.vp #play .gf-pl .mr-go{width:44px;height:44px}
+/* golf: how-to-play path tiles */
+.gf-ptg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--hl);border-bottom:1px solid var(--hl)}
+.gf-pt{position:relative;display:flex;flex-direction:column;gap:10px;padding:28px 24px 28px;min-height:230px;border-left:1px solid var(--hl);text-decoration:none;color:var(--ayla-deep);transition:background .5s}
+.gf-pt:first-child{border-left:0}
+.gf-pt:hover{background:var(--ayla-sky)}
+.gf-pt>svg{width:36px;height:36px;stroke-width:1.3;color:var(--ayla-blue);margin-bottom:auto;transition:color .5s}
+.gf-pt:hover>svg{color:var(--ayla-deep)}
+.gf-pt h3{margin:0;font-weight:400;font-size:30px;line-height:1.1;letter-spacing:-.03em}
+.gf-pt p{margin:0;font-size:16px;color:#4f5f67}
+.gf-pt:hover p{color:#1d4560}
+.gf-pg{position:absolute;top:28px;right:24px;display:flex;opacity:0;transform:translate(-6px,6px);transition:opacity .4s,transform .5s cubic-bezier(.22,1,.36,1)}
+.gf-pg svg{width:22px;height:22px}
+.gf-pt:hover .gf-pg{opacity:1;transform:none}
+@media (max-width:767px){.gf-ptg{grid-template-columns:1fr 1fr}.gf-pt{min-height:170px;border-bottom:1px solid var(--hl)}}
+/* golf: even section rhythm (100px) */
+.vp .lw-intro.gf-intro{padding-top:80px;padding-bottom:40px}
+.vp .mr-nums.gf-n{padding:0 64px 0}
+.vp .gf-am{padding-top:100px;padding-bottom:0}
+.vp .gf-mb,.vp .gf-ac,.vp .gf-cal{padding-top:100px;padding-bottom:100px}
+.vp .gf-awh.x-sec.bq-hd{padding:100px 64px 56px}
+.vp .mr-nums.gf-aw{padding:0 64px 100px}
+/* golf: awards removed; residences band follows calendar */
+/* golf: membership band photo + blue overlay */
+.gf-xb>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.gf-xb::after{background:linear-gradient(90deg,rgba(0,63,107,.94),rgba(0,95,155,.55))}
+/* golf: membership band uses light design-system blue (ayla-sky) overlay */
+.gf-xb{background:var(--ayla-sky)}
+.gf-xb>img{opacity:.5;mix-blend-mode:multiply}
+.gf-xb::after{background:linear-gradient(90deg,rgba(153,209,220,.95),rgba(153,209,220,.55))}
+.gf-xb .vp-h2{color:var(--ayla-deep)}
+.gf-xb .vp-btn{background:var(--ayla-deep);color:#fff}
+.gf-xb .vp-btn b{background:#fff;color:var(--ayla-deep)}
