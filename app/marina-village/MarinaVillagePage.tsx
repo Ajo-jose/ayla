@@ -65,7 +65,7 @@ export default function MarinaVillagePage() {
         <section className="mv-boat" id="mv-boats" data-screen-label="Boats Services">
           <div className="mv-head">
             <div><h2 className="vp-h2 vp-rv">Boats <em className="sw-serif">Services</em></h2><p className="vp-rv" style={D(1)}>From world-class berthing at Ayla Marina to vibrant dining, shopping, and cultural experiences at Marina Village.</p></div>
-            <a className="vp-btn vp-rv" style={D(2)} href="#">Learn More About Ayla Marina<b><ArrowRight aria-hidden="true" /></b></a>
+            <a className="vp-btn vp-rv" style={D(2)} href="/marina">Learn More About Ayla Marina<b><ArrowRight aria-hidden="true" /></b></a>
           </div>
           <div className="mv-bgrid">{boats.map((c, i) => <CardEl key={i} c={c} i={i} />)}</div>
         </section>
