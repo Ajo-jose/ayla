@@ -80,7 +80,7 @@
 .nw-sel svg{position:absolute;right:12px;width:16px;height:16px;pointer-events:none;color:var(--ayla-deep)}
 .nw-img{height:260px}
 .nw-card[data-s="7"] .nw-img,.nw-card[data-s="5"] .nw-img{height:350px}
-.nw-card[data-s="6"] .nw-img{height:360px}
+.nw-card[data-s="6"] .nw-img{height:350px}
 .dt-relgrid .nw-img{height:260px}
 .nw-list{padding-top:80px}
 .nw-more{padding-bottom:80px}
