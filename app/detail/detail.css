@@ -1242,3 +1242,9 @@ transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .35s,background .3
 .vp .mr-row{gap:4px}
 .vp .mr-row .x-n{line-height:.78;margin-bottom:-4px}
 .vp .mr-nums{padding:72px 64px 72px}
+
+/* stats → next heading: less space; keep columns top-aligned */
+.vp .mr-nums{align-items:start;padding-bottom:40px}
+.vp .mr-row{justify-content:flex-start;align-self:start}
+.vp .mr-nums+.x-sec.bq-hd,.vp .mr-nums+.bq-hd{padding-top:72px}
+.vp .mr-row,.vp .mr-row:last-child{gap:4px;padding-top:8px;padding-bottom:8px}
