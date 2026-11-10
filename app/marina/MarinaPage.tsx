@@ -14,7 +14,7 @@ export default function MarinaPage() {
       <main className="vp" data-pg="marina">
 
 
-<section className="mv-hero st-hero x-hero" data-screen-label="Hero"><video data-par src="/assets/v/v-oasis.mp4" poster="/assets/dt/mv-marina-2.jpg" autoPlay muted loop playsInline aria-hidden="true"></video>
+<section className="mv-hero st-hero x-hero" data-screen-label="Hero"><img data-par src="/assets/marina/mb-3.jpg" alt="Ayla Marina berths and Marina Village" />
 <div className="mv-hc"><h1 className="mv-h1"><span className="mv-w"><span style={{ "--i": "0" } as React.CSSProperties}>Ayla</span></span><span className="mv-w"><span style={{ "--i": "1" } as React.CSSProperties}><em className="sw-serif">Marina</em></span></span></h1></div>
 <div className="x-hside"><p>Direct Red Sea access, 5 Gold Anchor berthing and a waterfront village, all in one harbour.</p><div className="x-hbtns"><a className="vp-btn py-w" href="#enquire" data-go="enquire">Reserve a berth<b><ArrowRight aria-hidden="true" /></b></a><a className="st-ghost py-gw" href="#arrive" data-go="arrive">Documents needed</a></div></div>
 <span className="mv-cue" aria-hidden="true">Scroll</span></section>
@@ -44,7 +44,7 @@ export default function MarinaPage() {
 
 
 
-<section className="x-stagewrap" id="enquire" data-screen-label="Enquire"><div className="c2-stage x-stage"><img className="c2-bg" src="/assets/dt/mv-marina-2.jpg" alt="" loading="lazy" />
+<section className="x-stagewrap" id="enquire" data-screen-label="Enquire"><div className="c2-stage x-stage"><img className="c2-bg" src="/assets/marina/mb-1.jpg" alt="" loading="lazy" />
 <div className="x-sl"><h2 className="vp-h2 vp-rv">Reserve <em className="sw-serif">a berth</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us your vessel size and the marina team will confirm availability, rates and arrival requirements.</p></div>
 <div className="c2-win vp-rv" style={{ "--d": "2" } as React.CSSProperties}><div className="c2-bar"><h2>Enquire now</h2><span>All fields required</span></div>
 <form data-f noValidate>
@@ -62,8 +62,8 @@ export default function MarinaPage() {
 
 <section className="ex dn-wd" data-screen-label="While you explore"><div className="ex-head"><h2 className="vp-h2 vp-rv">While you <em className="sw-serif">explore</em></h2></div>
 <div className="ex-row vp-rv" style={{ "--d": "1" } as React.CSSProperties}>
-<a className="ex-p" href="/live"><img src="/assets/dt/mv-marina-3.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3><p>Freehold residences within the Ayla Oasis community.</p></div></a>
-<a className="ex-p" href="/marina-village"><img src="/assets/dt/mv-marina-1.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
+<a className="ex-p" href="/live"><img src="/assets/marina/mb-4.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>01</small><h3>Invest in Ayla</h3><p>Freehold residences within the Ayla Oasis community.</p></div></a>
+<a className="ex-p" href="/marina-village"><img src="/assets/marina/mb-2.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>02</small><h3>Marina Village</h3><p>Berths, boardwalk shops and waterfront dining in one stretch.</p></div></a>
 <a className="ex-p" href="/whats-on"><img src="/assets/dt/whatson-fire.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight aria-hidden="true" /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
 </div></section>
 
