@@ -78,7 +78,7 @@ export default function DinePage() {
 
         <section className="dn-cross" data-screen-label="Cross-link banner">
           <video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" />
-          <div className="dn-crin"><h2 className="vp-h2 vp-rv">Planning a private event or <em className="sw-serif">wedding?</em></h2><a className="vp-btn vp-rv" style={D(1)} href="#">Explore Weddings &amp; Events<b><ArrowRight aria-hidden="true" /></b></a></div>
+          <div className="dn-crin"><h2 className="vp-h2 vp-rv">Planning a private event or <em className="sw-serif">wedding?</em></h2><div className="dn-ctab vp-rv" style={D(1)}><a className="vp-btn" href="/weddings">Explore Weddings<b><ArrowRight aria-hidden="true" /></b></a><a className="vp-btn dn-ctag" href="/events">Explore Events<b><ArrowRight aria-hidden="true" /></b></a></div></div>
         </section>
 
         <section className="dn-wo" data-screen-label="What's on">
