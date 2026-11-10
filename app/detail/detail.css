@@ -1641,3 +1641,4 @@ repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100
 #services .mr-sv h3{font-size:38px}
 #services .mr-sv p{font-size:17px;line-height:1.7}
 #services .mr-go{display:none}
+#mr-fc{display:none!important}.mr-fr{justify-content:space-between}

@@ -38,7 +38,7 @@ export default function MarinaVillagePage() {
       <SiteHeader />
       <main className="vp" data-pg="marina-village">
         <section className="mv-hero" data-screen-label="Hero">
-          <img id="mv-himg" src="/assets/mv/abb718fa.jpg" alt="Marina Village boardwalk" />
+          <img id="mv-himg" src="/assets/mv/mv-6.jpg" alt="Marina Village boardwalk" />
           <div className="mv-hc">
             <h1 className="mv-h1"><span className="mv-w"><span style={{ ["--i" as string]: 0 } as React.CSSProperties}>Marina</span></span><span className="mv-w"><span style={{ ["--i" as string]: 1 } as React.CSSProperties}><em className="sw-serif">Village</em></span></span></h1>
             <p>From world-class berthing at Ayla Marina to vibrant dining, shopping, and cultural experiences at Marina Village.</p>
@@ -72,7 +72,7 @@ export default function MarinaVillagePage() {
         <section className="ex" data-screen-label="Explore more">
           <div className="ex-head"><h2 className="vp-h2 vp-rv">Explore <em className="sw-serif">more</em></h2></div>
           <div className="ex-row vp-rv" style={D(1)}>
-            <a className="ex-p" href="#"><img src="/assets/mv/d9a0d7da.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Dine at Ayla</h3><p>Restaurants and cafes across the marina, beach and golf club.</p></div></a>
+            <a className="ex-p" href="#"><img src="/assets/mv/mv-7.jpg" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>01</small><h3>Dine at Ayla</h3><p>Restaurants and cafes across the marina, beach and golf club.</p></div></a>
             <a className="ex-p" href="#"><img src="/assets/mv/86038a85.png" alt="" loading="lazy" /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>02</small><h3>Invest in Ayla</h3></div></a>
             <a className="ex-p" href="#"><video src="/assets/v/v-events.mp4" autoPlay muted loop playsInline aria-hidden="true" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /><span className="ex-go" aria-hidden="true"><ArrowUpRight /></span><div className="ex-c"><small>03</small><h3>Wedding &amp; Events</h3><p>Beachfront and marina venues for weddings, conferences and celebrations.</p></div></a>
           </div>
