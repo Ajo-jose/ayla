@@ -1624,3 +1624,20 @@ a.mr-sv{text-decoration:none;color:inherit}
 .gf-routes .bounce-cards{height:300px}
 .vp .gf-am{padding-bottom:24px!important}
 .gf-routes{overflow:visible!important}.vp .gf-routes{padding-bottom:24px!important}
+/* Marina stats: equal space above and below */
+.vp .mr-nums:not(.gf-n):not(.sb-n){padding-top:80px!important;padding-bottom:80px!important}
+.vp .mv-intro.lw-intro:has(+ .mr-nums:not(.gf-n)){padding-bottom:0!important}
+/* Marina slider: centred line, ticks and thumb */
+#mr-rg{height:44px;margin:12px 0 0;
+background:
+linear-gradient(90deg,var(--ayla-deep) calc(16px + (100% - 32px) * var(--f,.43)),rgba(0,63,114,.25) calc(16px + (100% - 32px) * var(--f,.43))) left center/100% 2px no-repeat,
+repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100% - 1px)/37)) 16px center/calc(100% - 32px + 1px) 12px no-repeat}
+#mr-rg::-webkit-slider-thumb{box-sizing:border-box;width:32px;height:32px;margin-top:6px;transform:none;border:6px solid #fff;background:var(--ayla-deep);box-shadow:0 0 0 1.5px var(--ayla-deep)}
+#mr-rg::-moz-range-thumb{box-sizing:border-box;width:32px;height:32px;border:6px solid #fff;background:var(--ayla-deep);box-shadow:0 0 0 1.5px var(--ayla-deep)}
+/* Marina services: compact, no arrows, bottom space */
+#services.mr-svs{padding:80px 64px 80px!important}
+#services .mr-sh{margin-bottom:32px}
+#services .mr-sv{grid-template-columns:72px minmax(0,.8fr) minmax(0,1.6fr);padding:28px 24px}
+#services .mr-sv h3{font-size:38px}
+#services .mr-sv p{font-size:17px;line-height:1.7}
+#services .mr-go{display:none}
