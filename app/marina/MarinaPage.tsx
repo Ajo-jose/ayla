@@ -46,8 +46,7 @@ export default function MarinaPage() {
 
 
 <section className="x-stagewrap" id="enquire" data-screen-label="Enquire"><div className="c2-stage x-stage"><img className="c2-bg" src="/assets/dt/mv-marina-2.jpg" alt="" loading="lazy" />
-<div className="x-sl"><h2 className="vp-h2 vp-rv">Reserve <em className="sw-serif">a berth</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us your vessel size and the marina team will confirm availability, rates and arrival requirements.</p>
-<a className="x-line" href="tel:+96232094000"><Phone aria-hidden="true" />+962 3 209 4000</a><a className="x-line" href="mailto:info@ayla.com.jo"><Mail aria-hidden="true" />info@ayla.com.jo</a></div>
+<div className="x-sl"><h2 className="vp-h2 vp-rv">Reserve <em className="sw-serif">a berth</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us your vessel size and the marina team will confirm availability, rates and arrival requirements.</p></div>
 <div className="c2-win vp-rv" style={{ "--d": "2" } as React.CSSProperties}><div className="c2-bar"><h2>Enquire now</h2><span>All fields required</span></div>
 <form data-f noValidate>
 <label className="c2-ln c2-half"><span className="c2-lb">Name</span><input type="text" required autoComplete="name" /></label>

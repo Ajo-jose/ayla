@@ -49,8 +49,7 @@ export default function GolfClubPage() {
 <section className="gf-hk gf-rs" id="residences" data-screen-label="Golf Residences"><img src="/assets/dt/mv-marina-1.jpg" alt="" loading="lazy" /><div className="gf-card vp-rv"><small>Live on the course</small><h2 className="vp-h2">Golf <em className="sw-serif">Residences</em></h2><p>Apartments and townhouses overlooking the fairways of Ayla Golf Club, from JOD 168,000.</p><div className="st-btns"><a className="vp-btn" href="/live">View residences<b><ArrowRight aria-hidden="true" /></b></a></div></div></section>
 
 <section className="x-stagewrap" id="enquire" data-screen-label="Enquire"><div className="c2-stage x-stage"><img className="c2-bg" src="/assets/dt/mv-marina-3.jpg" alt="" loading="lazy" />
-<div className="x-sl"><h2 className="vp-h2 vp-rv">Book a <em className="sw-serif">tee time</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us what you are after and the Ayla Golf Club team will confirm tee times, lessons or membership details.</p>
-<a className="x-line" href="tel:+96232094000"><Phone aria-hidden="true" />+962 3 209 4000</a><a className="x-line" href="mailto:info@ayla.com.jo"><Mail aria-hidden="true" />info@ayla.com.jo</a></div>
+<div className="x-sl"><h2 className="vp-h2 vp-rv">Book a <em className="sw-serif">tee time</em></h2><p className="vp-rv" style={{ "--d": "1" } as React.CSSProperties}>Tell us what you are after and the Ayla Golf Club team will confirm tee times, lessons or membership details.</p></div>
 <div className="c2-win vp-rv" style={{ "--d": "2" } as React.CSSProperties}><div className="c2-bar"><h2>Enquire now</h2><span>All fields required</span></div>
 <form data-f noValidate>
 <label className="c2-ln c2-half"><span className="c2-lb">Name</span><input type="text" required autoComplete="name" /></label>

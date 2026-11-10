@@ -1539,3 +1539,37 @@ a.mr-sv{text-decoration:none;color:inherit}
 .ew-wh .ew-pin{padding-top:88px;min-height:800px}
 .ew-wh .ew-it,.vp .ew-wh .ew-it:first-child{height:420px}
 .ew-wh .ew-wr{margin-top:12px}
+
+/* Live: beige residence cards, one-line hero buttons, tighter testimonial → form gap */
+.lw-res .st-card .st-in{background:color-mix(in srgb,var(--sand) 22%,#fff)}
+.lw-res .st-card:nth-child(3) .vp-h2{color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) .vp-h2 .sw-serif{color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) p{color:#3f4950}
+.lw-res .st-card:nth-child(3) .st-ghost{border-color:var(--ayla-deep);color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) .st-ghost:hover{background:var(--ayla-deep);color:#fff}
+.lw-res .st-card:nth-child(3) .x-k{color:var(--ayla-blue)}
+.lw-res .st-card:nth-child(3) .lw-price{border-color:var(--hl)}
+.lw-res .st-card:nth-child(3) .lw-price small{color:#3f4950}
+.lw-res .st-card:nth-child(3) .lw-price span,.lw-res .st-card:nth-child(3) .lw-price em{color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) .vp-btn{background:var(--ayla-deep);color:#fff}
+.lw-res .st-card:nth-child(3) .vp-btn b{background:#fff;color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) .vp-btn:hover{background:var(--ayla-blue)}
+.lw-res .st-card:nth-child(3) .stay-link{color:var(--ayla-deep)}
+.lw-res .st-card:nth-child(3) .stay-link:hover{color:var(--ayla-blue)}
+.mv-hero.x-hero .x-hbtns{flex-wrap:nowrap}.mv-hero.x-hero .x-hbtns>*{white-space:nowrap}
+.vp .lw-st{padding-bottom:0!important}
+
+/* Galleries: arrow slider, uniform tiles, no scroll-jacking */
+.az-gal{height:auto!important;padding-bottom:80px}
+.az-pin{position:relative!important;height:auto!important;min-height:0!important;padding-top:80px!important;overflow:hidden}
+.az-gal .az-gt{width:max-content;gap:32px;align-items:flex-start;margin:0;transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.az-gal .az-gf,.az-gal .az-gf:nth-child(n){align-self:flex-start;justify-content:flex-start;flex-direction:column;width:416px}
+.az-gal .az-gf .az-gi,.az-gal .az-gf:nth-child(n) .az-gi{width:416px!important;height:320px!important}
+.az-gal .az-gf .az-gi img{transform:none!important}
+.az-gal .az-gp{display:none}
+.az-nav{display:flex;gap:12px}
+.az-ar{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:transparent;color:#fff;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .25s,color .25s,opacity .25s}
+.az-ar:hover:not(:disabled){background:#fff;color:var(--ayla-deep)}.az-ar:disabled{opacity:.35;cursor:default}
+.az-gal .az-gh{align-items:center}
+/* Live cards: chips readable on beige */
+.lw-res .st-card:nth-child(3) .st-copy .dq-chips li{color:#1d2328;border-color:color-mix(in srgb,#98a3ad 45%,transparent)}

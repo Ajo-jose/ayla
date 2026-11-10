@@ -95,8 +95,11 @@ btns.forEach(function(b,i){b.addEventListener('click',function(){pick(i)})});pic
 var en=$('[data-enq]',ux);if(en)en.addEventListener('click',function(e){e.preventDefault();var sel=$('#az-unit'),on=$('.az-ub.on',ux);if(sel&&on)sel.value=on.dataset.name;var el=document.getElementById('enquire');scrollTo({top:el.getBoundingClientRect().top+scrollY-90*zoom(),behavior:'smooth'})})}
 
 /* pinned horizontal gallery */
-var gal=$('.az-gal');if(gal){var tr=$('.az-gt',gal),bar=$('.az-gp',gal),cnt=$('.az-gc b',gal),nf=$$('.az-gf',gal).length,gi=$$('.az-gi img',gal);
-onScroll(function(){var r=gal.getBoundingClientRect(),tot=r.height-innerHeight,p=clamp(tot>0?-r.top/tot:0,0,1),mx=Math.max(0,tr.offsetWidth-1440);tr.style.transform='translate3d('+(-p*mx).toFixed(1)+'px,0,0)';bar.style.setProperty('--p',p.toFixed(3));gi.forEach(function(g){var q=g.parentNode.getBoundingClientRect(),c=(q.left+q.width/2-720)/1440;g.style.transform='translate3d('+(c*-9).toFixed(2)+'%,0,0) scale(1.18)'});if(cnt)cnt.textContent=('0'+(Math.round(p*(nf-1))+1)).slice(-2)})}
+var gal=$('.az-gal');if(gal){var tr=$('.az-gt',gal),cnt=$('.az-gc b',gal),hd=$('.az-gh',gal),fs=$$('.az-gf',gal),idx=0,VIS=3,STEP=448,mx=Math.max(0,fs.length-VIS);
+var nav=document.createElement('div');nav.className='az-nav';nav.innerHTML='<button type="button" class="az-ar" aria-label="Previous"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="az-ar" aria-label="Next"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>';
+if(hd)hd.appendChild(nav);var pv=nav.children[0],nx=nav.children[1];
+function go(i){idx=clamp(i,0,mx);tr.style.transform='translate3d('+(-idx*STEP)+'px,0,0)';pv.disabled=idx===0;nx.disabled=idx===mx;if(cnt)cnt.textContent=('0'+(idx+1)).slice(-2)}
+pv.addEventListener('click',function(){go(idx-1)});nx.addEventListener('click',function(){go(idx+1)});go(0)}
 
 /* stacked cards: scale back as the next card arrives */
 var cs=$$('.st-card');if(cs.length){onScroll(function(){var vh=innerHeight;cs.forEach(function(c,i){var nx=cs[i+1],inn=c.firstElementChild;if(!nx){inn.style.transform='';return}var r=nx.getBoundingClientRect(),p=clamp(1-(r.top-120)/(vh*.8),0,1);inn.style.transform='scale('+(1-p*.06).toFixed(4)+')';inn.style.filter='brightness('+(1-p*.25).toFixed(3)+')'})})}
