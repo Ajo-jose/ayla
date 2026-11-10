@@ -1573,3 +1573,6 @@ a.mr-sv{text-decoration:none;color:inherit}
 .az-gal .az-gh{align-items:center}
 /* Live cards: chips readable on beige */
 .lw-res .st-card:nth-child(3) .st-copy .dq-chips li{color:#1d2328;border-color:color-mix(in srgb,#98a3ad 45%,transparent)}
+
+.vp a.wa-only{width:56px;height:56px;padding:0;justify-content:center;border-radius:50%;flex:none}
+.vp a.wa-only svg{width:26px;height:26px}
