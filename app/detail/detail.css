@@ -1578,3 +1578,12 @@ a.mr-sv{text-decoration:none;color:inherit}
 .vp a.wa-only svg{width:26px;height:26px}
 .c2-send{border-radius:999px!important}
 .dn-ocards.hy-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* Golf: stats first, then intro, then amenities — more breathing room */
+.vp .mr-nums.gf-n{padding:80px 64px 0;gap:0}
+.vp .gf-n .mr-row{gap:10px;padding-top:0;padding-bottom:0}
+.vp .gf-n .x-n{font-size:56px;line-height:1;margin-bottom:0}
+.vp .gf-n .mr-row b{font-size:20px}
+.vp .gf-n .mr-row small{font-size:15px;margin-top:2px}
+.vp .lw-intro.gf-intro{padding-top:88px;padding-bottom:0}
+.vp .gf-am{padding-top:88px}
