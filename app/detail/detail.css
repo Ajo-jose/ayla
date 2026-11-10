@@ -1620,3 +1620,7 @@ a.mr-sv{text-decoration:none;color:inherit}
 .sb-sdg .sb-hd p{color:#4f5f67}
 .sb-g{border-color:transparent}.sb-g:hover{background:transparent;border-color:transparent}
 .vp-btn.py-w>svg:first-child{width:20px;height:20px;flex:none;margin-right:-4px}
+.vp .gf-routes{padding:24px 64px 0!important}
+.gf-routes .bounce-cards{height:300px}
+.vp .gf-am{padding-bottom:24px!important}
+.gf-routes{overflow:visible!important}.vp .gf-routes{padding-bottom:24px!important}
