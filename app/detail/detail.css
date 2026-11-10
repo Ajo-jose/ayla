@@ -1587,3 +1587,6 @@ a.mr-sv{text-decoration:none;color:inherit}
 .vp .gf-n .mr-row small{font-size:15px;margin-top:2px}
 .vp .lw-intro.gf-intro{padding-top:88px;padding-bottom:0}
 .vp .gf-am{padding-top:88px}
+
+/* Stats: smaller numbers site-wide (mr-nums pages) */
+.vp .mr-nums:not(.sb-n) .mr-row .x-n{font-size:64px;line-height:1;margin-bottom:0}
