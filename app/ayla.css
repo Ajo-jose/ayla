@@ -298,8 +298,8 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .vp[data-pg="sustainability"]>section[data-screen-label="Awards"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="sustainability"]>section[data-screen-label="Giving back"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="sustainability"]>section[data-screen-label="SDGs"]{padding-top:80px!important;padding-bottom:80px!important}
-.vp[data-pg="sustainability"]>section[data-screen-label="Reports"]{padding-top:80px!important;padding-bottom:80px!important}
-.vp[data-pg="sustainability"]>section[data-screen-label="While you explore"]{padding-top:80px!important;padding-bottom:80px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="Reports"]{padding-top:80px!important;padding-bottom:56px!important}
+.vp[data-pg="sustainability"]>section[data-screen-label="While you explore"]{padding-top:46px!important;padding-bottom:80px!important}
 .vp[data-pg="faqs"]>section[data-screen-label="FAQs"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="faqs"]>section[data-screen-label="Contact"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="terms"]>section[data-screen-label="Terms"]{padding-top:80px!important;padding-bottom:80px!important}
