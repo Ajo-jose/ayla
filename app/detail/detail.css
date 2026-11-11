@@ -1642,6 +1642,3 @@ repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100
 #services .mr-sv p{font-size:17px;line-height:1.7}
 #services .mr-go{display:none}
 #mr-fc{display:none!important}.mr-fr{justify-content:space-between}
-.gf-sl{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:-40px}
-.gf-sl img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px;display:block}
-@media (max-width:767px){.gf-sl{grid-template-columns:1fr;margin-top:0}}
