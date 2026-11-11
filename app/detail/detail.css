@@ -1642,3 +1642,7 @@ repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100
 #services .mr-sv p{font-size:17px;line-height:1.7}
 #services .mr-go{display:none}
 #mr-fc{display:none!important}.mr-fr{justify-content:space-between}
+.wd-xf{position:relative}
+.wd-xf img{position:absolute;inset:0;opacity:0;animation:wdXf 16s infinite}
+.wd-xf img:nth-child(1){opacity:1;animation-delay:0s}.wd-xf img:nth-child(2){animation-delay:4s}.wd-xf img:nth-child(3){animation-delay:8s}.wd-xf img:nth-child(4){animation-delay:12s}
+@keyframes wdXf{0%{opacity:0}6%,25%{opacity:1}31%,100%{opacity:0}}
