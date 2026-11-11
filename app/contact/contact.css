@@ -56,3 +56,4 @@ a.c2-dc:hover{background:var(--ayla-deep)}a.c2-dc:hover strong,a.c2-dc:hover sma
 .vp .c2-hin h1{font-size:136px}
 .c2-hin h1{font-size:136px}
 .c2-send{border-radius:999px!important}
+.c2-root .c2-form + .c2-routes{padding-top:0}
