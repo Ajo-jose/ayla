@@ -63,3 +63,4 @@
 .bn-bars .on i::after{animation:bnBar 6s linear forwards}
 @keyframes bnBar{to{transform:scaleX(1)}}
 @media (prefers-reduced-motion:reduce){.bn-slide.on>img,.bn-bars .on i::after{animation:none}.bn-bars .on i::after{transform:scaleX(1)}}
+.bn-a h1 span{font-weight:400}
