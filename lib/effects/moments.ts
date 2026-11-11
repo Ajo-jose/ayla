@@ -2,7 +2,7 @@
 export default function moments() {
 (function(){
 var ring=document.getElementById('mo-ring'),sec=document.getElementById('moments');if(!ring)return;
-var IM=['/assets/4832270e23473a056a719250ca0b381a.jpg','/assets/0eedfcae95800cf90c8e055d017aac34.jpg','/assets/2882b24b799ca7a4515f17d6e845880f.jpg','/assets/c4a023d5c6e76ebbeba11c362135d2e9.jpg'];
+var IM=['/assets/mama/mg-4.jpg','/assets/golf/gc-green.jpg','/assets/isl/ia-1.jpg','/assets/golf/gc-swing.jpg','/assets/marina/mb-3.jpg'];
 var ACTS=['Water','Land','Family','Adventure','Shop'],BODY='Body copy goes here — one or two sentences of intro for this section. Replace with real words once the content is written.';var CAPS=ACTS.concat(ACTS);
 var N=CAPS.length,STEP=26,SPAN=N*STEP,R=930,RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var cards=CAPS.map(function(c,i){var d=document.createElement('article');d.className='mo-card';d.innerHTML='<div class="mo-img"><img src="'+IM[i%IM.length]+'" alt="" draggable="false"><div class="mo-reveal"><svg class="mo-rv-svg" aria-hidden="true" viewBox="0 0 320 360" preserveAspectRatio="none"></svg><div class="mo-rv-in"><h4>'+c+'</h4><p>Body copy goes here — one or two sentences of intro for this activity.</p><a class="mo-explore" href="#" draggable="false">Explore</a></div></div></div><h3>'+c+'</h3>';ring.appendChild(d);return d});
