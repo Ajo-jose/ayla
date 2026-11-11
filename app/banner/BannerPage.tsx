@@ -59,27 +59,6 @@ export default function BannerPage() {
         <Tag n="Option 1" t="Bottom gradient, title left" />
         <AwardsStrip />
 
-        <section className="bn bn-b" data-screen-label="Banner option 2">
-          <img src="/assets/golf/gc-panorama.jpg" alt="" />
-          <div className="bn-c">
-            <h1><span>Ayla</span><em className="sw-serif">Golf Club</em></h1>
-            <p>A Greg Norman championship course, floodlit academy and clubhouse life on the Red Sea.</p>
-            <a className="vp-btn py-w" href="#">Book a tee time<b><ArrowRight aria-hidden="true" /></b></a>
-          </div>
-        </section>
-        <Tag n="Option 2" t="Full tint, centred" />
-        <AwardsStrip />
-
-        <section className="bn bn-c3" data-screen-label="Banner option 3">
-          <img src="/assets/mama/mg-4.jpg" alt="" />
-          <div className="bn-c">
-            <h1><span>Mama Gaia</span><em className="sw-serif">Beach Club</em></h1>
-            <div className="bn-s"><p>Sardinian–Jordanian cuisine, poolside cabanas and nights at OUM.</p><a className="vp-btn py-w" href="#">Reserve<b><ArrowRight aria-hidden="true" /></b></a></div>
-          </div>
-        </section>
-        <Tag n="Option 3" t="Side scrim, text right" />
-        <AwardsStrip />
-
       </main>
       <Footer />
       <div className="vp-toast" id="vp-toast" role="status" />
