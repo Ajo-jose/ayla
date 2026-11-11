@@ -257,7 +257,7 @@ html{background:#fff}#page{zoom:var(--z,1)}a{color:#005f9b}a:hover{color:#003f6b
 .vp[data-pg="dine"]>section[data-screen-label="Cross-link banner"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="dine"]>section[data-screen-label="What's on"]{padding-top:80px!important;padding-bottom:80px!important}
 .vp[data-pg="dine"]>section[data-screen-label="While you dine"]{padding-top:80px!important;padding-bottom:80px!important}
-.vp[data-pg="marina"]>section[data-screen-label="Accreditations"]{padding-top:80px!important}
+.vp[data-pg="marina"]>section[data-screen-label="Accreditations"]{padding-top:60px!important}
 .vp[data-pg="marina"]>section[data-screen-label="Intro"]{padding-top:67px!important}
 .vp[data-pg="marina"]>section[data-screen-label="Services"]{padding-top:80px!important}
 .vp[data-pg="marina"]>section[data-screen-label="Marina Village"]{padding-top:80px!important;padding-bottom:80px!important}
