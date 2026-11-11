@@ -1658,3 +1658,7 @@ repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100
 .sb-a i.sb-lg img{height:100%;width:auto;display:block;object-fit:contain}
 .vp .sb-rc{border-radius:16px;overflow:hidden}
 .vp .sb-rc .sb-ri{border-radius:0}
+.mr-sv .mr-n{display:flex;align-items:center}
+.mr-sv .mr-n svg{width:36px;height:36px}
+.mr-ac i.mr-lg{display:block;height:96px;width:auto}
+.mr-ac i.mr-lg img{height:100%;width:auto;display:block;object-fit:contain}
