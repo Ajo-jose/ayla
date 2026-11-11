@@ -1662,3 +1662,11 @@ repeating-linear-gradient(90deg,var(--ayla-deep) 0 1px,transparent 1px calc((100
 .mr-sv .mr-n svg{width:36px;height:36px}
 .mr-ac i.mr-lg{display:block;height:96px;width:auto}
 .mr-ac i.mr-lg img{height:100%;width:auto;display:block;object-fit:contain}
+
+/* Marina accreditations: auto-scrolling logo slider (right to left) */
+.mr-mqv{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mr-ac.mr-trk{display:flex;grid-template-columns:none;gap:0;width:max-content;animation:mrMq 40s linear infinite}
+.mr-ac.mr-trk li{flex:none;padding:0 56px}
+.mr-ac.mr-trk img{display:block;height:96px;width:auto;object-fit:contain}
+@keyframes mrMq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mr-ac.mr-trk{animation:none}}
