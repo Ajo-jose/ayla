@@ -46,21 +46,4 @@
 @keyframes bnFill{to{transform:scaleX(1)}}
 .bn-a .bn-c{bottom:88px}
 @media (prefers-reduced-motion:reduce){.bn-pg .on i::after{animation:none;transform:scaleX(1)}}
-/* 1B — slider, one-line titles */
-.bn-ol::after{z-index:1;pointer-events:none}
-.bn-slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;visibility:hidden}
-.bn-slide.on{opacity:1;visibility:visible}
-.bn-slide>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.bn-slide.on>img{animation:bnZoom 7s ease-out both}
-@keyframes bnZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
-.bn-ol .bn-c{z-index:2;bottom:120px}
-.bn-one{font-size:120px!important;white-space:nowrap}
-.bn-one span,.bn-one em{display:inline!important}
-.bn-bars{position:absolute;z-index:3;left:64px;right:64px;bottom:56px;display:flex;gap:12px}
-.bn-bars button{flex:1;height:20px;padding:0;border:0;background:none;cursor:pointer;display:flex;align-items:center}
-.bn-bars i{display:block;width:100%;height:3px;border-radius:2px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}
-.bn-bars i::after{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left}
-.bn-bars .on i::after{animation:bnBar 6s linear forwards}
-@keyframes bnBar{to{transform:scaleX(1)}}
-@media (prefers-reduced-motion:reduce){.bn-slide.on>img,.bn-bars .on i::after{animation:none}.bn-bars .on i::after{transform:scaleX(1)}}
 .bn-a h1 span{font-weight:400}

@@ -30,37 +30,6 @@ function AwardsStrip() {
 }
 
 
-const oneLine = [
-  { img: "/assets/marina/mb-3.jpg", t: "Marina", i: "Village", p: "Waterfront dining, shops and cafés along the Ayla Marina boardwalk.", b: "Explore" },
-  { img: "/assets/golf/gc-panorama.jpg", t: "Ayla", i: "Golf Club", p: "A Greg Norman championship course and clubhouse life on the Red Sea.", b: "Book a tee time" },
-  { img: "/assets/mama/mg-4.jpg", t: "Mama Gaia", i: "Beach Club", p: "Sardinian–Jordanian cuisine, poolside cabanas and nights at OUM.", b: "Reserve" },
-  { img: "/assets/azb/ab-1.jpg", t: "Azure Beach", i: "Apartments", p: "Beachfront apartments with mountain and sea views.", b: "Book a viewing" },
-]
-
-function SliderBanner() {
-  const [i, setI] = useState(0)
-  useEffect(() => {
-    const t = setTimeout(() => setI(n => (n + 1) % oneLine.length), 6000)
-    return () => clearTimeout(t)
-  }, [i])
-  return (
-    <section className="bn bn-a bn-ol" data-screen-label="Banner option 1 slider" aria-roledescription="carousel">
-      {oneLine.map((s, k) => (
-        <div key={s.img} className={"bn-slide" + (k === i ? " on" : "")} aria-hidden={k !== i}>
-          <img src={s.img} alt="" />
-          <div className="bn-c">
-            <h1 className="bn-one"><span>{s.t}</span> <em className="sw-serif">{s.i}</em></h1>
-            <div className="bn-s"><p>{s.p}</p><a className="vp-btn py-w" href="#" tabIndex={k === i ? 0 : -1}>{s.b}<b><ArrowRight aria-hidden="true" /></b></a></div>
-          </div>
-        </div>
-      ))}
-      <div className="bn-bars" role="tablist">
-        {oneLine.map((s, k) => <button key={k} role="tab" aria-selected={k === i} aria-label={"Slide " + (k + 1)} className={k === i ? "on" : ""} onClick={() => setI(k)}><i /></button>)}
-      </div>
-    </section>
-  )
-}
-
 function Tag({ n, t }: { n: string; t: string }) {
   return <div className="bn-tag"><b>{n}</b><span>{t}</span></div>
 }
@@ -88,10 +57,6 @@ export default function BannerPage() {
           <div className="bn-pg" role="tablist" aria-label="Banner slides">{slides.map((_, i) => <button key={i} role="tab" aria-selected={i === si} aria-label={"Slide " + (i + 1)} className={i === si ? "on" : i < si ? "done" : ""} onClick={() => setSi(i)}><i key={si === i ? "a" + si : "b"} /></button>)}</div>
         </section>
         <Tag n="Option 1" t="Bottom gradient, title left" />
-        <AwardsStrip />
-
-        <SliderBanner />
-        <Tag n="Option 1B" t="Bottom gradient with slider, one-line title" />
         <AwardsStrip />
 
         <section className="bn bn-b" data-screen-label="Banner option 2">
